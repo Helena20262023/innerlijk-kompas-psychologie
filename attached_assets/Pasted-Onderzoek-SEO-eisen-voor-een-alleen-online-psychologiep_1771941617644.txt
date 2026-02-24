@@ -1,0 +1,89 @@
+Onderzoek SEO-eisen voor een (alleen online) psychologiepraktijk website gericht op Nederland/Nederlandse expats/Engelstaligen in Nederland zoekend naar CGT, EMDR, NET, Mindfulness, ACT, EFT, Schematherapie, IE. Lever: 5 geoptimaliseerde title tag templates, meta description formules, benodigde schema markup (met JSON-LD code), lokale SEO checklist indien van toepassing, en top 10 keywords om te targeten. Baseer op huidige zoektrends en citeer bronnen.
+​
+
+5 Geoptimaliseerde Title Tag Templates
+<60 karakters, keyword vooraan, specialisatie + online/expats voor CTR. NL/ENG mix, geïnspireerd op praktijken als iPractice en PsyQ.
+
+Online CGT Therapeut Nederland | EMDR & ACT Specialist
+
+Geregistreerde Psycholoog Online | Mindfulness EFT Schematherapie
+
+Online Therapie Expats NL | NET IE Hulp in het Engels
+
+Psycholoog Online Nederland | CGT EMDR Zonder Wachtlijst
+
+Engelstalige Therapeut NL | ACT Mindfulness Schematherapie
+
+Meta Description Formules
+<160 karakters, keyword + USP (VU, online, specialisaties) + CTA. Formules met NL-voorbeelden:
+
+Online [keyword/specialisatie] Nederland/Expats | Geregistreerd psycholoog (VU Amsterdam), Engelstalig optioneel. Direct video-sessies. Boek intake. Voorbeeld: "Online CGT EMDR therapeut Nederland | Voor expats & locals, VU-alumna. Mindfulness, ACT, EFT beschikbaar. Geen wachtlijst, start vandaag."
+
+**[Specialisaties] Online Hulp | Deskundige therapie in NL/ENG, vergoedbaar. Persoonlijk plan via video. Neem contact op voor gratis kennismaking."
+​
+
+Schema Markup (JSON-LD Code)
+Gebruik Psychologist/Service voor therapieën, areaServed: Nederland. Voeg in <head>, pas aan met je data; valideer via Google's Rich Results Test. Gebaseerd op NL-praktijken.
+​
+​
+
+json
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Psychologist",
+  "name": "Jouw Naam",
+  "gender": "Female",
+  "jobTitle": "Geregistreerd Psycholoog",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Vrije Universiteit Amsterdam"
+  },
+  "offers": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Online CGT EMDR NET Mindfulness ACT EFT Schematherapie IE",
+      "serviceType": ["Video Therapie", "Engelstalig"],
+      "areaServed": ["Nederland", "Expats"]
+    }
+  },
+  "url": "https://jouwpraktijk.nl",
+  "sameAs": ["https://www.psynip.nl/profiel/jouw-naam"]
+}
+</script>
+SEO Checklist (Nationaal/Online Focus)
+Geen fysiek local SEO nodig; richt op nationaal en Google Business "service area: Nederland". Checklist voor online praktijken als De Online Psycholoog:
+
+Google Business Profile: Categorie "Psycholoog", service area "Nederland + expats", diensten (CGT, EMDR), reviews.
+
+Content: Blogs over "CGT online Nederland", "EMDR voor expats", FAQ-schema.
+
+Technisch: Mobiel-first, HTTPS, snelle laadtijd, NL/ENG hreflang tags.
+
+E-E-A-T: BIG-register link, VU-logo, testimonials, specialisatiespagina's.
+
+Directories: Psyned.nl, Therapie.nl, expat-forums.
+
+Top 10 Keywords om te Targeten
+Long-tail op therapieën + online/expats/ENG, hoog volume laag concurrentie via NL-trends (Ahrefs/Google Trends). Focus specialisaties.
+
+online cgt nederland
+
+emdr therapeut online
+
+act therapie expats
+
+mindfulness psycholoog nl
+
+schematherapie online
+
+eft relatietherapie nederland
+
+net therapie engels nl
+
+ie therapie online
+
+online psycholoog expats nederland
+
+cgt emdr mindfulness act engelstalig
