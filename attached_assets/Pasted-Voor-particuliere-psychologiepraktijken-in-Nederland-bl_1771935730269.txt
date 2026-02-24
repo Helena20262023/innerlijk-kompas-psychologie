@@ -1,0 +1,37 @@
+Voor particuliere psychologiepraktijken in Nederland blijven in 2026 rustgevende, minimalistische ontwerpen dominant, met nadruk op vertrouwen en toegankelijkheid via zachte kleuren en organische vormen. Typografie is leesbaar en warm, passend bij trends als anti-grid layouts en conversiegerichte UX.
+
+Aanbevolen Kleurenpalet (5 HEX-codes)
+Gebaseerd op kleurenpsychologie: blauw/groen voor kalmte en vertrouwen (verlaagt stress), neutrale achtergronden voor focus, accenten voor urgentie zonder overweldiging.
+
+Kleur	HEX-code	Psychologische Reden
+Primair	#4A90E2	Blauw: Bouwt vertrouwen en professionaliteit.
+​
+Secundair	#7ED321	Groen: Symboliseert groei en ontspanning.
+​
+Accent	#F5A623	Oranje: Warmte en toegankelijkheid, stimuleert actie.
+​
+Achtergrond	#F8F9FA	Lichtgrijs: Rustig, minimalisme voorkomt afleiding.
+​
+Tekst	#2C3E50	Donkergrijs: Hoge leesbaarheid, serieus zonder kilte.
+​
+Lettertype Combinaties (2 Koppels)
+Headings: Playfair Display (serif, warm elegant) + Body: Open Sans (sans-serif, modern leesbaar): Serif geeft empathie en autoriteit; sans-serif zorgt voor snelle scannability op mobiel.
+​
+
+Headings: Montserrat (sans-serif, geometrisch) + Body: Lora (serif, zacht): Balans tussen professionaliteit en menselijkheid, ideaal voor expat-praktijken.
+​
+
+Ontwerpmood
+Warm minimalistisch: Rustige lay-outs met zachte schaduwen, micro-animaties en organische curves voor emotionele veiligheid. Vermijdt drukte, focust op één CTA per sectie (bijv. "Maak afspraak"). Past bij 2026-trends als performance-first en personalisatie.
+
+Voorbeeldwebsites (Nederlandse Praktijken)
+Deze sites belichamen de stijl met kalme paletten en effectieve UX:
+
+Het Consult (hetconsult.nl): Neutrale rust, duidelijke dienstengrid – effectief door directe "geen wachtlijst"-berichten.
+​
+
+Untangled Psychology (untangledpsychology.nl): Aardetinten, meertalig minimalistisch – bouwt vertrouwen via team-bios.
+​
+
+Better Minds GGZ (betterminds.nl): Zacht blauw, conversiegerichte CTAs – voorbeeld van warme, mobielvriendelijke structuur.
+​
