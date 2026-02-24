@@ -8,11 +8,11 @@ export default function About() {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center mb-20">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <h1 className="text-5xl font-serif text-foreground mb-6">Over Innerlijk Kompas</h1>
+              <h1 className="text-5xl md:text-6xl font-serif text-foreground mb-6">Over Innerlijk Kompas</h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
                 Wij geloven dat therapie toegankelijk, effectief en vrij van oordeel moet zijn. Onze aanpak combineert wetenschappelijke nauwkeurigheid met oprechte menselijke warmte.
               </p>
@@ -50,10 +50,20 @@ export default function About() {
               </div>
 
               <div className="mt-8 flex flex-wrap gap-3">
-                <span className="px-4 py-2 bg-secondary/10 text-secondary rounded-full text-sm font-medium border border-secondary/20 shadow-sm">BIG-geregistreerd</span>
-                <span className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20 shadow-sm">VU Amsterdam Alumna</span>
-                <span className="px-4 py-2 bg-accent/20 text-accent-foreground rounded-full text-sm font-medium border border-accent/30 shadow-sm">EMDR Practitioner</span>
-                <span className="px-4 py-2 bg-muted text-muted-foreground rounded-full text-sm font-medium border border-border shadow-sm">Vloeiend in EN/NL</span>
+                {[
+                  { label: "BIG-geregistreerd", color: "bg-secondary/10 text-secondary border-secondary/20" },
+                  { label: "VU Amsterdam Alumna", color: "bg-primary/10 text-primary border-primary/20" },
+                  { label: "EMDR Practitioner", color: "bg-accent/20 text-accent-foreground border-accent/30" },
+                  { label: "Vloeiend in EN/NL", color: "bg-muted text-muted-foreground border-border" }
+                ].map((tag, i) => (
+                  <motion.span 
+                    key={i}
+                    whileHover={{ scale: 1.05, y: -2 }}
+                    className={`px-4 py-2 rounded-full text-sm font-medium border shadow-sm transition-all cursor-default ${tag.color}`}
+                  >
+                    {tag.label}
+                  </motion.span>
+                ))}
               </div>
 
               <div className="mt-12 p-6 glass-card rounded-2xl border-primary/10">

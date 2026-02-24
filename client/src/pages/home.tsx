@@ -27,16 +27,17 @@ export default function Home() {
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-3xl">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/60 backdrop-blur-sm border border-white/40 shadow-sm mb-6 text-sm font-medium text-primary">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/60 backdrop-blur-sm border border-white/40 shadow-sm mb-6 text-sm font-medium text-primary hover:bg-white/80 transition-colors cursor-default">
                 <CheckCircle2 size={16} />
                 <span>Online Psycholoog Nederland — Geen wachtlijst</span>
               </div>
               
-              <h1 className="text-5xl md:text-7xl font-serif text-foreground leading-[1.1] mb-6">
+              <h1 className="text-5xl md:text-7xl font-serif text-foreground leading-[1.1] mb-6 tracking-tight">
                 Expert <span className="text-primary italic">online therapie</span> door VU-afgestudeerde psycholoog.
               </h1>
               
@@ -45,10 +46,10 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="rounded-full bg-accent hover:bg-accent/90 text-foreground text-lg px-8 py-6 shadow-lg shadow-accent/20">
+                <Button asChild size="lg" className="rounded-full bg-accent hover:bg-accent/90 text-foreground text-lg px-8 py-6 shadow-lg shadow-accent/20 transition-all hover:scale-105 active:scale-95">
                   <Link href="/contact">Direct intake plannen</Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="rounded-full bg-white/50 backdrop-blur-sm border-white/50 hover:bg-white/80 text-lg px-8 py-6">
+                <Button asChild variant="outline" size="lg" className="rounded-full bg-white/50 backdrop-blur-sm border-white/50 hover:bg-white/80 text-lg px-8 py-6 transition-all hover:border-primary/30">
                   <Link href="/about">Ontmoet Sarah</Link>
                 </Button>
               </div>
@@ -72,30 +73,30 @@ export default function Home() {
       <section className="bg-white py-12 border-b border-border/50 relative z-20 shadow-sm">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-            <div className="flex flex-col md:flex-row items-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center text-secondary shrink-0">
+            <div className="flex flex-col md:flex-row items-center gap-4 group cursor-default">
+              <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center text-secondary shrink-0 group-hover:bg-secondary/20 transition-colors duration-300">
                 <Clock size={24} />
               </div>
               <div>
-                <h3 className="font-bold text-foreground">Snel starten</h3>
+                <h3 className="font-bold text-foreground group-hover:text-secondary transition-colors">Snel starten</h3>
                 <p className="text-sm text-muted-foreground">Start je traject binnen een week online.</p>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row items-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+            <div className="flex flex-col md:flex-row items-center gap-4 group cursor-default">
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0 group-hover:bg-primary/20 transition-colors duration-300">
                 <Globe size={24} />
               </div>
               <div>
-                <h3 className="font-bold text-foreground">Wereldwijd NL-hulp</h3>
+                <h3 className="font-bold text-foreground group-hover:text-primary transition-colors">Wereldwijd NL-hulp</h3>
                 <p className="text-sm text-muted-foreground">Specialistische zorg voor NL-sprekers en expats.</p>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row items-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center text-accent shrink-0">
+            <div className="flex flex-col md:flex-row items-center gap-4 group cursor-default">
+              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center text-accent shrink-0 group-hover:bg-accent/20 transition-colors duration-300">
                 <CheckCircle2 size={24} />
               </div>
               <div>
-                <h3 className="font-bold text-foreground">Evidence Based</h3>
+                <h3 className="font-bold text-foreground group-hover:text-accent transition-colors">Evidence Based</h3>
                 <p className="text-sm text-muted-foreground">Effectieve CGT & EMDR via video-consult.</p>
               </div>
             </div>

@@ -35,16 +35,16 @@ export default function Services() {
   return (
     <div className="pt-20">
       {/* Header */}
-      <section className="py-20 bg-secondary/10 relative overflow-hidden">
-        <div className="absolute right-0 top-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl mix-blend-multiply"></div>
+      <section className="py-24 bg-secondary/10 relative overflow-hidden">
+        <div className="absolute right-0 top-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl mix-blend-multiply animate-pulse"></div>
         <div className="container mx-auto px-6 relative z-10">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
             className="max-w-3xl"
           >
-            <h1 className="text-5xl font-serif text-foreground mb-6">Onze Diensten</h1>
+            <h1 className="text-5xl md:text-6xl font-serif text-foreground mb-6 leading-tight">Onze Diensten</h1>
             <p className="text-xl text-foreground/80 leading-relaxed">
               Wij bieden evidence-based psychologische behandelingen in een warme, uitnodigende omgeving. Vind de ondersteuning die bij jouw traject past.
             </p>
@@ -74,13 +74,13 @@ export default function Services() {
                     {service.description}
                   </p>
                   
-                  <div className="bg-white p-8 rounded-[2rem] border border-border/50 shadow-sm">
-                    <h3 className="font-bold text-foreground mb-4 uppercase tracking-wide text-sm">Focusgebieden</h3>
+                  <div className="bg-white p-8 rounded-[2rem] border border-border/50 shadow-sm transition-all duration-300 hover:shadow-md hover:border-primary/20 group">
+                    <h3 className="font-bold text-foreground mb-4 uppercase tracking-wide text-sm group-hover:text-primary transition-colors">Focusgebieden</h3>
                     <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       {service.areas.map((area, i) => (
-                        <li key={i} className="flex items-start gap-3">
-                          <CheckCircle2 size={18} className="text-primary mt-1 shrink-0" />
-                          <span className="text-foreground/80">{area}</span>
+                        <li key={i} className="flex items-start gap-3 group/item">
+                          <CheckCircle2 size={18} className="text-primary mt-1 shrink-0 group-hover/item:scale-110 transition-transform" />
+                          <span className="text-foreground/80 group-hover/item:text-foreground transition-colors">{area}</span>
                         </li>
                       ))}
                     </ul>
