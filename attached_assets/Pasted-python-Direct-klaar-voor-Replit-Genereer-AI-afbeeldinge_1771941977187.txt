@@ -1,0 +1,45 @@
+python
+# Direct klaar voor Replit: Genereer AI-afbeeldingen voor online psychologiepraktijk website
+# Copy-paste deze prompts in Midjourney Discord (/imagine) of DALL-E (ChatGPT). Pas aan met je naam/kleuren.
+
+prompts = {
+    "Hero Banner (1920x1080px)": """
+Kalmende hero afbeelding voor online psycholoog website, diverse Nederlandse vrouw in 30s met serene uitdrukking, 
+zittend bij raam met zacht natuurlijk licht, boeken en plant op achtergrond, warm minimalistisch interieur, 
+blue-groene tonen (#4A90E2, #7ED321), hoge resolutie, professionele compositie --ar 16:9 --v 6 --q 2
+    """,
+    
+    "Features CGT/EMDR (1200x800px)": """
+Abstracte illustratie van cognitieve gedragstherapie, zachte lijnen verbindend negatieve en positieve gedachten 
+als bloeiende paden, pastel blauw-groen (#4A90E2, #F5A623), minimalistisch vector stijl, geen mensen, 
+kalm en hoopvol --ar 3:2 --style raw --v 6
+    """,
+    
+    "About Photo Vrouwelijke Psycholoog (800x1200px)": """
+Portret van zelfverzekerde vrouwelijke geregistreerde psycholoog, 35 jaar, vriendelijke glimlach, zittend in 
+moderne home office met VU Amsterdam diploma zichtbaar op achtergrond, naturally lit, warme neutrale kleuren, 
+benaderbaar en professioneel --ar 2:3 --q 2 --v 6
+    """,
+    
+    "Testimonials Achtergrond (600x400px)": """
+Subtiele achtergrond voor testimonial, abstracte mindfulness meditatie scène met vrouw in lotus pose silhouette 
+tegen zonsondergang, zachte gradients oranje-blauw (#F5A623 naar #4A90E2), niet herkenbaar, vredig --ar 3:2 --v 6
+    """,
+    
+    "CTA Boekingsbanner (1920x600px)": """
+Aanmoedigende banner voor online therapie boeking, lege stoel met uitnodigend kussen tegenover raam met uitzicht 
+op Nederlandse tulpenvelden, symbool voor sessie, helder daglicht, uitnodigend, warm minimalistisch --ar 16:3 --no mensen --v 6
+    """
+}
+
+for image_type, prompt in prompts.items():
+    print(f"\n🖼️ {image_type}")
+    print(f"📝 Prompt: {prompt}")
+    print("-" * 80)
+
+print("\n💡 Tips voor Replit/Midjourney:")
+print("1. Copy elke prompt naar Discord: /imagine prompt: [paste]")
+print("2. Gebruik U1-U4 voor variaties, Vary (Subtle/Strong)")
+print("3. Download beste, resize naar afmetingen met Replit Image tools")
+print("4. Alternatief: DALL-E 3 in ChatGPT met zelfde prompts")
+print("\n🎨 Kleuren matchen je brand: Primair #4A90E2, Secundair #7ED321")

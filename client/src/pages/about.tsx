@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import therapistImg from "@/assets/images/therapist.jpg";
+import therapistImg from "@/assets/images/therapist.png";
 
 export default function About() {
   return (

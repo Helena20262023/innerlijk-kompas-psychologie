@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2, Clock, Globe, ShieldCheck } from "lucide-react";
-import heroImg from "@/assets/images/hero-nature.jpg";
-import therapistImg from "@/assets/images/therapist.jpg";
+import heroImg from "@/assets/images/hero-nature.png";
+import therapistImg from "@/assets/images/therapist.png";
 
 export default function Home() {
   return (
