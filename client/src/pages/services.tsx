@@ -93,7 +93,7 @@ export default function Services() {
             <div className="lg:col-span-5">
               <div className="sticky top-32 space-y-8">
                 <div className="rounded-[2rem] overflow-hidden shadow-lg aspect-[4/3]">
-                  <img src={therapyRoomImg} alt="Onze therapiekamer" className="w-full h-full object-cover" />
+                  <img src={therapyRoomImg} alt="Online therapie kamer voor EMDR, ACT en Schematherapie" className="w-full h-full object-cover" />
                 </div>
                 
                 <div className="bg-primary text-primary-foreground p-8 rounded-[2rem]">

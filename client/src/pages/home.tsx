@@ -14,7 +14,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <img 
             src={heroImg} 
-            alt="Rustige natuur" 
+            alt="Online CGT Therapeut Nederland - Rustige natuur voor EMDR & ACT Specialist" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-background/80 backdrop-blur-[2px]"></div>
@@ -117,7 +117,7 @@ export default function Home() {
               <div className="aspect-[4/5] rounded-[2rem] overflow-hidden relative z-10 shadow-2xl">
                 <img 
                   src={therapistImg} 
-                  alt="VU Amsterdam Psycholoog" 
+                  alt="Online psycholoog expats nederland - Dr. Sarah van der Meer VU Amsterdam" 
                   className="w-full h-full object-cover"
                 />
               </div>

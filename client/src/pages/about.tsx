@@ -26,7 +26,7 @@ export default function About() {
               viewport={{ once: true }}
               className="aspect-square rounded-[2rem] overflow-hidden shadow-xl"
             >
-              <img src={therapistImg} alt="Oprichter" className="w-full h-full object-cover" />
+              <img src={therapistImg} alt="Geregistreerde Psycholoog Online - Specialist in CGT, EMDR & ACT" className="w-full h-full object-cover" />
             </motion.div>
             
             <motion.div
