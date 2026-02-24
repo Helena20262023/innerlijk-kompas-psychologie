@@ -1,0 +1,87 @@
+Online-only psychologiepraktijk vanuit Servië target Nederland effectief zonder locatie te vermelden: focus op "online psycholoog Nederland" en EU-brede aantrekkingskracht voor expats/Dutch speakers. Als vrouwelijke geregistreerde psycholoog (VU Amsterdam) versterk je E-E-A-T met BIG-registratie, alumni-logo en testimonials.
+
+Aangepaste SEO-Aanbevelingen (Online-Only)
+Pas lokale focus aan naar nationaal/online keywords; vermijd fysiek adres. Schema markup zonder straat (gebruik "online" serviceArea).
+​
+
+Bijgewerkte Title Tags (5 Templates)
+Online Psycholoog Nederland | VU-Afgestudeerde Therapeut 
+​
+
+Vrouwelijke Psycholoog Online | Hulp Bij Angst & Stress
+
+Geregistreerde Psycholoog | Snel Online Afspraak Maken
+
+Online Therapie Zonder Wachtlijst | Deskundige Hulp NL
+
+VU Psycholoog Online | Cognitieve Therapie Voor Vrouwen
+
+Meta Descriptions
+Online [keyword] | Geregistreerd psycholoog (VU Amsterdam), geen wachtlijst. Veilige video-sessies voor [probleem]. Boek nu intake. Voorbeeld: "Online psycholoog Nederland | Geregistreerd BIG, VU Amsterdam alumna. Hulp bij burn-out en relaties via video. Direct afspraak, vergoedbaar. Neem contact op."
+​
+
+Schema Markup (Aangepast JSON-LD)
+json
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Psychologist",
+  "name": "Jouw Naam",
+  "gender": "Female",
+  "jobTitle": "Geregistreerd Psycholoog",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Vrije Universiteit Amsterdam"
+  },
+  "offers": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Online Psychologische Therapie",
+      "serviceType": "Video Sessies"
+    },
+    "areaServed": "Nederland"
+  },
+  "url": "https://jouwpraktijk.nl",
+  "telephone": "+381-... (of NL-nummer)"
+}
+</script>
+Voeg in <head>; valideer met Google's tool.
+​
+​
+
+Local/National SEO Checklist (Online Focus)
+Google Business: Claim met "Service Area: Nederland", online-only categorie "Psycholoog".
+​
+
+Keywords: Prioriteer "online psycholoog nederland", "vrouwelijke therapeut online".
+
+BIG-register link, VU-logo, testimonials met NL-clienten.
+
+Content: Blogs als "Online therapie vanuit huis: voordelen voor drukke professionals".
+
+Geen fysiek adres; gebruik "Wereldwijd toegankelijk voor NL-sprekers".
+​
+
+Top 10 Keywords (Online/Vrouw-Focus)
+Aangepast op trends: online/long-tail met volume.
+
+online psycholoog nederland
+
+geregistreerd psycholoog online
+
+vrouwelijke psycholoog
+
+vu psycholoog therapie
+
+online therapie angst
+
+psycholoog zonder wachtlijst
+
+cognitieve gedragstherapie online
+
+burn-out coach vrouw
+
+relatietherapie online nl
+
+psychologische hulp expats

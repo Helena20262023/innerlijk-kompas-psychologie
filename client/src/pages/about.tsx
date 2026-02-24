@@ -42,17 +42,22 @@ export default function About() {
                   Met meer dan 12 jaar klinische ervaring in Nederland en het VK, heb ik Innerlijk Kompas opgericht om een plek te creëren waar zowel inwoners als internationals zich echt begrepen voelen.
                 </p>
                 <p>
-                  Als voormalig expat weet ik uit eerste hand hoe groot de druk kan zijn bij het aanpassen aan een nieuwe cultuur. Mijn therapeutische stijl is direct maar compassievol, waarbij ik gebruik maak van Cognitieve Gedragstherapie (CGT) en EMDR om de kernoorzaken van klachten aan te pakken.
+                  Als <strong>VU Amsterdam alumna</strong> en BIG-geregistreerd psycholoog combineer ik academische expertise met een direct maar compassievolle stijl. Ik maak gebruik van Cognitieve Gedragstherapie (CGT) en EMDR om de kernoorzaken van klachten aan te pakken.
                 </p>
                 <p>
-                  Mijn doel is niet alleen symptoombestrijding, maar je helpen een veerkrachtig en betekenisvol leven op te bouwen dat in lijn is met je eigen innerlijke kompas.
+                  Mijn doel is niet alleen symptoombestrijding, maar je helpen een veerkrachtig en betekenisvol leven op te bouwen dat in lijn is met je eigen innerlijke kompas, waar ter wereld je ook bent.
                 </p>
               </div>
 
               <div className="mt-8 flex flex-wrap gap-3">
-                <span className="px-4 py-2 bg-secondary/10 text-secondary rounded-full text-sm font-medium">BIG-geregistreerd</span>
-                <span className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium">EMDR Practitioner</span>
-                <span className="px-4 py-2 bg-accent/20 text-accent-foreground rounded-full text-sm font-medium">Vloeiend in EN/NL</span>
+                <span className="px-4 py-2 bg-secondary/10 text-secondary rounded-full text-sm font-medium border border-secondary/20 shadow-sm">BIG-geregistreerd</span>
+                <span className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20 shadow-sm">VU Amsterdam Alumna</span>
+                <span className="px-4 py-2 bg-accent/20 text-accent-foreground rounded-full text-sm font-medium border border-accent/30 shadow-sm">EMDR Practitioner</span>
+                <span className="px-4 py-2 bg-muted text-muted-foreground rounded-full text-sm font-medium border border-border shadow-sm">Vloeiend in EN/NL</span>
+              </div>
+
+              <div className="mt-12 p-6 glass-card rounded-2xl border-primary/10">
+                <p className="italic text-foreground/80">"Online therapie biedt de flexibiliteit die moderne professionals nodig hebben, zonder in te leveren op de kwaliteit van de verbinding of de effectiviteit van de behandeling."</p>
               </div>
             </motion.div>
           </div>
