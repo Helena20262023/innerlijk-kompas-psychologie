@@ -8,27 +8,27 @@ export default function Services() {
   const services = [
     {
       id: "individual",
-      title: "Individual Therapy",
-      description: "Personalized one-on-one sessions tailored to your specific mental health goals. We utilize evidence-based treatments such as Cognitive Behavioral Therapy (CBT), EMDR for trauma, and Schema Therapy.",
-      areas: ["Anxiety & Panic", "Depression & Low Mood", "Burnout & Stress", "Trauma & PTSD", "Self-esteem issues"],
+      title: "Individuele Therapie",
+      description: "Gepersonaliseerde één-op-één sessies afgestemd op jouw specifieke doelen. We maken gebruik van evidence-based behandelingen zoals Cognitieve Gedragstherapie (CGT), EMDR voor trauma en Schematherapie.",
+      areas: ["Angst & Paniek", "Depressie & Somberheid", "Burn-out & Stress", "Trauma & PTSS", "Zelfbeeld problematiek"],
     },
     {
       id: "expat",
-      title: "Expat & Internationals Support",
-      description: "Moving to a new country brings unique psychological challenges. Our specialized expat counseling helps you navigate the complexities of international life in the Netherlands.",
-      areas: ["Cultural adjustment", "Homesickness & Isolation", "Career transitions", "Identity issues", "Navigating the Dutch healthcare system"],
+      title: "Ondersteuning voor Expats",
+      description: "Verhuizen naar een nieuw land brengt unieke uitdagingen met zich mee. Onze gespecialiseerde expat-begeleiding helpt je bij het navigeren door de complexiteit van het internationale leven in Nederland.",
+      areas: ["Culturele aanpassing", "Heimwee & Isolatier", "Carrière-overgangen", "Identiteitsproblematiek", "Navigeren Nederlandse zorgsysteem"],
     },
     {
       id: "online",
-      title: "Online Therapy",
-      description: "High-quality psychological care from the comfort of your own home. Perfect for busy professionals, frequent travelers, or those who prefer the familiarity of their own space.",
-      areas: ["Secure video calls", "Flexible scheduling", "Continuous care while traveling", "Access from anywhere in NL"],
+      title: "Online Therapie",
+      description: "Hoogwaardige psychologische zorg vanuit het comfort van je eigen huis. Ideaal voor drukke professionals, frequente reizigers of diegenen die de voorkeur geven aan hun eigen vertrouwde ruimte.",
+      areas: ["Beveiligde videobelverbinding", "Flexibele planning", "Zorg continueren tijdens reizen", "Overal in NL bereikbaar"],
     },
     {
       id: "couples",
-      title: "Couples Counseling",
-      description: "EFT (Emotionally Focused Therapy) based counseling for couples looking to improve communication, rebuild trust, or navigate difficult life transitions together.",
-      areas: ["Communication breakdown", "Intimacy issues", "Cross-cultural relationships", "Conflict resolution"],
+      title: "Relatietherapie",
+      description: "Counseling op basis van EFT (Emotionally Focused Therapy) voor koppels die hun communicatie willen verbeteren, vertrouwen willen herstellen of samen door moeilijke levensfasen willen navigeren.",
+      areas: ["Communicatieproblemen", "Intimiteitsvraagstukken", "Cross-culturele relaties", "Conflictbeheersing"],
     }
   ];
 
@@ -44,9 +44,9 @@ export default function Services() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl"
           >
-            <h1 className="text-5xl font-serif text-foreground mb-6">Our Services</h1>
+            <h1 className="text-5xl font-serif text-foreground mb-6">Onze Diensten</h1>
             <p className="text-xl text-foreground/80 leading-relaxed">
-              We provide evidence-based psychological treatments in a warm, welcoming environment. Find the support that fits your journey.
+              Wij bieden evidence-based psychologische behandelingen in een warme, uitnodigende omgeving. Vind de ondersteuning die bij jouw traject past.
             </p>
           </motion.div>
         </div>
@@ -75,7 +75,7 @@ export default function Services() {
                   </p>
                   
                   <div className="bg-white p-8 rounded-[2rem] border border-border/50 shadow-sm">
-                    <h3 className="font-bold text-foreground mb-4 uppercase tracking-wide text-sm">Areas of Focus</h3>
+                    <h3 className="font-bold text-foreground mb-4 uppercase tracking-wide text-sm">Focusgebieden</h3>
                     <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       {service.areas.map((area, i) => (
                         <li key={i} className="flex items-start gap-3">
@@ -93,26 +93,26 @@ export default function Services() {
             <div className="lg:col-span-5">
               <div className="sticky top-32 space-y-8">
                 <div className="rounded-[2rem] overflow-hidden shadow-lg aspect-[4/3]">
-                  <img src={therapyRoomImg} alt="Our therapy room" className="w-full h-full object-cover" />
+                  <img src={therapyRoomImg} alt="Onze therapiekamer" className="w-full h-full object-cover" />
                 </div>
                 
                 <div className="bg-primary text-primary-foreground p-8 rounded-[2rem]">
-                  <h3 className="text-2xl font-serif mb-4">Rates & Insurance</h3>
+                  <h3 className="text-2xl font-serif mb-4">Tarieven & Vergoeding</h3>
                   <p className="mb-6 opacity-90 leading-relaxed">
-                    As a private practice, our sessions are typically self-pay. However, depending on your Dutch health insurance policy (restitutiepolis), you may be eligible for partial or full reimbursement.
+                    Als particuliere praktijk worden sessies doorgaans zelf betaald. Echter, afhankelijk van je Nederlandse zorgverzekering (restitutiepolis), kom je mogelijk in aanmerking voor gedeeltelijke of volledige vergoeding.
                   </p>
                   <ul className="space-y-3 mb-8 opacity-90">
                     <li className="flex justify-between border-b border-primary-foreground/20 pb-2">
-                      <span>Individual Session (45m)</span>
+                      <span>Individuele Sessie (45m)</span>
                       <strong>€135</strong>
                     </li>
                     <li className="flex justify-between border-b border-primary-foreground/20 pb-2">
-                      <span>Couples Session (75m)</span>
+                      <span>Relatie Sessie (75m)</span>
                       <strong>€195</strong>
                     </li>
                   </ul>
                   <Button asChild className="w-full bg-accent hover:bg-accent/90 text-foreground text-lg rounded-full">
-                    <Link href="/contact">Book an Intake</Link>
+                    <Link href="/contact">Plan een intake</Link>
                   </Button>
                 </div>
               </div>

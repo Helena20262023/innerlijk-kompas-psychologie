@@ -19,8 +19,8 @@ export default function Navbar() {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/services", label: "Services" },
-    { href: "/about", label: "About" },
+    { href: "/services", label: "Diensten" },
+    { href: "/about", label: "Over ons" },
     { href: "/contact", label: "Contact" },
   ];
 
@@ -60,12 +60,12 @@ export default function Navbar() {
             asChild
             className="rounded-full bg-primary hover:bg-primary/90 text-white px-6"
           >
-            <Link href="/contact">Book Session</Link>
+            <Link href="/contact">Maak Afspraak</Link>
           </Button>
           <div className="flex items-center gap-2 border-l pl-6">
-            <span className="text-sm font-bold text-foreground">EN</span>
+            <span className="text-sm text-muted-foreground hover:text-foreground cursor-pointer transition-colors">EN</span>
             <span className="text-sm text-muted-foreground">/</span>
-            <span className="text-sm text-muted-foreground hover:text-foreground cursor-pointer transition-colors">NL</span>
+            <span className="text-sm font-bold text-foreground">NL</span>
           </div>
         </nav>
 
@@ -102,12 +102,12 @@ export default function Navbar() {
               ))}
               <Button asChild className="w-full mt-4 rounded-full">
                 <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-                  Book Session
+                  Maak Afspraak
                 </Link>
               </Button>
               <div className="flex items-center justify-center gap-4 mt-4 pt-4 border-t">
-                <span className="text-sm font-bold text-foreground">English</span>
-                <span className="text-sm text-muted-foreground">Nederlands</span>
+                <span className="text-sm text-muted-foreground">English</span>
+                <span className="text-sm font-bold text-foreground">Nederlands</span>
               </div>
             </nav>
           </motion.div>

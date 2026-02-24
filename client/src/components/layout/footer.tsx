@@ -11,21 +11,21 @@ export default function Footer() {
             </a>
           </Link>
           <p className="text-muted/80 max-w-sm mb-6 leading-relaxed">
-            Serene, accessible therapy for locals and expats in the Netherlands. 
-            Evidence-based practices in a safe, welcoming environment.
+            Serene, toegankelijke therapie voor zowel inwoners als expats in Nederland.
+            Evidence-based praktijken in een veilige, verwelkomende omgeving.
           </p>
           <p className="text-sm text-muted/60">
-            © {new Date().getFullYear()} Innerlijk Kompas. All rights reserved.
+            © {new Date().getFullYear()} Innerlijk Kompas. Alle rechten voorbehouden.
           </p>
         </div>
 
         <div>
-          <h4 className="font-bold mb-4 text-white">Services</h4>
+          <h4 className="font-bold mb-4 text-white">Diensten</h4>
           <ul className="space-y-3">
-            <li><Link href="/services"><a className="text-muted/80 hover:text-white transition-colors">Individual Therapy</a></Link></li>
-            <li><Link href="/services"><a className="text-muted/80 hover:text-white transition-colors">Couples Therapy</a></Link></li>
-            <li><Link href="/services"><a className="text-muted/80 hover:text-white transition-colors">Expat Support</a></Link></li>
-            <li><Link href="/services"><a className="text-muted/80 hover:text-white transition-colors">Online Sessions</a></Link></li>
+            <li><Link href="/services"><a className="text-muted/80 hover:text-white transition-colors">Individuele Therapie</a></Link></li>
+            <li><Link href="/services"><a className="text-muted/80 hover:text-white transition-colors">Relatietherapie</a></Link></li>
+            <li><Link href="/services"><a className="text-muted/80 hover:text-white transition-colors">Expat Ondersteuning</a></Link></li>
+            <li><Link href="/services"><a className="text-muted/80 hover:text-white transition-colors">Online Sessies</a></Link></li>
           </ul>
         </div>
 
@@ -34,7 +34,7 @@ export default function Footer() {
           <ul className="space-y-3 text-muted/80">
             <li>Keizersgracht 123</li>
             <li>1015 CJ Amsterdam</li>
-            <li>The Netherlands</li>
+            <li>Nederland</li>
             <li className="pt-2"><a href="mailto:hello@innerlijkkompas.nl" className="hover:text-white transition-colors">hello@innerlijkkompas.nl</a></li>
             <li><a href="tel:+31201234567" className="hover:text-white transition-colors">+31 20 123 4567</a></li>
           </ul>
