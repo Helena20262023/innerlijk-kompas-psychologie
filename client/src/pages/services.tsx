@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import therapyRoomImg from "@/assets/images/werkwijze-kamer-creme.png";
-import compassBgImg from "@/assets/images/kompas-background-v2.png";
+import compassBgImg from "@/assets/images/kompas-background-brown.png";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
@@ -37,7 +37,17 @@ export default function Services() {
     <div className="pt-20">
       {/* Header */}
       <section className="py-24 bg-secondary/10 relative overflow-hidden">
-        <div className="absolute right-0 top-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl mix-blend-multiply animate-pulse"></div>
+        {/* Decorative Compass for Header */}
+        <div 
+          className="absolute right-0 top-0 w-[400px] h-[400px] opacity-[0.15] pointer-events-none rotate-12"
+          style={{ 
+            backgroundImage: `url(${compassBgImg})`,
+            backgroundSize: 'contain',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            filter: 'sepia(0.8) saturate(1.5) brightness(0.9)',
+          }}
+        />
         <div className="container mx-auto px-6 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -57,12 +67,13 @@ export default function Services() {
       <section className="py-20 bg-background relative overflow-hidden">
         {/* Decorative Compass Background */}
         <div 
-          className="absolute right-[-10%] top-[10%] w-[500px] h-[500px] opacity-[0.08] pointer-events-none rotate-12"
+          className="absolute right-[-10%] top-[10%] w-[500px] h-[500px] opacity-[0.12] pointer-events-none rotate-12"
           style={{ 
             backgroundImage: `url(${compassBgImg})`,
             backgroundSize: 'contain',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
+            filter: 'sepia(0.8) saturate(1.5) brightness(0.9)',
             mixBlendMode: 'multiply'
           }}
         />
