@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2, Clock, Globe, ShieldCheck } from "lucide-react";
-import cherryBlossomImg from "@/assets/images/cherry-blossom.png";
+import cherryBlossomImg from "@/assets/images/cherry-blossom-dark.png";
 import therapistImg from "@/assets/images/therapist.png";
 
 export default function Home() {

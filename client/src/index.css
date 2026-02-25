@@ -36,33 +36,33 @@
 }
 
 :root {
-  /* Professional Neutral Palette with Soft Blossom undertones */
-  --background: 350 30% 98%; 
-  --foreground: 210 29% 24%; /* Restored original deep gray for footer and text */
+  /* Darker Blossom/Sakura Palette */
+  --background: 345 25% 95%; /* Muted dusty rose background */
+  --foreground: 345 40% 15%; /* Darker maroon-gray text */
 
-  /* Primary: Professional Warm Gray/Beige */
-  --primary: 30 10% 70%;
-  --primary-foreground: 210 29% 24%;
+  /* Primary: Deep Blossom Pink/Mauve #A66B78 */
+  --primary: 345 25% 55%;
+  --primary-foreground: 345 10% 98%;
 
-  /* Secondary: Soft Sage/Stone */
-  --secondary: 215 15% 65%;
+  /* Secondary: Professional Darker Sage #6B786B */
+  --secondary: 120 10% 45%;
   --secondary-foreground: 0 0% 100%;
 
-  /* Accent: Professional Beige/Sand */
-  --accent: 30 15% 85%;
-  --accent-foreground: 210 29% 24%;
+  /* Accent: Dusty Rose Gold #C2919C */
+  --accent: 345 30% 70%;
+  --accent-foreground: 345 40% 15%;
 
-  --card: 0 0% 100%;
-  --card-foreground: 210 29% 24%;
-  --popover: 0 0% 100%;
-  --popover-foreground: 210 29% 24%;
+  --card: 345 20% 98%;
+  --card-foreground: 345 40% 15%;
+  --popover: 345 20% 98%;
+  --popover-foreground: 345 40% 15%;
 
-  --muted: 210 20% 90%;
-  --muted-foreground: 210 20% 40%;
+  --muted: 345 15% 90%;
+  --muted-foreground: 345 20% 40%;
 
-  --border: 210 20% 90%;
-  --input: 210 20% 90%;
-  --ring: 212 72% 59%;
+  --border: 345 15% 85%;
+  --input: 345 15% 85%;
+  --ring: 345 25% 55%;
 
   --radius: 1rem;
 }
