@@ -196,12 +196,12 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 relative overflow-hidden bg-primary text-primary-foreground">
+      <section className="py-24 relative overflow-hidden bg-accent text-accent-foreground">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay"></div>
         <div className="container mx-auto px-6 relative z-10 text-center">
           <h2 className="text-4xl md:text-5xl font-serif mb-6 max-w-3xl mx-auto leading-tight">Start vandaag nog met je traject, waar je ook bent.</h2>
           <p className="text-xl opacity-90 mb-10 max-w-2xl mx-auto">Vrijblijvend kennismakingsgesprek van 15 minuten. Geen reistijd, direct deskundige hulp.</p>
-          <Button asChild size="lg" className="rounded-full bg-accent hover:bg-accent/90 text-foreground text-lg px-10 py-6 shadow-xl">
+          <Button asChild size="lg" className="rounded-full bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-10 py-6 shadow-xl">
             <Link href="/contact">Boek direct een intake</Link>
           </Button>
         </div>
