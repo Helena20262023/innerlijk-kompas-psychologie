@@ -36,33 +36,33 @@
 }
 
 :root {
-  /* Darker Blossom/Sakura Palette */
+  /* Darker Blossom with Calm Yellow accents */
   --background: 345 25% 95%; /* Muted dusty rose background */
   --foreground: 345 40% 15%; /* Darker maroon-gray text */
 
-  /* Primary: Deep Blossom Pink/Mauve #A66B78 */
+  /* Primary: Deep Blossom Pink/Mauve */
   --primary: 345 25% 55%;
   --primary-foreground: 345 10% 98%;
 
-  /* Secondary: Professional Darker Sage #6B786B */
+  /* Secondary: Professional Darker Sage */
   --secondary: 120 10% 45%;
   --secondary-foreground: 0 0% 100%;
 
-  /* Accent: Dusty Rose Gold #C2919C */
-  --accent: 345 30% 70%;
+  /* Accent: Calm Yellow/Ochre #E6D5B8 - Adds warmth and peace */
+  --accent: 38 45% 82%;
   --accent-foreground: 345 40% 15%;
 
-  --card: 345 20% 98%;
+  --card: 38 30% 97%; /* Very soft yellow-tinted card */
   --card-foreground: 345 40% 15%;
-  --popover: 345 20% 98%;
+  --popover: 38 30% 97%;
   --popover-foreground: 345 40% 15%;
 
-  --muted: 345 15% 90%;
+  --muted: 38 20% 92%;
   --muted-foreground: 345 20% 40%;
 
-  --border: 345 15% 85%;
-  --input: 345 15% 85%;
-  --ring: 345 25% 55%;
+  --border: 38 20% 88%;
+  --input: 38 20% 88%;
+  --ring: 38 45% 82%;
 
   --radius: 1rem;
 }
