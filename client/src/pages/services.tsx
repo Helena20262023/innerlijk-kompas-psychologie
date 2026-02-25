@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import therapyRoomImg from "@/assets/images/werkwijze-kamer-klassiek.png";
+import therapyRoomImg from "@/assets/images/werkwijze-kamer-creme.png";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
