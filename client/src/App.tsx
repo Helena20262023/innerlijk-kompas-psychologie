@@ -12,6 +12,7 @@ import Home from "@/pages/home";
 import Services from "@/pages/services";
 import About from "@/pages/about";
 import Contact from "@/pages/contact";
+import LaunchChecklist from "@/pages/launch-checklist";
 
 function Router() {
   return (
@@ -23,6 +24,7 @@ function Router() {
           <Route path="/services" component={Services} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
+          <Route path="/checklist" component={LaunchChecklist} />
           <Route component={NotFound} />
         </Switch>
       </main>
