@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import therapyRoomImg from "@/assets/images/werkwijze-kamer-creme.png";
-import compassBgImg from "@/assets/images/kompas-background-brown.png";
+import compassBgImg from "@/assets/images/kompas-dome.png";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
@@ -39,13 +39,13 @@ export default function Services() {
       <section className="py-24 bg-secondary/10 relative overflow-hidden">
         {/* Decorative Compass for Header */}
         <div 
-          className="absolute right-0 top-0 w-[400px] h-[400px] opacity-[0.15] pointer-events-none rotate-12"
+          className="absolute right-[-5%] top-[-10%] w-[500px] h-[500px] opacity-[0.18] pointer-events-none rotate-[-15deg]"
           style={{ 
             backgroundImage: `url(${compassBgImg})`,
             backgroundSize: 'contain',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
-            filter: 'sepia(0.8) saturate(1.5) brightness(0.9)',
+            filter: 'sepia(0.6) saturate(1.2) contrast(1.1)',
           }}
         />
         <div className="container mx-auto px-6 relative z-10">
@@ -67,13 +67,13 @@ export default function Services() {
       <section className="py-20 bg-background relative overflow-hidden">
         {/* Decorative Compass Background */}
         <div 
-          className="absolute right-[-10%] top-[10%] w-[500px] h-[500px] opacity-[0.12] pointer-events-none rotate-12"
+          className="absolute left-[-10%] bottom-[10%] w-[600px] h-[600px] opacity-[0.12] pointer-events-none rotate-12"
           style={{ 
             backgroundImage: `url(${compassBgImg})`,
             backgroundSize: 'contain',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
-            filter: 'sepia(0.8) saturate(1.5) brightness(0.9)',
+            filter: 'sepia(0.6) saturate(1.2) contrast(1.1)',
             mixBlendMode: 'multiply'
           }}
         />
