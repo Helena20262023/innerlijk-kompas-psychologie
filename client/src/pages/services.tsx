@@ -65,14 +65,14 @@ export default function Services() {
 
       {/* Main Content */}
       <section className="py-20 bg-background relative overflow-hidden">
-        {/* Decorative Compass Background */}
+        {/* Full Section Background Compass */}
         <div 
-          className="absolute left-[-10%] bottom-[10%] w-[600px] h-[600px] opacity-[0.12] pointer-events-none rotate-12"
+          className="absolute inset-0 opacity-[0.05] pointer-events-none"
           style={{ 
             backgroundImage: `url(${compassBgImg})`,
-            backgroundSize: 'contain',
-            backgroundRepeat: 'no-repeat',
+            backgroundSize: '800px',
             backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
             filter: 'sepia(0.6) saturate(1.2) contrast(1.1)',
             mixBlendMode: 'multiply'
           }}
