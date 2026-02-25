@@ -7,28 +7,28 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 export default function Services() {
   const services = [
     {
+      id: "individual",
+      title: "Individuele Online Behandeling",
+      description: "Gepersonaliseerde één-op-één sessies afgestemd op jouw specifieke doelen. We maken gebruik van evidence-based behandelingen zoals Cognitieve Gedragstherapie (CGT), EMDR voor trauma en Schematherapie.",
+      areas: ["Angst & Paniek", "Depressie & Somberheid", "Burn-out & Stress", "Trauma & PTSS", "Zelfbeeld problematiek"],
+    },
+    {
+      id: "couples",
+      title: "Online Relatietherapie",
+      description: "Counseling voor koppels die hun communicatie willen verbeteren, vertrouwen willen herstellen of samen door moeilijke levensfasen willen navigeren. Gericht op het herstellen van verbinding en emotionele veiligheid.",
+      areas: ["Communicatieproblemen", "Intimiteitsvraagstukken", "Cross-culturele relaties", "Conflictbeheersing", "EFT-methode"],
+    },
+    {
       id: "trauma",
       title: "Traumabehandeling",
       description: "Samen werken we aan het verwerken van schokkende gebeurtenissen die jouw leven nu nog beïnvloeden. Ik maak gebruik van krachtige methoden zoals EMDR, Imaginaire Exposure (IE) en Narrative Exposure Therapy (NET).",
       areas: ["EMDR", "Imaginaire Exposure", "NET", "Vroegkinderlijk trauma", "PTSS"],
     },
     {
-      id: "cgt",
-      title: "Cognitieve Gedragstherapie (CGT)",
-      description: "We onderzoeken hoe jouw gedachten jouw gevoelens en gedrag beïnvloeden. Door patronen te herkennen en te doorbreken, krijg jij weer regie over jouw leven.",
-      areas: ["Angst & Paniek", "Depressie", "Negatief zelfbeeld", "Dwangklachten"],
-    },
-    {
-      id: "schematherapie",
-      title: "Schematherapie",
-      description: "Soms zitten patronen diep geworteld in jouw verleden. Met schematherapie help ik je deze patronen te begrijpen en te veranderen, zodat je gezondere keuzes voor jezelf kunt maken.",
-      areas: ["Hardnekkige patronen", "Persoonlijkheidsproblematiek", "Terugkerende relatieproblemen"],
-    },
-    {
-      id: "act-eft",
-      title: "ACT & EFT",
-      description: "Met ACT leer je omgaan met moeilijke emoties, terwijl EFT gericht is op het herstellen van verbinding en emotionele veiligheid binnen jouw relatie.",
-      areas: ["Acceptatie", "Mindfulness", "Relatieverbinding", "Emotieregulatie"],
+      id: "methodieken",
+      title: "Specialistische Methodieken",
+      description: "Ik integreer verschillende therapeutische kaders om de zorg te bieden die het beste bij jou past, waaronder CGT, Schematherapie en ACT.",
+      areas: ["CGT", "Schematherapie", "ACT", "Mindfulness"],
     }
   ];
 

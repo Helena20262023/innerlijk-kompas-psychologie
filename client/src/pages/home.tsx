@@ -38,8 +38,11 @@ export default function Home() {
               </div>
               
               <h1 className="text-5xl md:text-7xl font-serif text-foreground leading-[1.1] mb-6 tracking-tight">
-                Expert <span className="text-primary italic">online therapie</span> door een psycholoog die jou begrijpt.
+                Innerlijk Kompas Psychologie
               </h1>
+              <p className="text-xl md:text-2xl font-sans text-primary/80 mb-6 font-medium">
+                online psychologische behandeling
+              </p>
               
               <p className="text-lg md:text-xl text-foreground/80 mb-10 leading-relaxed max-w-2xl">
                 Krijg professionele ondersteuning bij burn-out, angst en relaties via veilige video-sessies. Waar je ook bent, ik help je graag verder in je eigen taal.
