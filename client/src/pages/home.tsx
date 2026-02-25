@@ -15,7 +15,7 @@ export default function Home() {
           <img 
             src={cherryBlossomImg} 
             alt="Japanse Bloesem - Rustige omgeving voor online therapie" 
-            className="w-full h-full object-cover opacity-60 scale-105"
+            className="w-full h-full object-cover opacity-40 grayscale-[0.2]"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent backdrop-blur-[1px]"></div>
         </div>
@@ -196,8 +196,8 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 relative overflow-hidden bg-accent text-accent-foreground">
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay"></div>
+      <section className="py-24 relative overflow-hidden bg-muted text-foreground">
+        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5 mix-blend-overlay"></div>
         <div className="container mx-auto px-6 relative z-10 text-center">
           <h2 className="text-4xl md:text-5xl font-serif mb-6 max-w-3xl mx-auto leading-tight">Start vandaag nog met je traject, waar je ook bent.</h2>
           <p className="text-xl opacity-90 mb-10 max-w-2xl mx-auto">Vrijblijvend kennismakingsgesprek van 15 minuten. Geen reistijd, direct deskundige hulp.</p>
