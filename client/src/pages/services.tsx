@@ -62,22 +62,25 @@ export default function Services() {
               viewport={{ once: true }}
               className="prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-8"
             >
-              <h2 className="text-3xl md:text-4xl font-serif text-foreground italic mb-8">Samen op zoek naar jouw koers</h2>
+              <h2 className="text-3xl md:text-4xl font-serif text-foreground italic mb-8">Hoe we te werk gaan</h2>
               
               <p>
-                🧩 Het zetten van de eerste stap naar hulp kan spannend zijn en soms zelfs een beetje drempels opwerpen. Dat begrijp ik heel goed. Daarom vind ik het allerbelangrijkste dat jij je bij mij op je gemak voelt. Bij Innerlijk Kompas Psychologie varen we in een veilige en warme omgeving waar alles er mag zijn: je kwetsbaarheden, je blokkades, maar ook je kracht. Het mooie van onze online ontmoetingen is dat je deze ontdekkingstocht start vanuit je eigen vertrouwde plek—je eigen bank of je eigen bureaustoel—waar de veiligheid al gewaarborgd is.
+                Hulp zoeken is een moedige stap, maar ik weet dat de drempel soms hoog kan aanvoelen. Spanning of twijfel bij de start is heel normaal. Juist daarom staat een veilige en vertrouwde sfeer bij mij voorop. Het grote voordeel van onze online behandelingen is dat je deze gesprekken voert vanuit je eigen omgeving—een plek waar jij je volledig op je gemak voelt.
               </p>
 
+              <h3 className="text-2xl font-serif text-foreground italic">Samen de route bepalen</h3>
               <p>
-                🗺️ Voordat we de zeilen bijzetten, nemen we tijdens een uitgebreide intake de tijd om jouw persoonlijke kaart in te vullen. We kijken naar waar je vandaan komt en waar je nu vastloopt. In gezamenlijkheid kijken we welke route—de behandelmethode—het beste aansluit bij wie jij bent en wat je wilt bereiken. We varen niet op de automatische piloot; gaandeweg blijven we samen kijken of we nog steeds de juiste koers varen of dat we de koers iets moeten bijsturen om jouw doelen te bereiken.
+                We beginnen altijd met een intakegesprek. Hierin nemen we de tijd voor jouw geschiedenis en formuleren we heldere doelen. Ik geloof niet in een eenzijdige aanpak; we beslissen samen welke behandelmethode het beste aansluit bij jouw specifieke klachten en persoonlijkheid. Gedurende het traject monitoren we regelmatig of we nog op de goede weg zitten of dat we de koers iets moeten bijstellen.
               </p>
 
+              <h3 className="text-2xl font-serif text-foreground italic">Heden en verleden</h3>
               <p>
-                🔍 Tijdens onze gesprekken kijken we naar wat er nu in je leven speelt. Soms is het genoeg om te focussen op actuele situaties en praktische oplossingen. Maar het kan ook waardevol zijn om even terug te kijken naar de windstromen uit het verleden, om te begrijpen waarom je kompas nu een bepaalde kant op wijst. Door die verbanden te leggen, ontstaat er ruimte voor echte, blijvende verandering.
+                In de sessies kijken we naar wat er nu speelt. Soms ligt de oplossing in het aanpakken van actuele situaties en het aanleren van nieuwe vaardigheden. In andere gevallen is het waardevol om verbanden te leggen met het verleden, om te begrijpen waar bepaalde blokkades vandaan komen.
               </p>
 
+              <h3 className="text-2xl font-serif text-foreground italic">Verandering in de praktijk</h3>
               <p>
-                🌱 De sessies zijn de basis, maar de echte groei vindt plaats op het moment dat je de laptop dichtklapt. Juist in je dagelijks leven, buiten onze 'behandelkamer', ga je aan de slag met de inzichten en tools die we samen bespreken. Door thuis te oefenen en nieuwe paden te bewandelen, leer je weer te vertrouwen op je eigen navigatie. Zo varen we samen toe naar het moment waarop je met zelfvertrouwen je eigen koers weer kunt varen.
+                Echte verandering vindt niet alleen plaats tijdens ons gesprek, maar juist in de tijd daartussenin. Daarom werken we met praktische oefeningen en tools waar je thuis direct mee aan de slag kunt. Door in je eigen omgeving te oefenen met nieuwe inzichten, leer je weer te vertrouwen op je eigen innerlijke kompas. Zo varen we stap voor stap toe naar het moment waarop je met zelfvertrouwen je eigen koers weer kunt varen.
               </p>
             </motion.div>
           </div>
