@@ -55,6 +55,33 @@ export default function Services() {
       {/* Main Content */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto mb-20">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-8"
+            >
+              <h2 className="text-3xl md:text-4xl font-serif text-foreground italic mb-8">Samen op zoek naar jouw koers</h2>
+              
+              <p>
+                🧩 Het zetten van de eerste stap naar hulp kan spannend zijn en soms zelfs een beetje drempels opwerpen. Dat begrijp ik heel goed. Daarom vind ik het allerbelangrijkste dat jij je bij mij op je gemak voelt. Bij Innerlijk Kompas Psychologie varen we in een veilige en warme omgeving waar alles er mag zijn: je kwetsbaarheden, je blokkades, maar ook je kracht. Het mooie van onze online ontmoetingen is dat je deze ontdekkingstocht start vanuit je eigen vertrouwde plek—je eigen bank of je eigen bureaustoel—waar de veiligheid al gewaarborgd is.
+              </p>
+
+              <p>
+                🗺️ Voordat we de zeilen bijzetten, nemen we tijdens een uitgebreide intake de tijd om jouw persoonlijke kaart in te vullen. We kijken naar waar je vandaan komt en waar je nu vastloopt. In gezamenlijkheid kijken we welke route—de behandelmethode—het beste aansluit bij wie jij bent en wat je wilt bereiken. We varen niet op de automatische piloot; gaandeweg blijven we samen kijken of we nog steeds de juiste koers varen of dat we de koers iets moeten bijsturen om jouw doelen te bereiken.
+              </p>
+
+              <p>
+                🔍 Tijdens onze gesprekken kijken we naar wat er nu in je leven speelt. Soms is het genoeg om te focussen op actuele situaties en praktische oplossingen. Maar het kan ook waardevol zijn om even terug te kijken naar de windstromen uit het verleden, om te begrijpen waarom je kompas nu een bepaalde kant op wijst. Door die verbanden te leggen, ontstaat er ruimte voor echte, blijvende verandering.
+              </p>
+
+              <p>
+                🌱 De sessies zijn de basis, maar de echte groei vindt plaats op het moment dat je de laptop dichtklapt. Juist in je dagelijks leven, buiten onze 'behandelkamer', ga je aan de slag met de inzichten en tools die we samen bespreken. Door thuis te oefenen en nieuwe paden te bewandelen, leer je weer te vertrouwen op je eigen navigatie. Zo varen we samen toe naar het moment waarop je met zelfvertrouwen je eigen koers weer kunt varen.
+              </p>
+            </motion.div>
+          </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
             
             {/* Services List */}
