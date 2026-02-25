@@ -65,22 +65,22 @@ export default function Services() {
               <h2 className="text-3xl md:text-4xl font-serif text-foreground italic mb-8">Hoe we te werk gaan</h2>
               
               <p>
-                🧩 Hulp zoeken is een moedige stap, maar ik weet dat de drempel soms hoog kan aanvoelen. Spanning of twijfel bij de start is heel normaal. Juist daarom staat een veilige en vertrouwde sfeer bij mij voorop. Het grote voordeel van onze online behandelingen is dat je deze gesprekken voert vanuit je eigen omgeving—een plek waar jij je volledig op je gemak voelt.
+                Hulp zoeken is een moedige stap, maar ik weet dat de drempel soms hoog kan aanvoelen. Spanning of twijfel bij de start is heel normaal. Juist daarom staat een veilige en vertrouwde sfeer bij mij voorop. Het grote voordeel van onze online behandelingen is dat je deze gesprekken voert vanuit je eigen omgeving—een plek waar jij je volledig op je gemak voelt.
               </p>
 
               <h3 className="text-2xl font-serif text-foreground italic">Samen de route bepalen</h3>
               <p>
-                🗺️ We beginnen altijd met een intakegesprek. Hierin nemen we de tijd voor jouw geschiedenis en formuleren we heldere doelen. Ik geloof niet in een eenzijdige aanpak; we beslissen samen welke behandelmethode het beste aansluit bij jouw specifieke klachten en persoonlijkheid. Gedurende het traject monitoren we regelmatig of we nog op de goede weg zitten of dat we de koers iets moeten bijstellen.
+                We beginnen altijd met een intakegesprek. Hierin nemen we de tijd voor jouw geschiedenis en formuleren we heldere doelen. Ik geloof niet in een eenzijdige aanpak; we beslissen samen welke behandelmethode het beste aansluit bij jouw specifieke klachten en persoonlijkheid. Gedurende het traject monitoren we regelmatig of we nog op de goede weg zitten of dat we de koers iets moeten bijstellen.
               </p>
 
               <h3 className="text-2xl font-serif text-foreground italic">Heden en verleden</h3>
               <p>
-                🔍 In de sessies kijken we naar wat er nu speelt. Soms ligt de oplossing in het aanpakken van actuele situaties en het aanleren van nieuwe vaardigheden. In andere gevallen is het waardevol om verbanden te leggen met het verleden, om te begrijpen waar bepaalde blokkades vandaan komen.
+                In de sessies kijken we naar wat er nu speelt. Soms ligt de oplossing in het aanpakken van actuele situaties en het aanleren van nieuwe vaardigheden. In andere gevallen is het waardevol om verbanden te leggen met het verleden, om te begrijpen waar bepaalde blokkades vandaan komen.
               </p>
 
               <h3 className="text-2xl font-serif text-foreground italic">Verandering in de praktijk</h3>
               <p>
-                🌱 Echte verandering vindt niet alleen plaats tijdens ons gesprek, maar juist in de tijd daartussenin. Daarom werken we met praktische oefeningen en tools waar je thuis direct mee aan de slag kunt. Door in je eigen omgeving te oefenen met nieuwe inzichten, leer je weer te vertrouwen op je eigen innerlijke kompas. Zo varen we stap voor stap toe naar het moment waarop je met zelfvertrouwen je eigen koers weer kunt varen. 🧭
+                Echte verandering vindt niet alleen plaats tijdens ons gesprek, maar juist in de tijd daartussenin. Daarom werken we met praktische oefeningen en tools waar je thuis direct mee aan de slag kunt. Door in je eigen omgeving te oefenen met nieuwe inzichten, leer je weer te vertrouwen op je eigen innerlijke kompas. Zo varen we stap voor stap toe naar het moment waarop je met zelfvertrouwen je eigen koers weer kunt varen.
               </p>
             </motion.div>
           </div>
