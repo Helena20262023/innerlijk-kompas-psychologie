@@ -39,7 +39,7 @@ export default function Contact() {
     console.log(values);
     toast({
       title: "Bericht verzonden!",
-      description: "Bedankt voor je bericht. We nemen binnen 48 uur contact met je op.",
+      description: "Bedankt voor jouw bericht. Ik neem binnen 48 uur contact met je op.",
     });
     form.reset();
   }
@@ -56,7 +56,7 @@ export default function Contact() {
             >
               <h1 className="text-5xl font-serif text-foreground mb-6">Contact</h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Zet de eerste stap. Neem contact op voor een intake of stel je vragen. We hebben momenteel geen wachtlijst.
+                Zet de eerste stap. Neem contact op voor een intake of stel jouw vragen. Ik help je graag verder.
               </p>
             </motion.div>
           </div>
@@ -108,7 +108,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold text-foreground">Openingstijden</h4>
-                    <p className="text-muted-foreground mt-1">Ma - Do: 9:00 - 18:00<br/>Vr: 9:00 - 15:00<br/>Online sessies in overleg</p>
+                    <p className="text-muted-foreground mt-1">Ma - Do: 9:00 - 18:00<br/>Vr: 9:00 - 15:00<br/>Jouw sessies in overleg</p>
                   </div>
                 </div>
               </div>
@@ -196,10 +196,10 @@ export default function Contact() {
                     name="message"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Kort bericht</FormLabel>
+                        <FormLabel>Jouw bericht</FormLabel>
                         <FormControl>
                           <Textarea 
-                            placeholder="Beschrijf kort wat je naar therapie brengt..." 
+                            placeholder="Beschrijf kort wat jou naar therapie brengt..." 
                             className="min-h-[150px] bg-white resize-y" 
                             {...field} 
                             data-testid="input-message"

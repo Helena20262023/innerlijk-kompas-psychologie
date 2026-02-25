@@ -9,7 +9,7 @@ export default function Tarieven() {
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl mx-auto text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-serif mb-6 italic">Tarieven & Kosten</h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Transparantie over de kosten van jouw traject.
+            Transparantie over de kosten van jouw traject, zodat je precies weet waar je aan toe bent.
           </p>
         </motion.div>
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -26,7 +26,7 @@ export default function Tarieven() {
           <div className="p-8 rounded-[2rem] border bg-card/50 glass-card border-primary/20">
             <h3 className="text-2xl font-serif mb-4 italic">Vergoedingen</h3>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Veel van onze behandelingen worden (deels) vergoed vanuit de aanvullende verzekering. Neem contact op met je verzekeraar voor de specifieke voorwaarden.
+              Veel van de behandelingen worden (deels) vergoed vanuit jouw aanvullende verzekering. Neem contact op met jouw verzekeraar voor de specifieke voorwaarden.
             </p>
             <div className="p-4 bg-muted/30 rounded-xl text-sm">
               <p><strong>Let op:</strong> Geen wachtlijst voor particuliere trajecten.</p>

@@ -15,19 +15,19 @@ export default function Services() {
     {
       id: "expat",
       title: "Ondersteuning voor Expats",
-      description: "Verhuizen naar een nieuw land brengt unieke uitdagingen met zich mee. Onze gespecialiseerde expat-begeleiding helpt je bij het navigeren door de complexiteit van het internationale leven in Nederland.",
+      description: "Verhuizen naar een nieuw land brengt unieke uitdagingen met zich mee. Mijn gespecialiseerde expat-begeleiding helpt je bij het navigeren door de complexiteit van jouw internationale leven.",
       areas: ["Culturele aanpassing", "Heimwee & Isolatier", "Carrière-overgangen", "Identiteitsproblematiek", "Navigeren Nederlandse zorgsysteem"],
     },
     {
       id: "online",
       title: "Online Therapie",
-      description: "Hoogwaardige psychologische zorg vanuit het comfort van je eigen huis. Ideaal voor drukke professionals, frequente reizigers of diegenen die de voorkeur geven aan hun eigen vertrouwde ruimte.",
+      description: "Hoogwaardige psychologische zorg vanuit het comfort van jouw eigen huis. Ideaal als je een druk leven hebt, vaak reist of de voorkeur geeft aan je eigen vertrouwde omgeving.",
       areas: ["Beveiligde videobelverbinding", "Flexibele planning", "Zorg continueren tijdens reizen", "Overal in NL bereikbaar"],
     },
     {
       id: "couples",
       title: "Relatietherapie",
-      description: "Counseling op basis van EFT (Emotionally Focused Therapy) voor koppels die hun communicatie willen verbeteren, vertrouwen willen herstellen of samen door moeilijke levensfasen willen navigeren.",
+      description: "Counseling voor koppels die hun communicatie willen verbeteren, vertrouwen willen herstellen of samen door moeilijke levensfasen willen navigeren.",
       areas: ["Communicatieproblemen", "Intimiteitsvraagstukken", "Cross-culturele relaties", "Conflictbeheersing"],
     }
   ];

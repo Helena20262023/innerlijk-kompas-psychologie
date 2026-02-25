@@ -38,11 +38,11 @@ export default function Home() {
               </div>
               
               <h1 className="text-5xl md:text-7xl font-serif text-foreground leading-[1.1] mb-6 tracking-tight">
-                Expert <span className="text-primary italic">online therapie</span> door VU-afgestudeerde psycholoog.
+                Expert <span className="text-primary italic">online therapie</span> door een psycholoog die jou begrijpt.
               </h1>
               
               <p className="text-lg md:text-xl text-foreground/80 mb-10 leading-relaxed max-w-2xl">
-                Professionele ondersteuning bij burn-out, angst en relaties via veilige video-sessies. Wereldwijd toegankelijk voor Nederlanders en expats.
+                Krijg professionele ondersteuning bij burn-out, angst en relaties via veilige video-sessies. Waar je ook bent, ik help je graag verder in je eigen taal.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -79,7 +79,7 @@ export default function Home() {
               </div>
               <div>
                 <h3 className="font-bold text-foreground group-hover:text-secondary transition-colors">Snel starten</h3>
-                <p className="text-sm text-muted-foreground">Start je traject binnen een week online.</p>
+                <p className="text-sm text-muted-foreground">Start jouw traject binnen een week online.</p>
               </div>
             </div>
             <div className="flex flex-col md:flex-row items-center gap-4 group cursor-default">
@@ -87,8 +87,8 @@ export default function Home() {
                 <Globe size={24} />
               </div>
               <div>
-                <h3 className="font-bold text-foreground group-hover:text-primary transition-colors">Wereldwijd NL-hulp</h3>
-                <p className="text-sm text-muted-foreground">Specialistische zorg voor NL-sprekers en expats.</p>
+                <h3 className="font-bold text-foreground group-hover:text-primary transition-colors">Wereldwijd hulp</h3>
+                <p className="text-sm text-muted-foreground">Specialistische zorg voor jou, waar je ook woont.</p>
               </div>
             </div>
             <div className="flex flex-col md:flex-row items-center gap-4 group cursor-default">
@@ -97,7 +97,7 @@ export default function Home() {
               </div>
               <div>
                 <h3 className="font-bold text-foreground group-hover:text-accent transition-colors">Evidence Based</h3>
-                <p className="text-sm text-muted-foreground">Effectieve CGT & EMDR via video-consult.</p>
+                <p className="text-sm text-muted-foreground">Effectieve CGT & EMDR via jouw scherm.</p>
               </div>
             </div>
           </div>
@@ -133,10 +133,10 @@ export default function Home() {
             >
               <h2 className="text-4xl font-serif text-foreground mb-6">Online therapie: flexibel, veilig en persoonlijk.</h2>
               <p className="text-lg text-foreground/80 mb-6 leading-relaxed">
-                Als geregistreerd psycholoog (VU Amsterdam) bied ik hoogwaardige psychologische zorg zonder de beperkingen van een fysieke locatie. Of je nu in Amsterdam woont of als expat in het buitenland verblijft, je krijgt de vertrouwde hulp in je eigen taal.
+                Als geregistreerd psycholoog help ik je graag met hoogwaardige zorg, zonder dat je de deur uit hoeft. Of je nu in Nederland woont of als expat in het buitenland verblijft, je krijgt de vertrouwde hulp in je eigen taal.
               </p>
               <p className="text-lg text-foreground/80 mb-8 leading-relaxed">
-                Bij Innerlijk Kompas combineren we wetenschappelijke methoden met de toegankelijkheid van online zorg. Geen reistijd, geen wachtlijsten, wel de diepgang die je nodig hebt.
+                Bij Innerlijk Kompas combineer ik wetenschappelijke methoden met de toegankelijkheid van online zorg. Geen reistijd, geen wachtlijsten, wel de diepgang die jij nodig hebt.
               </p>
               
               <ul className="space-y-4 mb-10">
@@ -199,10 +199,10 @@ export default function Home() {
       <section className="py-24 relative overflow-hidden bg-muted text-foreground">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5 mix-blend-overlay"></div>
         <div className="container mx-auto px-6 relative z-10 text-center">
-          <h2 className="text-4xl md:text-5xl font-serif mb-6 max-w-3xl mx-auto leading-tight">Start vandaag nog met je traject, waar je ook bent.</h2>
-          <p className="text-xl opacity-90 mb-10 max-w-2xl mx-auto">Vrijblijvend kennismakingsgesprek van 15 minuten. Geen reistijd, direct deskundige hulp.</p>
+          <h2 className="text-4xl md:text-5xl font-serif mb-6 max-w-3xl mx-auto leading-tight">Start vandaag nog met jouw traject, waar je ook bent.</h2>
+          <p className="text-xl opacity-90 mb-10 max-w-2xl mx-auto">Vrijblijvend kennismakingsgesprek van 15 minuten. Geen reistijd, direct deskundige hulp voor jou.</p>
           <Button asChild size="lg" className="rounded-full bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-10 py-6 shadow-xl">
-            <Link href="/contact">Boek direct een intake</Link>
+            <Link href="/contact">Boek direct jouw intake</Link>
           </Button>
         </div>
       </section>

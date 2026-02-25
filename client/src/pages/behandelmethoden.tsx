@@ -3,10 +3,10 @@ import { CheckCircle2 } from "lucide-react";
 
 export default function Behandelmethoden() {
   const methoden = [
-    { title: "CGT (Cognitieve Gedragstherapie)", desc: "Focus op het veranderen van niet-helpende gedachten en gedragspatronen." },
-    { title: "EMDR", desc: "Effectieve methode voor het verwerken van traumatische ervaringen." },
-    { title: "ACT (Acceptance and Commitment Therapy)", desc: "Leren omgaan met moeilijke gedachten en gevoelens terwijl je investeert in wat voor jou waardevol is." },
-    { title: "EFT (Emotionally Focused Therapy)", desc: "Gericht op emotionele verbinding en patronen binnen relaties." }
+    { title: "CGT (Cognitieve Gedragstherapie)", desc: "Focus op het veranderen van jouw niet-helpende gedachten en gedragspatronen." },
+    { title: "EMDR", desc: "Effectieve methode voor het verwerken van jouw traumatische ervaringen." },
+    { title: "ACT (Acceptance and Commitment Therapy)", desc: "Leren omgaan met jouw moeilijke gedachten en gevoelens terwijl je investeert in wat voor jou waardevol is." },
+    { title: "EFT (Emotionally Focused Therapy)", desc: "Gericht op emotionele verbinding en patronen binnen jouw relatie." }
   ];
 
   return (
@@ -15,7 +15,7 @@ export default function Behandelmethoden() {
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl mx-auto text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-serif mb-6 italic">Behandelmethoden</h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Evidence-based methoden die we inzetten om jouw persoonlijke groei te ondersteunen.
+            Evidence-based methoden die ik inzet om jouw persoonlijke groei te ondersteunen.
           </p>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">

@@ -14,7 +14,7 @@ export default function About() {
             >
               <h1 className="text-5xl md:text-6xl font-serif text-foreground mb-6">Over Innerlijk Kompas</h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Wij geloven dat therapie toegankelijk, effectief en vrij van oordeel moet zijn. Onze aanpak combineert wetenschappelijke nauwkeurigheid met oprechte menselijke warmte.
+                Ik geloof dat therapie toegankelijk, effectief en vrij van oordeel moet zijn. Mijn aanpak combineert wetenschappelijke nauwkeurigheid met oprechte menselijke warmte.
               </p>
             </motion.div>
           </div>
@@ -39,13 +39,13 @@ export default function About() {
               
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Met meer dan 12 jaar klinische ervaring in Nederland en het VK, heb ik Innerlijk Kompas opgericht om een plek te creëren waar zowel inwoners als internationals zich echt begrepen voelen.
+                  Met meer dan 12 jaar klinische ervaring in Nederland en het VK, heb ik Innerlijk Kompas opgericht om een plek te creëren waar jij je echt begrepen voelt.
                 </p>
                 <p>
-                  Als <strong>VU Amsterdam alumna</strong> en BIG-geregistreerd psycholoog combineer ik academische expertise met een direct maar compassievolle stijl. Ik maak gebruik van Cognitieve Gedragstherapie (CGT) en EMDR om de kernoorzaken van klachten aan te pakken.
+                  Als <strong>VU Amsterdam alumna</strong> en BIG-geregistreerd psycholoog combineer ik academische expertise met een directe maar compassievolle stijl. Ik maak gebruik van Cognitieve Gedragstherapie (CGT) en EMDR om de kernoorzaken van jouw klachten aan te pakken.
                 </p>
                 <p>
-                  Mijn doel is niet alleen symptoombestrijding, maar je helpen een veerkrachtig en betekenisvol leven op te bouwen dat in lijn is met je eigen innerlijke kompas, waar ter wereld je ook bent.
+                  Mijn doel is niet alleen symptoombestrijding, maar jou helpen een veerkrachtig en betekenisvol leven op te bouwen dat in lijn is met jouw eigen innerlijke kompas, waar ter wereld je ook bent.
                 </p>
               </div>
 
