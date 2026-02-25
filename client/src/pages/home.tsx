@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2, Clock, Globe, ShieldCheck } from "lucide-react";
-import heroImg from "@/assets/images/hero-nature.png";
+import cherryBlossomImg from "@/assets/images/cherry-blossom.png";
 import therapistImg from "@/assets/images/therapist.png";
 
 export default function Home() {
@@ -13,11 +13,11 @@ export default function Home() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
-            src={heroImg} 
-            alt="Online CGT Therapeut Nederland - Rustige natuur voor EMDR & ACT Specialist" 
-            className="w-full h-full object-cover"
+            src={cherryBlossomImg} 
+            alt="Japanse Bloesem - Rustige omgeving voor online therapie" 
+            className="w-full h-full object-cover opacity-60 scale-105"
           />
-          <div className="absolute inset-0 bg-background/80 backdrop-blur-[2px]"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent backdrop-blur-[1px]"></div>
         </div>
 
         {/* Abstract Blob */}
