@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import therapyRoomImg from "@/assets/images/werkwijze-kamer-creme.png";
+import compassBgImg from "@/assets/images/kompas-background.png";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
@@ -53,8 +54,19 @@ export default function Services() {
       </section>
 
       {/* Main Content */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-6">
+      <section className="py-20 bg-background relative overflow-hidden">
+        {/* Decorative Compass Background */}
+        <div 
+          className="absolute right-0 top-1/4 w-1/3 h-2/3 opacity-5 pointer-events-none"
+          style={{ 
+            backgroundImage: `url(${compassBgImg})`,
+            backgroundSize: 'contain',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'right center',
+            filter: 'grayscale(100%)'
+          }}
+        />
+        <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto mb-20">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
