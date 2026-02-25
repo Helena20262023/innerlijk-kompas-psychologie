@@ -7,28 +7,28 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 export default function Services() {
   const services = [
     {
-      id: "individual",
-      title: "Individuele Therapie",
-      description: "Gepersonaliseerde één-op-één sessies afgestemd op jouw specifieke doelen. We maken gebruik van evidence-based behandelingen zoals Cognitieve Gedragstherapie (CGT), EMDR voor trauma en Schematherapie.",
-      areas: ["Angst & Paniek", "Depressie & Somberheid", "Burn-out & Stress", "Trauma & PTSS", "Zelfbeeld problematiek"],
+      id: "trauma",
+      title: "Traumabehandeling",
+      description: "Samen werken we aan het verwerken van schokkende gebeurtenissen die jouw leven nu nog beïnvloeden. Ik maak gebruik van krachtige methoden zoals EMDR, Imaginaire Exposure (IE) en Narrative Exposure Therapy (NET).",
+      areas: ["EMDR", "Imaginaire Exposure", "NET", "Vroegkinderlijk trauma", "PTSS"],
     },
     {
-      id: "expat",
-      title: "Ondersteuning voor Expats",
-      description: "Verhuizen naar een nieuw land brengt unieke uitdagingen met zich mee. Mijn gespecialiseerde expat-begeleiding helpt je bij het navigeren door de complexiteit van jouw internationale leven.",
-      areas: ["Culturele aanpassing", "Heimwee & Isolatier", "Carrière-overgangen", "Identiteitsproblematiek", "Navigeren Nederlandse zorgsysteem"],
+      id: "cgt",
+      title: "Cognitieve Gedragstherapie (CGT)",
+      description: "We onderzoeken hoe jouw gedachten jouw gevoelens en gedrag beïnvloeden. Door patronen te herkennen en te doorbreken, krijg jij weer regie over jouw leven.",
+      areas: ["Angst & Paniek", "Depressie", "Negatief zelfbeeld", "Dwangklachten"],
     },
     {
-      id: "online",
-      title: "Online Therapie",
-      description: "Hoogwaardige psychologische zorg vanuit het comfort van jouw eigen huis. Ideaal als je een druk leven hebt, vaak reist of de voorkeur geeft aan je eigen vertrouwde omgeving.",
-      areas: ["Beveiligde videobelverbinding", "Flexibele planning", "Zorg continueren tijdens reizen", "Overal in NL bereikbaar"],
+      id: "schematherapie",
+      title: "Schematherapie",
+      description: "Soms zitten patronen diep geworteld in jouw verleden. Met schematherapie help ik je deze patronen te begrijpen en te veranderen, zodat je gezondere keuzes voor jezelf kunt maken.",
+      areas: ["Hardnekkige patronen", "Persoonlijkheidsproblematiek", "Terugkerende relatieproblemen"],
     },
     {
-      id: "couples",
-      title: "Relatietherapie",
-      description: "Counseling voor koppels die hun communicatie willen verbeteren, vertrouwen willen herstellen of samen door moeilijke levensfasen willen navigeren.",
-      areas: ["Communicatieproblemen", "Intimiteitsvraagstukken", "Cross-culturele relaties", "Conflictbeheersing"],
+      id: "act-eft",
+      title: "ACT & EFT",
+      description: "Met ACT leer je omgaan met moeilijke emoties, terwijl EFT gericht is op het herstellen van verbinding en emotionele veiligheid binnen jouw relatie.",
+      areas: ["Acceptatie", "Mindfulness", "Relatieverbinding", "Emotieregulatie"],
     }
   ];
 
@@ -44,9 +44,9 @@ export default function Services() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="max-w-3xl"
           >
-            <h1 className="text-5xl md:text-6xl font-serif text-foreground mb-6 leading-tight">Onze Diensten</h1>
+            <h1 className="text-5xl md:text-6xl font-serif text-foreground mb-6 leading-tight">Mijn Werkwijze</h1>
             <p className="text-xl text-foreground/80 leading-relaxed">
-              Wij bieden evidence-based psychologische behandelingen in een warme, uitnodigende omgeving. Vind de ondersteuning die bij jouw traject past.
+              Ik bied evidence-based behandelingen in een warme omgeving. Samen kijken we welke methode het beste bij jou en jouw hulpvraag past.
             </p>
           </motion.div>
         </div>

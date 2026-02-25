@@ -19,9 +19,9 @@ export default function Navbar() {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/services", label: "Diensten" },
-    { href: "/methoden", label: "Behandelmethoden" },
+    { href: "/werkwijze", label: "Werkwijze" },
     { href: "/about", label: "Over mij" },
+    { href: "/ervaringen", label: "Ervaringen" },
     { href: "/tarieven", label: "Tarieven" },
     { href: "/contact", label: "Contact" },
   ];
