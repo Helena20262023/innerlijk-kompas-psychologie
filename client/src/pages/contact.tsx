@@ -2,12 +2,13 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage, FormDescription } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, AlertCircle } from "lucide-react";
+import { Checkbox } from "@/components/ui/checkbox";
 
 const contactSchema = z.object({
   name: z.string().min(2, "Naam is verplicht"),
@@ -15,6 +16,9 @@ const contactSchema = z.object({
   phone: z.string().optional(),
   service: z.string().min(1, "Selecteer een dienst"),
   message: z.string().min(10, "Geef een kort bericht op"),
+  privacy: z.boolean().refine((val) => val === true, {
+    message: "Akkoord gaan met de privacyverklaring is verplicht",
+  }),
 });
 
 export default function Contact() {
@@ -27,6 +31,7 @@ export default function Contact() {
       phone: "",
       service: "",
       message: "",
+      privacy: false,
     },
   });
 
@@ -200,7 +205,35 @@ export default function Contact() {
                             data-testid="input-message"
                           />
                         </FormControl>
+                        <FormDescription className="flex items-center gap-2 text-amber-600 font-medium">
+                          <AlertCircle size={14} />
+                          Let op: Deel geen gevoelige medische informatie in dit veld.
+                        </FormDescription>
                         <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+
+                  <FormField
+                    control={form.control}
+                    name="privacy"
+                    render={({ field }) => (
+                      <FormItem className="flex flex-row items-start space-x-3 space-y-0 rounded-md border p-4 bg-muted/30">
+                        <FormControl>
+                          <Checkbox
+                            checked={field.value}
+                            onCheckedChange={field.onChange}
+                            data-testid="checkbox-privacy"
+                          />
+                        </FormControl>
+                        <div className="space-y-1 leading-none">
+                          <FormLabel>
+                            Ik ga akkoord met de <a href="/privacy" className="text-primary hover:underline">privacyverklaring</a> (AVG).
+                          </FormLabel>
+                          <FormDescription>
+                            Je gegevens worden vertrouwelijk behandeld.
+                          </FormDescription>
+                        </div>
                       </FormItem>
                     )}
                   />

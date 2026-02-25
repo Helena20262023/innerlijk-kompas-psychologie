@@ -30,6 +30,15 @@ export default function Footer() {
         </div>
 
         <div>
+          <h4 className="font-bold mb-4 text-white">Juridisch</h4>
+          <ul className="space-y-3">
+            <li><Link href="/privacy"><a className="text-muted/80 hover:text-white transition-colors">Privacyverklaring</a></Link></li>
+            <li><Link href="/terms"><a className="text-muted/80 hover:text-white transition-colors">Algemene Voorwaarden</a></Link></li>
+            <li><Link href="/checklist"><a className="text-muted/80 hover:text-white transition-colors">Lanceringschecklist</a></Link></li>
+          </ul>
+        </div>
+
+        <div>
           <h4 className="font-bold mb-4 text-white">Contact</h4>
           <ul className="space-y-3 text-muted/80">
             <li>Keizersgracht 123</li>
