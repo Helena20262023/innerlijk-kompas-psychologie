@@ -36,36 +36,33 @@
 }
 
 :root {
-  /* Cherry Blossom Palette */
-  --background: 350 30% 98%; /* Soft blush white */
-  --foreground: 350 20% 20%; /* Deep warm gray */
+  /* Professional Neutral Palette with Soft Blossom undertones */
+  --background: 350 30% 98%; /* Keep the soft pinkish background as requested */
+  --foreground: 215 25% 25%; /* Professional deep gray/blue */
 
-  /* Primary: Soft Pink #F4C2C2 -> Calm */
-  --primary: 350 55% 82%;
-  --primary-foreground: 350 20% 20%;
+  /* Primary: Professional Warm Gray/Beige #A8A29E */
+  --primary: 30 10% 70%;
+  --primary-foreground: 215 25% 15%;
 
-  /* Secondary: Sage Green #B2AC88 -> Nature/Balance */
-  --secondary: 75 15% 60%;
+  /* Secondary: Soft Sage/Stone #94A3B8 -> Professional Balance */
+  --secondary: 215 15% 65%;
   --secondary-foreground: 0 0% 100%;
 
-  /* Accent: Warm Gold #E6BE8A */
-  --accent: 35 45% 72%;
-  --accent-foreground: 350 20% 20%;
+  /* Accent: Professional Beige/Sand #D6D3D1 */
+  --accent: 30 15% 85%;
+  --accent-foreground: 215 25% 15%;
 
   --card: 0 0% 100%;
-  --card-foreground: 350 20% 20%;
+  --card-foreground: 215 25% 25%;
   --popover: 0 0% 100%;
-  --popover-foreground: 350 20% 20%;
+  --popover-foreground: 215 25% 25%;
 
-  --muted: 210 20% 90%;
-  --muted-foreground: 210 20% 40%;
+  --muted: 215 15% 94%;
+  --muted-foreground: 215 15% 45%;
 
-  --destructive: 0 84% 60%;
-  --destructive-foreground: 0 0% 100%;
-
-  --border: 210 20% 90%;
-  --input: 210 20% 90%;
-  --ring: 212 72% 59%;
+  --border: 215 15% 90%;
+  --input: 215 15% 90%;
+  --ring: 215 15% 65%;
 
   --radius: 1rem;
 }
