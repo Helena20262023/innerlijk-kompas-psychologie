@@ -50,10 +50,14 @@ export default function Home() {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="rounded-full bg-accent hover:bg-accent/90 text-foreground text-lg px-8 py-6 shadow-lg shadow-accent/20 transition-all hover:scale-105 active:scale-95">
-                  <Link href="/contact">Direct intake plannen</Link>
+                  <Link href="/contact">
+                    <span className="cursor-pointer">Direct intake plannen</span>
+                  </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="rounded-full bg-white/50 backdrop-blur-sm border-white/50 hover:bg-white/80 text-lg px-8 py-6 transition-all hover:border-primary/30">
-                  <Link href="/about">Ontmoet Sarah</Link>
+                  <Link href="/about">
+                    <span className="cursor-pointer">Ontmoet Sarah</span>
+                  </Link>
                 </Button>
               </div>
               
@@ -188,9 +192,9 @@ export default function Home() {
                 <h3 className="text-2xl font-serif mb-4">{service.title}</h3>
                 <p className="text-muted-foreground mb-8 leading-relaxed">{service.desc}</p>
                 <Link href="/services">
-                  <a className="inline-flex items-center text-sm font-bold uppercase tracking-wider text-foreground hover:text-primary transition-colors group">
+                  <span className="inline-flex items-center text-sm font-bold uppercase tracking-wider text-foreground hover:text-primary transition-colors group cursor-pointer">
                     Diensten bekijken <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
-                  </a>
+                  </span>
                 </Link>
               </motion.div>
             ))}
@@ -205,7 +209,9 @@ export default function Home() {
           <h2 className="text-4xl md:text-5xl font-serif mb-6 max-w-3xl mx-auto leading-tight">Start vandaag nog met jouw traject, waar je ook bent.</h2>
           <p className="text-xl opacity-90 mb-10 max-w-2xl mx-auto">Vrijblijvend kennismakingsgesprek van 15 minuten. Geen reistijd, direct deskundige hulp voor jou.</p>
           <Button asChild size="lg" className="rounded-full bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-10 py-6 shadow-xl">
-            <Link href="/contact">Boek direct jouw intake</Link>
+            <Link href="/contact">
+              <span className="cursor-pointer">Boek direct jouw intake</span>
+            </Link>
           </Button>
         </div>
       </section>

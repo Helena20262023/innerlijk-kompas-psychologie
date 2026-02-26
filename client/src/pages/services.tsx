@@ -162,7 +162,9 @@ export default function Services() {
                     </li>
                   </ul>
                   <Button asChild className="w-full bg-accent hover:bg-accent/90 text-foreground text-lg rounded-full">
-                    <Link href="/contact">Plan een intake</Link>
+                    <Link href="/contact">
+                      <span className="cursor-pointer">Plan een intake</span>
+                    </Link>
                   </Button>
                 </div>
               </div>
