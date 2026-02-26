@@ -5,10 +5,8 @@ export default function Footer() {
     <footer className="bg-[#5C3D45] text-background py-16">
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="col-span-1 md:col-span-2">
-          <Link href="/">
-            <a className="font-serif text-2xl font-bold tracking-tight mb-4 block">
-              Innerlijk Kompas
-            </a>
+          <Link href="/" className="font-serif text-2xl font-bold tracking-tight mb-4 block">
+            Innerlijk Kompas
           </Link>
           <p className="text-muted/80 max-w-sm mb-6 leading-relaxed">
             Serene, toegankelijke therapie voor zowel inwoners als expats in Nederland.
@@ -22,19 +20,19 @@ export default function Footer() {
         <div>
           <h4 className="font-bold mb-4 text-white">Diensten</h4>
           <ul className="space-y-3">
-            <li><Link href="/services"><a className="text-muted/80 hover:text-white transition-colors">Individuele Therapie</a></Link></li>
-            <li><Link href="/services"><a className="text-muted/80 hover:text-white transition-colors">Relatietherapie</a></Link></li>
-            <li><Link href="/services"><a className="text-muted/80 hover:text-white transition-colors">Expat Ondersteuning</a></Link></li>
-            <li><Link href="/services"><a className="text-muted/80 hover:text-white transition-colors">Online Sessies</a></Link></li>
+            <li><Link href="/services" className="text-muted/80 hover:text-white transition-colors">Individuele Therapie</Link></li>
+            <li><Link href="/services" className="text-muted/80 hover:text-white transition-colors">Relatietherapie</Link></li>
+            <li><Link href="/services" className="text-muted/80 hover:text-white transition-colors">Expat Ondersteuning</Link></li>
+            <li><Link href="/services" className="text-muted/80 hover:text-white transition-colors">Online Sessies</Link></li>
           </ul>
         </div>
 
         <div>
           <h4 className="font-bold mb-4 text-white">Juridisch</h4>
           <ul className="space-y-3">
-            <li><Link href="/privacy"><a className="text-muted/80 hover:text-white transition-colors">Privacyverklaring</a></Link></li>
-            <li><Link href="/terms"><a className="text-muted/80 hover:text-white transition-colors">Algemene Voorwaarden</a></Link></li>
-            <li><Link href="/checklist"><a className="text-muted/80 hover:text-white transition-colors">Lanceringschecklist</a></Link></li>
+            <li><Link href="/privacy" className="text-muted/80 hover:text-white transition-colors">Privacyverklaring</Link></li>
+            <li><Link href="/terms" className="text-muted/80 hover:text-white transition-colors">Algemene Voorwaarden</Link></li>
+            <li><Link href="/checklist" className="text-muted/80 hover:text-white transition-colors">Lanceringschecklist</Link></li>
           </ul>
         </div>
 
