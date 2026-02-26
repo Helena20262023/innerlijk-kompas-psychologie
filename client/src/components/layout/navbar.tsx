@@ -37,25 +37,25 @@ export default function Navbar() {
       <div className="container mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo */}
         <Link href="/">
-          <a className="font-serif text-2xl font-bold text-primary tracking-tight flex items-center gap-2">
+          <span className="font-serif text-2xl font-bold text-primary tracking-tight flex items-center gap-2 cursor-pointer">
             <span className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-white text-lg">
               IK
             </span>
             Innerlijk Kompas
-          </a>
+          </span>
         </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href}>
-              <a
-                className={`text-sm font-medium transition-colors hover:text-primary ${
+              <span
+                className={`text-sm font-medium transition-colors hover:text-primary cursor-pointer ${
                   location === link.href ? "text-primary" : "text-foreground/80"
                 }`}
               >
                 {link.label}
-              </a>
+              </span>
             </Link>
           ))}
           <Button
@@ -92,14 +92,14 @@ export default function Navbar() {
             <nav className="flex flex-col px-6 py-4 gap-4">
               {navLinks.map((link) => (
                 <Link key={link.href} href={link.href}>
-                  <a
+                  <span
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className={`text-lg font-medium ${
+                    className={`text-lg font-medium cursor-pointer ${
                       location === link.href ? "text-primary" : "text-foreground"
                     }`}
                   >
                     {link.label}
-                  </a>
+                  </span>
                 </Link>
               ))}
               <Button asChild className="w-full mt-4 rounded-full">
