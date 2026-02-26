@@ -21,11 +21,11 @@ export default function Tarieven() {
               <li>• Online video consult</li>
               <li>• Verslaglegging inbegrepen</li>
             </ul>
-            <Button asChild className="w-full rounded-full">
-              <Link href="/contact">
-                <span className="cursor-pointer">Afspraak maken</span>
-              </Link>
-            </Button>
+            <Link href="/contact" className="w-full">
+              <Button className="w-full rounded-full">
+                Afspraak maken
+              </Button>
+            </Link>
           </div>
           <div className="p-8 rounded-[2rem] border bg-card/50 glass-card border-primary/20">
             <h3 className="text-2xl font-serif mb-4 italic">Vergoedingen</h3>

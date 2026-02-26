@@ -49,16 +49,16 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="rounded-full bg-accent hover:bg-accent/90 text-foreground text-lg px-8 py-6 shadow-lg shadow-accent/20 transition-all hover:scale-105 active:scale-95">
-                  <Link href="/contact">
-                    <span className="cursor-pointer">Direct intake plannen</span>
-                  </Link>
-                </Button>
-                <Button asChild variant="outline" size="lg" className="rounded-full bg-white/50 backdrop-blur-sm border-white/50 hover:bg-white/80 text-lg px-8 py-6 transition-all hover:border-primary/30">
-                  <Link href="/about">
-                    <span className="cursor-pointer">Ontmoet Sarah</span>
-                  </Link>
-                </Button>
+                <Link href="/contact">
+                  <Button size="lg" className="rounded-full bg-accent hover:bg-accent/90 text-foreground text-lg px-8 py-6 shadow-lg shadow-accent/20 transition-all hover:scale-105 active:scale-95">
+                    Direct intake plannen
+                  </Button>
+                </Link>
+                <Link href="/about">
+                  <Button variant="outline" size="lg" className="rounded-full bg-white/50 backdrop-blur-sm border-white/50 hover:bg-white/80 text-lg px-8 py-6 transition-all hover:border-primary/30">
+                    Ontmoet Sarah
+                  </Button>
+                </Link>
               </div>
               
               <div className="mt-8 flex items-center gap-6 opacity-70">
@@ -155,12 +155,12 @@ export default function Home() {
                 ))}
               </ul>
 
-              <Button asChild variant="link" className="text-primary hover:text-primary/80 p-0 text-lg group">
-                <Link href="/about">
+              <Link href="/about">
+                <Button variant="link" className="text-primary hover:text-primary/80 p-0 text-lg group">
                   Meer over mijn expertise 
                   <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </Button>
+                </Button>
+              </Link>
             </motion.div>
           </div>
         </div>
@@ -208,11 +208,11 @@ export default function Home() {
         <div className="container mx-auto px-6 relative z-10 text-center">
           <h2 className="text-4xl md:text-5xl font-serif mb-6 max-w-3xl mx-auto leading-tight">Start vandaag nog met jouw traject, waar je ook bent.</h2>
           <p className="text-xl opacity-90 mb-10 max-w-2xl mx-auto">Vrijblijvend kennismakingsgesprek van 15 minuten. Geen reistijd, direct deskundige hulp voor jou.</p>
-          <Button asChild size="lg" className="rounded-full bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-10 py-6 shadow-xl">
-            <Link href="/contact">
-              <span className="cursor-pointer">Boek direct jouw intake</span>
-            </Link>
-          </Button>
+          <Link href="/contact">
+            <Button size="lg" className="rounded-full bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-10 py-6 shadow-xl">
+              Boek direct jouw intake
+            </Button>
+          </Link>
         </div>
       </section>
     </div>

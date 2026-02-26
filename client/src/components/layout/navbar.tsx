@@ -58,12 +58,13 @@ export default function Navbar() {
               </span>
             </Link>
           ))}
-          <Button
-            asChild
-            className="rounded-full bg-primary hover:bg-primary/90 text-white px-6"
-          >
-            <Link href="/contact">Maak Afspraak</Link>
-          </Button>
+          <Link href="/contact">
+            <Button
+              className="rounded-full bg-primary hover:bg-primary/90 text-white px-6"
+            >
+              Maak Afspraak
+            </Button>
+          </Link>
           <div className="flex items-center gap-2 border-l pl-6">
             <span className="text-sm text-muted-foreground hover:text-foreground cursor-pointer transition-colors">EN</span>
             <span className="text-sm text-muted-foreground">/</span>
@@ -102,11 +103,11 @@ export default function Navbar() {
                   </span>
                 </Link>
               ))}
-              <Button asChild className="w-full mt-4 rounded-full">
-                <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+                <Button className="w-full mt-4 rounded-full">
                   Maak Afspraak
-                </Link>
-              </Button>
+                </Button>
+              </Link>
               <div className="flex items-center justify-center gap-4 mt-4 pt-4 border-t">
                 <span className="text-sm text-muted-foreground">English</span>
                 <span className="text-sm font-bold text-foreground">Nederlands</span>

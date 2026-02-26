@@ -161,11 +161,11 @@ export default function Services() {
                       <strong>€195</strong>
                     </li>
                   </ul>
-                  <Button asChild className="w-full bg-accent hover:bg-accent/90 text-foreground text-lg rounded-full">
-                    <Link href="/contact">
-                      <span className="cursor-pointer">Plan een intake</span>
-                    </Link>
-                  </Button>
+                  <Link href="/contact">
+                    <Button className="w-full bg-accent hover:bg-accent/90 text-foreground text-lg rounded-full">
+                      Plan een intake
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
