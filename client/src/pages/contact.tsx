@@ -7,8 +7,10 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
-import { MapPin, Phone, Mail, Clock, AlertCircle } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, AlertCircle, Loader2 } from "lucide-react";
 import { Checkbox } from "@/components/ui/checkbox";
+import { useMutation } from "@tanstack/react-query";
+import { apiRequest } from "@/lib/queryClient";
 
 const contactSchema = z.object({
   name: z.string().min(2, "Naam is verplicht"),
@@ -35,13 +37,29 @@ export default function Contact() {
     },
   });
 
+  const contactMutation = useMutation({
+    mutationFn: async (values: z.infer<typeof contactSchema>) => {
+      const res = await apiRequest("POST", "/api/contact", values);
+      return res.json();
+    },
+    onSuccess: () => {
+      toast({
+        title: "Bericht verzonden!",
+        description: "Bedankt voor jouw bericht. Ik neem binnen 48 uur contact met je op.",
+      });
+      form.reset();
+    },
+    onError: () => {
+      toast({
+        title: "Er ging iets mis",
+        description: "Probeer het later opnieuw of neem telefonisch contact op.",
+        variant: "destructive",
+      });
+    },
+  });
+
   function onSubmit(values: z.infer<typeof contactSchema>) {
-    console.log(values);
-    toast({
-      title: "Bericht verzonden!",
-      description: "Bedankt voor jouw bericht. Ik neem binnen 48 uur contact met je op.",
-    });
-    form.reset();
+    contactMutation.mutate(values);
   }
 
   return (
@@ -238,8 +256,15 @@ export default function Contact() {
                     )}
                   />
 
-                  <Button type="submit" size="lg" className="w-full rounded-full bg-primary hover:bg-primary/90 text-white text-lg h-14" data-testid="button-submit-contact">
-                    Verzend aanvraag
+                  <Button type="submit" size="lg" className="w-full rounded-full bg-primary hover:bg-primary/90 text-white text-lg h-14" data-testid="button-submit-contact" disabled={contactMutation.isPending}>
+                    {contactMutation.isPending ? (
+                      <>
+                        <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                        Verzenden...
+                      </>
+                    ) : (
+                      "Verzend aanvraag"
+                    )}
                   </Button>
                   <p className="text-xs text-muted-foreground text-center mt-4">
                     Je informatie wordt veilig versleuteld en strikt vertrouwelijk behandeld.
