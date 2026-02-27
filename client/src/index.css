@@ -32,7 +32,7 @@
   --color-ring: hsl(var(--ring));
   
   --font-sans: 'Montserrat', sans-serif;
-  --font-serif: 'Lora', serif;
+  --font-serif: 'Playfair Display', serif;
 }
 
 :root {

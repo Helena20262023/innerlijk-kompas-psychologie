@@ -25,7 +25,7 @@ export default function Home() {
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-primary/10 blob-shape z-0 blur-3xl" style={{ animationDelay: '-4s' }}></div>
 
         <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl mx-auto text-center">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -40,8 +40,8 @@ export default function Home() {
               <h1 className="text-3xl md:text-4xl font-serif text-foreground leading-[1.1] mb-4 tracking-tight">
                 Innerlijk Kompas Psychologie
               </h1>
-              <p className="text-xl md:text-2xl font-sans text-primary/80 mb-6 font-medium text-center">
-                Therapie online
+              <p className="text-xl md:text-2xl font-sans text-primary/80 mb-6 font-medium">
+                Psychologische online behandeling
               </p>
               
               <p className="text-lg md:text-xl text-foreground/80 mb-10 leading-relaxed max-w-2xl">
