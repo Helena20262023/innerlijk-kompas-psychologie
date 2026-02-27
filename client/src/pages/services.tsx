@@ -146,6 +146,52 @@ export default function Services() {
                 </div>
               </motion.div>
 
+              <motion.div
+                id="behandelmethodieken"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.6 }}
+                className="scroll-mt-32"
+              >
+                <h2 className="text-3xl font-serif text-foreground mb-6">Behandelmethodieken</h2>
+                <p className="text-lg text-muted-foreground mb-10 leading-relaxed">
+                  Bij Innerlijk Kompas Psychologie wordt er met wetenschappelijk onderbouwde methoden gewerkt (evidence-based).
+                </p>
+
+                <div className="space-y-12">
+                  <div>
+                    <h3 className="text-2xl font-serif text-foreground mb-4">Cognitieve Gedragstherapie (CGT)</h3>
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      CGT gaat ervan uit dat gedachten, gevoelens en gedrag onlosmakelijk met elkaar verbonden zijn. Vaak hebben we onbewuste, negatieve gedachten over onszelf of situaties die ons angstig of somber maken.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Samen onderzoeken we of deze gedachten wel kloppen met de realiteit. Door kritisch naar je overtuigingen te kijken en stapsgewijs met nieuw gedrag te oefenen, leer je anders tegen situaties aan te kijken. Dit geeft direct verlichting bij angst- en stemmingsklachten.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-2xl font-serif text-foreground mb-4">Mindfulness</h3>
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      In onze drukke maatschappij leven we vaak op de 'automatische piloot' of zijn we in ons hoofd constant bezig met het verleden of de toekomst. Mindfulness helpt je om terug te keren naar het huidige moment.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      We gebruiken specifieke aandachtsoefeningen om je bewustzijn te vergroten. Je leert om emoties en gedachten te observeren zonder er direct over te oordelen of erdoor meegesleurd te worden. Dit is een krachtig middel tegen stress, piekeren en emotieregulatieproblemen.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-2xl font-serif text-foreground mb-4">Schemagerichte therapie (SFT)</h3>
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      Soms merk je dat je steeds in dezelfde valkuilen stapt, ongeacht hoe hard je je best doet. Dit komt vaak door 'schema's': diepgewortelde overtuigingen over jezelf en anderen die in je jeugd zijn ontstaan (bijvoorbeeld: "Ik ben niet goed genoeg" of "Mensen laten me altijd in de steek").
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      We maken deze patronen zichtbaar en begrijpelijk. We werken aan het 'gezonde volwassene'-deel in jou, zodat je minder vanuit oude pijn reageert en gezondere keuzes kunt maken in relaties en voor jezelf.
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+
               {services.map((service, idx) => (
                 <motion.div 
                   key={service.id}
