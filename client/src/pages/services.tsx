@@ -217,6 +217,104 @@ export default function Services() {
                 </div>
               </motion.div>
 
+              <motion.div
+                id="traumabehandeling"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.6 }}
+                className="scroll-mt-32"
+              >
+                <h2 className="text-3xl font-serif text-foreground mb-6">Specialistische traumabehandeling</h2>
+                <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
+                  Trauma vraagt om een specifieke, zorgvuldige benadering. Wanneer schokkende gebeurtenissen uit het verleden een grote impact blijven hebben op je huidige leven, bijvoorbeeld in de vorm van PTSS, herbelevingen of emotionele blokkades, kunnen er gerichte traumamethodieken in.
+                </p>
+                <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                  Deze methoden zijn erop gericht de emotionele lading van nare herinneringen te verminderen, zodat ze een plek kunnen krijgen in je geschiedenis zonder je heden te beheersen. Binnen Innerlijk Kompas Psychologie wordt er gebruik gemaakt van de volgende specialistische methodieken:
+                </p>
+
+                <div className="bg-white rounded-[2rem] border border-border/50 shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:border-primary/20 mb-12">
+                  <table className="w-full" data-testid="table-trauma-methodieken">
+                    <thead>
+                      <tr className="border-b border-border/50">
+                        <th className="text-left px-6 py-4 font-bold text-foreground uppercase tracking-wide text-sm">Methodiek</th>
+                        <th className="text-left px-6 py-4 font-bold text-foreground uppercase tracking-wide text-sm">Omschrijving</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr className="border-b border-border/30 hover:bg-secondary/5 transition-colors">
+                        <td className="px-6 py-4 font-medium text-foreground whitespace-nowrap align-top">EMDR</td>
+                        <td className="px-6 py-4 text-muted-foreground leading-relaxed">Schokkende herinneringen herverwerken door het werkgeheugen te belasten, waardoor de emotionele lading structureel afneemt.</td>
+                      </tr>
+                      <tr className="border-b border-border/30 hover:bg-secondary/5 transition-colors">
+                        <td className="px-6 py-4 font-medium text-foreground whitespace-nowrap align-top">IE</td>
+                        <td className="px-6 py-4 text-muted-foreground leading-relaxed">De herinnering opzoeken in een veilige setting, zodat je brein leert dat het gevaar geweken is en de spanning afneemt.</td>
+                      </tr>
+                      <tr className="border-b border-border/30 hover:bg-secondary/5 transition-colors">
+                        <td className="px-6 py-4 font-medium text-foreground whitespace-nowrap align-top">IR</td>
+                        <td className="px-6 py-4 text-muted-foreground leading-relaxed">In verbeelding ingrijpen in een nare herinnering om jezelf te geven wat je op dat moment nodig had, zoals veiligheid of troost.</td>
+                      </tr>
+                      <tr className="last:border-b-0 hover:bg-secondary/5 transition-colors">
+                        <td className="px-6 py-4 font-medium text-foreground whitespace-nowrap align-top">NET</td>
+                        <td className="px-6 py-4 text-muted-foreground leading-relaxed">Losse pijnlijke herinneringen omvormen tot een samenhangend levensverhaal via een tijdlijn — effectief bij meervoudig trauma.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div className="space-y-12">
+                  <div>
+                    <h3 className="text-2xl font-serif text-foreground mb-4">EMDR (Eye Movement Desensitization and Reprocessing)</h3>
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      EMDR is een wetenschappelijk bewezen en zeer effectieve therapievorm voor het verwerken van schokkende of pijnlijke gebeurtenissen die in het hier en nu nog steeds klachten geven.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Terwijl je terugdenkt aan de gebeurtenis, wordt je werkgeheugen belast door een afleidende taak (zoals een bewegend object op je scherm). Hierdoor wordt de herinnering opnieuw opgeslagen, maar dan zonder de overweldigende emotionele lading. Na de behandeling worden deze herinneringen als aanzienlijk minder pijnlijk en belastend ervaren. Hoewel EMDR bekend staat als traumatherapie, is het breed toepasbaar. Het kan ook zeer effectief worden ingezet bij andere psychische problemen, zoals angstklachten, paniek of een negatief zelfbeeld dat is ontstaan door nare ervaringen in het verleden.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-2xl font-serif text-foreground mb-4">Imaginaire Exposure (IE)</h3>
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      Wanneer je iets ingrijpends hebt meegemaakt, is de natuurlijke neiging om alles wat daaraan herinnert te vermijden. Hoewel dit op de korte termijn rust geeft, houdt het de angst op de lange termijn juist in stand.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      In een veilige setting zoeken we de herinnering juist op. Door de gebeurtenis in de tegenwoordige tijd en met detail te herbeleven in je verbeelding, leert je brein dat het gevaar nu geweken is. De spanning neemt hierdoor structureel af.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-2xl font-serif text-foreground mb-4">Imaginaire Rescripting (IR)</h3>
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      Deze methode wordt vaak ingezet bij trauma's die te maken hebben met jeugdervaringen of sociale pijn.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      In je verbeelding gaan we terug naar een nare herinnering. In plaats van de gebeurtenis lijdzaam te ondergaan, grijpen we in de verbeelding in om jezelf te geven wat je op dat moment nodig had, zoals veiligheid of troost. Dit helpt om diepe emotionele wonden te verzachten.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-2xl font-serif text-foreground mb-4">Narratieve Exposure Therapie (NET)</h3>
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      NET is bijzonder effectief wanneer je in je leven te maken hebt gehad met meerdere traumatische gebeurtenissen (meervoudig trauma).
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      We kijken naar de context van je hele leven. Samen leggen we een 'tijdlijn' neer van je levensverhaal. We staan uitgebreid stil bij de ingrijpende gebeurtenissen en schrijven deze uit. Dit helpt om losse, pijnlijke herinneringen om te vormen tot een samenhangend verhaal dat een plek krijgt in je biografie.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-12 bg-secondary/10 p-8 rounded-[2rem] border border-border/50">
+                  <h3 className="text-2xl font-serif text-foreground mb-4">Welke methode is passend?</h3>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    Er zijn veel verschillende manieren om aan herstel te werken en de keuze daarin maak je niet alleen. Samen kijken we naar wat er speelt: de aard van je klachten, je persoonlijke geschiedenis en wat in het verleden al helpend is geweest of juist niet.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Bij Innerlijk Kompas Psychologie werken we niet met een standaardaanpak. Na de intake bespreken we welke methode, of combinatie van methoden, het beste aansluit bij jouw situatie. Zo ontstaat er een route die écht bij je past, in een tempo dat voor jou goed voelt.
+                  </p>
+                </div>
+              </motion.div>
+
               {services.map((service, idx) => (
                 <motion.div 
                   key={service.id}
