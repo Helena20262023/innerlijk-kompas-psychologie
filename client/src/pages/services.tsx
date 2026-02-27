@@ -155,9 +155,34 @@ export default function Services() {
                 className="scroll-mt-32"
               >
                 <h2 className="text-3xl font-serif text-foreground mb-6">Behandelmethodieken</h2>
-                <p className="text-lg text-muted-foreground mb-10 leading-relaxed">
+                <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                   Bij Innerlijk Kompas Psychologie wordt er met wetenschappelijk onderbouwde methoden gewerkt (evidence-based).
                 </p>
+
+                <div className="bg-white rounded-[2rem] border border-border/50 shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:border-primary/20 mb-12">
+                  <table className="w-full" data-testid="table-methodieken">
+                    <thead>
+                      <tr className="border-b border-border/50">
+                        <th className="text-left px-6 py-4 font-bold text-foreground uppercase tracking-wide text-sm">Methodiek</th>
+                        <th className="text-left px-6 py-4 font-bold text-foreground uppercase tracking-wide text-sm">Omschrijving</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr className="border-b border-border/30 hover:bg-secondary/5 transition-colors">
+                        <td className="px-6 py-4 font-medium text-foreground whitespace-nowrap align-top">CGT</td>
+                        <td className="px-6 py-4 text-muted-foreground leading-relaxed">Gedachten, gevoelens en gedrag onderzoeken en bijsturen voor directe verlichting bij angst- en stemmingsklachten.</td>
+                      </tr>
+                      <tr className="border-b border-border/30 hover:bg-secondary/5 transition-colors">
+                        <td className="px-6 py-4 font-medium text-foreground whitespace-nowrap align-top">Mindfulness</td>
+                        <td className="px-6 py-4 text-muted-foreground leading-relaxed">Terugkeren naar het huidige moment en emoties leren observeren zonder oordeel — krachtig tegen stress en piekeren.</td>
+                      </tr>
+                      <tr className="last:border-b-0 hover:bg-secondary/5 transition-colors">
+                        <td className="px-6 py-4 font-medium text-foreground whitespace-nowrap align-top">SFT</td>
+                        <td className="px-6 py-4 text-muted-foreground leading-relaxed">Diepgewortelde patronen uit je jeugd zichtbaar maken en werken aan gezondere keuzes in relaties en voor jezelf.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
 
                 <div className="space-y-12">
                   <div>
