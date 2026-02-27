@@ -6,13 +6,17 @@ import { Link } from "wouter";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 export default function Services() {
+  const individualFocusAreas = [
+    { focus: "Angst & Paniek", description: "Overmatige bezorgdheid, sociale angst of paniekaanvallen die je bewegingsvrijheid beperken." },
+    { focus: "Somberheid", description: "Gevoelens van neerslachtigheid, verlies van plezier of aanhoudende depressieve klachten." },
+    { focus: "Trauma & PTSS", description: "Klachten als gevolg van schokkende gebeurtenissen, zoals herbelevingen, vermijding en verhoogde waakzaamheid." },
+    { focus: "Emotieregulatie", description: "Moeite met het hanteren van intense emoties, waardoor je je snel overspoeld voelt of juist blokkeert." },
+    { focus: "Onverwerkte rouw", description: "Vastlopen in het proces na het verlies van een dierbare of een andere ingrijpende levensgebeurtenis." },
+    { focus: "Stress & Burn-out", description: "Chronische overbelasting, spanningsklachten en het gevoel de grip op je dagelijkse taken te verliezen." },
+    { focus: "Zelfbeeld", description: "Werken aan hardnekkige onzekerheid en negatieve overtuigingen over je eigenwaarde." },
+  ];
+
   const services = [
-    {
-      id: "individual",
-      title: "Individuele Online Behandeling",
-      description: "Gepersonaliseerde één-op-één sessies afgestemd op jouw specifieke doelen. We maken gebruik van evidence-based behandelingen zoals Cognitieve Gedragstherapie (CGT), EMDR voor trauma en Schematherapie.",
-      areas: ["Angst & Paniek", "Depressie & Somberheid", "Burn-out & Stress", "Trauma & PTSS", "Zelfbeeld problematiek"],
-    },
     {
       id: "couples",
       title: "Online Relatietherapie",
@@ -109,6 +113,39 @@ export default function Services() {
             
             {/* Services List */}
             <div className="lg:col-span-7 space-y-24">
+              <motion.div
+                id="individual"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.6 }}
+                className="scroll-mt-32"
+              >
+                <h2 className="text-3xl font-serif text-foreground mb-6">Individuele online behandeling</h2>
+                <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                  Binnen de individuele behandeling richten we ons op een breed scala aan psychische klachten. We kijken niet alleen naar de symptomen, maar ook naar de onderliggende patronen die je belemmeren in je dagelijks leven.
+                </p>
+
+                <div className="bg-white rounded-[2rem] border border-border/50 shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:border-primary/20">
+                  <table className="w-full" data-testid="table-focus-areas">
+                    <thead>
+                      <tr className="border-b border-border/50">
+                        <th className="text-left px-6 py-4 font-bold text-foreground uppercase tracking-wide text-sm">Focusgebieden</th>
+                        <th className="text-left px-6 py-4 font-bold text-foreground uppercase tracking-wide text-sm">Omschrijving</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {individualFocusAreas.map((area, i) => (
+                        <tr key={i} className="border-b border-border/30 last:border-b-0 hover:bg-secondary/5 transition-colors" data-testid={`row-focus-area-${i}`}>
+                          <td className="px-6 py-4 font-medium text-foreground whitespace-nowrap align-top">{area.focus}</td>
+                          <td className="px-6 py-4 text-muted-foreground leading-relaxed">{area.description}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </motion.div>
+
               {services.map((service, idx) => (
                 <motion.div 
                   key={service.id}
