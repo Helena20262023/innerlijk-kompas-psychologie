@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import therapyRoomImg from "@/assets/images/werkwijze-kamer-creme.png";
+import praktijkruimteImg from "@/assets/images/praktijkruimte.jpg";
 import compassBgImg from "@/assets/images/kompas-dome.png";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
@@ -143,6 +143,10 @@ export default function Services() {
                       ))}
                     </tbody>
                   </table>
+                </div>
+
+                <div className="mt-8 rounded-[2rem] overflow-hidden shadow-lg">
+                  <img src={praktijkruimteImg} alt="Moderne praktijkruimte met natuurlijke lichtinval" className="w-full h-auto object-cover" />
                 </div>
               </motion.div>
 
@@ -348,10 +352,6 @@ export default function Services() {
             {/* Sidebar / Info Card */}
             <div className="lg:col-span-5">
               <div className="sticky top-32 space-y-8">
-                <div className="rounded-[2rem] overflow-hidden shadow-lg aspect-[4/3]">
-                  <img src={therapyRoomImg} alt="Online therapie kamer voor EMDR, ACT en Schematherapie" className="w-full h-full object-cover" />
-                </div>
-                
                 <div className="bg-primary text-primary-foreground p-8 rounded-[2rem]">
                   <h3 className="text-2xl font-serif mb-4">Tarieven & Vergoeding</h3>
                   <p className="mb-6 opacity-90 leading-relaxed">
