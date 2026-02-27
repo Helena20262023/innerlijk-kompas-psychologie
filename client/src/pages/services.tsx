@@ -1,9 +1,6 @@
 import { motion } from "framer-motion";
 import praktijkruimteImg from "@/assets/images/praktijkruimte.jpg";
 import compassBgImg from "@/assets/images/kompas-dome.png";
-import { Button } from "@/components/ui/button";
-import { Link } from "wouter";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 export default function Services() {
   const individualFocusAreas = [
@@ -16,26 +13,6 @@ export default function Services() {
     { focus: "Zelfbeeld", description: "Werken aan hardnekkige onzekerheid en negatieve overtuigingen over je eigenwaarde." },
   ];
 
-  const services = [
-    {
-      id: "couples",
-      title: "Online Relatietherapie",
-      description: "Counseling voor koppels die hun communicatie willen verbeteren, vertrouwen willen herstellen of samen door moeilijke levensfasen willen navigeren. Gericht op het herstellen van verbinding en emotionele veiligheid.",
-      areas: ["Communicatieproblemen", "Intimiteitsvraagstukken", "Cross-culturele relaties", "Conflictbeheersing", "EFT-methode"],
-    },
-    {
-      id: "trauma",
-      title: "Traumabehandeling",
-      description: "Samen werken we aan het verwerken van schokkende gebeurtenissen die jouw leven nu nog beïnvloeden. Ik maak gebruik van krachtige methoden zoals EMDR, Imaginaire Exposure (IE) en Narrative Exposure Therapy (NET).",
-      areas: ["EMDR", "Imaginaire Exposure", "NET", "Vroegkinderlijk trauma", "PTSS"],
-    },
-    {
-      id: "methodieken",
-      title: "Specialistische Methodieken",
-      description: "Ik integreer verschillende therapeutische kaders om de zorg te bieden die het beste bij jou past, waaronder CGT, Schematherapie en ACT.",
-      areas: ["CGT", "Schematherapie", "ACT", "Mindfulness"],
-    }
-  ];
 
   return (
     <div className="pt-20">
@@ -109,10 +86,7 @@ export default function Services() {
             </motion.div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
-            
-            {/* Services List */}
-            <div className="lg:col-span-7 space-y-24">
+          <div className="max-w-4xl mx-auto space-y-24">
               <motion.div
                 id="individual"
                 initial={{ opacity: 0, y: 30 }}
@@ -318,63 +292,6 @@ export default function Services() {
                   </p>
                 </div>
               </motion.div>
-
-              {services.map((service, idx) => (
-                <motion.div 
-                  key={service.id}
-                  id={service.id}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "-100px" }}
-                  transition={{ duration: 0.6 }}
-                  className="scroll-mt-32"
-                >
-                  <h2 className="text-3xl font-serif text-foreground mb-6">{service.title}</h2>
-                  <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                    {service.description}
-                  </p>
-                  
-                  <div className="bg-white p-8 rounded-[2rem] border border-border/50 shadow-sm transition-all duration-300 hover:shadow-md hover:border-primary/20 group">
-                    <h3 className="font-bold text-foreground mb-4 uppercase tracking-wide text-sm group-hover:text-primary transition-colors">Focusgebieden</h3>
-                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                      {service.areas.map((area, i) => (
-                        <li key={i} className="flex items-start gap-3 group/item">
-                          <CheckCircle2 size={18} className="text-primary mt-1 shrink-0 group-hover/item:scale-110 transition-transform" />
-                          <span className="text-foreground/80 group-hover/item:text-foreground transition-colors">{area}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-
-            {/* Sidebar / Info Card */}
-            <div className="lg:col-span-5">
-              <div className="sticky top-32 space-y-8">
-                <div className="bg-primary text-primary-foreground p-8 rounded-[2rem]">
-                  <h3 className="text-2xl font-serif mb-4">Tarieven & Vergoeding</h3>
-                  <p className="mb-6 opacity-90 leading-relaxed">
-                    Als particuliere praktijk worden sessies doorgaans zelf betaald. Echter, afhankelijk van je Nederlandse zorgverzekering (restitutiepolis), kom je mogelijk in aanmerking voor gedeeltelijke of volledige vergoeding.
-                  </p>
-                  <ul className="space-y-3 mb-8 opacity-90">
-                    <li className="flex justify-between border-b border-primary-foreground/20 pb-2">
-                      <span>Individuele Sessie (45m)</span>
-                      <strong>€135</strong>
-                    </li>
-                    <li className="flex justify-between border-b border-primary-foreground/20 pb-2">
-                      <span>Relatie Sessie (75m)</span>
-                      <strong>€195</strong>
-                    </li>
-                  </ul>
-                  <Link href="/contact">
-                    <Button className="w-full bg-accent hover:bg-accent/90 text-foreground text-lg rounded-full">
-                      Plan een intake
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-            </div>
 
           </div>
         </div>
