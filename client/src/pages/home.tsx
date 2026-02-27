@@ -44,8 +44,8 @@ export default function Home() {
                 Psychologische online behandeling
               </p>
               
-              <p className="text-lg md:text-xl text-foreground/80 mb-10 leading-relaxed max-w-2xl">
-                Krijg professionele ondersteuning bij burn-out, angst en relaties via veilige video-sessies. Waar je ook bent, ik help je graag verder in je eigen taal.
+              <p className="text-lg md:text-xl text-foreground/80 mb-10 leading-relaxed max-w-2xl mx-auto">
+                Iedereen verdient een stevig fundament om op terug te vallen. Of je nu kampt met trauma, somberheid, aanhoudende stress of onverwerkte rouwgevoelens: Innerlijk Kompas Psychologie biedt de professionele begeleiding die nodig is om jouw koers weer helder te krijgen. Persoonlijk, toegankelijk en volledig online. Zodat je vanuit je eigen vertrouwde omgeving kunt werken aan herstel en kunt ontdekken hoe je weer vanuit eigen kracht kunt bewegen.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
