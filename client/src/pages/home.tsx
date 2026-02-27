@@ -37,11 +37,11 @@ export default function Home() {
                 <span>Online Psycholoog Nederland — Geen wachtlijst</span>
               </div>
               
-              <h1 className="text-5xl md:text-7xl font-serif text-foreground leading-[1.1] mb-6 tracking-tight">
+              <h1 className="text-3xl md:text-4xl font-serif text-foreground leading-[1.1] mb-4 tracking-tight">
                 Innerlijk Kompas Psychologie
               </h1>
-              <p className="text-xl md:text-2xl font-sans text-primary/80 mb-6 font-medium">
-                online psychologische behandeling
+              <p className="text-xl md:text-2xl font-sans text-primary/80 mb-6 font-medium text-center">
+                Therapie online
               </p>
               
               <p className="text-lg md:text-xl text-foreground/80 mb-10 leading-relaxed max-w-2xl">
