@@ -1,11 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Link } from "wouter";
-import { MessageCircle } from "lucide-react";
 
 export default function Tarieven() {
-  const whatsappUrl = "https://wa.me/31600000000";
-
   return (
     <div className="pt-24 pb-20 min-h-screen bg-background text-foreground">
       <div className="container mx-auto px-6">
@@ -43,39 +39,37 @@ export default function Tarieven() {
               Ik ben aangesloten bij <strong>Fundament Partners GGZ</strong>. Behandelingen binnen de Generalistische Basis GGZ (GBGGZ) worden vergoed vanuit je basisverzekering.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-2">Wat heb je nodig?</p>
-            <ul className="space-y-2 text-muted-foreground mb-6">
+            <ul className="space-y-2 text-muted-foreground">
               <li>• Een verwijsbrief van je huisarts (met een DSM-5 vermoeden, vóór de intake)</li>
               <li>• Je eigen risico wordt verrekend</li>
             </ul>
-            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-              <Button className="rounded-full gap-2" data-testid="button-whatsapp-zorgverzekering">
-                <MessageCircle size={18} />
-                Vragen? WhatsApp ons
-              </Button>
-            </a>
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="p-8 rounded-[2rem] border bg-card/50 glass-card"
+            className="p-8 rounded-[2rem] border-l-4 border-[#5D7B8A] bg-[#f0f4f7]"
           >
-            <h3 className="text-2xl font-serif mb-4" data-testid="text-section-gecontracteerd">Gecontracteerde verzekeraars</h3>
+            <h3 className="text-2xl font-serif mb-4" data-testid="text-section-vergoedingen">Informatie over vergoedingen</h3>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Bij de volgende verzekeraars wordt rechtstreeks gedeclareerd:
+              De vergoeding van je behandeling is afhankelijk van je zorgpolis en de contracten die mijn opdrachtgevers hebben afgesloten met zorgverzekeraars. Voor specifieke vragen over gecontracteerde zorg en de hoogte van je vergoeding, kun je de actuele informatie vinden op de websites van de platforms:
             </p>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-muted-foreground mb-4">
-              <li>• Zilveren Kruis (en labels)</li>
-              <li>• ONVZ (en labels)</li>
-              <li>• Menzis (en labels)</li>
-              <li>• a.s.r. (en labels)</li>
-              <li>• DSW (en labels)</li>
-              <li>• Eno (en labels)</li>
+            <ul className="space-y-3 mb-4">
+              <li>
+                <a href="https://fundament-partners.nl" target="_blank" rel="noopener noreferrer" className="text-[#5D7B8A] font-bold underline underline-offset-4 hover:text-[#4e6975] transition-colors" data-testid="link-vergoeding-fundament">
+                  Informatie over vergoedingen bij Fundament Partners
+                </a>
+              </li>
+              <li>
+                <a href="https://www.psyvisie.nl" target="_blank" rel="noopener noreferrer" className="text-[#5D7B8A] font-bold underline underline-offset-4 hover:text-[#4e6975] transition-colors" data-testid="link-vergoeding-psyvisie">
+                  Informatie over vergoedingen bij Psyvisie
+                </a>
+              </li>
             </ul>
-            <div className="p-4 bg-muted/30 rounded-xl text-sm text-muted-foreground">
-              <p><strong>Let op:</strong> Afwijkende situatie? Neem contact op voor een exacte inschatting van de kosten.</p>
-            </div>
+            <p className="text-sm italic text-muted-foreground">
+              Tip: Houd je polisnummer bij de hand wanneer je contact met hen opneemt.
+            </p>
           </motion.div>
 
           <motion.div
@@ -88,15 +82,9 @@ export default function Tarieven() {
             <p className="text-muted-foreground leading-relaxed mb-4">
               Voor verzekeraars waarmee geen contract is afgesloten (o.a. VGZ en labels, CZ en labels) geldt een restitutievergoeding. Afhankelijk van je polis wordt <strong>65% tot 100%</strong> van het NZa-tarief vergoed.
             </p>
-            <p className="text-muted-foreground leading-relaxed mb-4">
+            <p className="text-muted-foreground leading-relaxed">
               Check altijd je eigen polisvoorwaarden of neem contact op met je verzekeraar voor de exacte vergoeding.
             </p>
-            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-              <Button className="rounded-full gap-2" data-testid="button-whatsapp-restitutie">
-                <MessageCircle size={18} />
-                Vragen? WhatsApp ons
-              </Button>
-            </a>
           </motion.div>
 
           <motion.div
@@ -132,24 +120,21 @@ export default function Tarieven() {
                 <tbody>
                   <tr className="border-b border-border/30 hover:bg-secondary/5 transition-colors">
                     <td className="px-6 py-4 font-medium text-foreground">Individuele Sessie (45 min)</td>
-                    <td className="px-6 py-4 text-primary font-serif text-xl">€135</td>
+                    <td className="px-6 py-4 text-primary font-serif text-xl">€75</td>
                   </tr>
                   <tr className="last:border-b-0 hover:bg-secondary/5 transition-colors">
-                    <td className="px-6 py-4 font-medium text-foreground">Relatie Sessie (75 min)</td>
-                    <td className="px-6 py-4 text-primary font-serif text-xl">€195</td>
+                    <td className="px-6 py-4 font-medium text-foreground">Relatie Sessie (60 min)</td>
+                    <td className="px-6 py-4 text-primary font-serif text-xl">€120</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <p className="text-muted-foreground leading-relaxed mb-6">
+            <p className="text-muted-foreground leading-relaxed mb-4">
               Wachttijd: maximaal <strong>3 weken</strong>. Geen wachtlijst voor particuliere trajecten.
             </p>
-            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-              <Button className="rounded-full gap-2" data-testid="button-whatsapp-kosten">
-                <MessageCircle size={18} />
-                Vragen? WhatsApp ons
-              </Button>
-            </a>
+            <div className="p-4 bg-muted/30 rounded-xl text-sm text-muted-foreground">
+              <p>Je kunt een afspraak kosteloos tot <strong>24 uur</strong> voor je afspraak afzeggen. Voor afspraken die niet of te laat worden afgezegd, wordt <strong>€75,-</strong> in rekening gebracht.</p>
+            </div>
           </motion.div>
 
           <motion.div
@@ -187,12 +172,6 @@ export default function Tarieven() {
           >
             <p className="text-muted-foreground text-sm">
               Aangesloten bij <strong>Fundament Partners GGZ</strong> & <strong>Psyvisie</strong>
-            </p>
-            <p className="text-muted-foreground text-sm mt-1">
-              Vragen over kosten of vergoedingen?{" "}
-              <Link href="/contact" className="text-primary underline underline-offset-4 hover:text-primary/80 transition-colors" data-testid="link-contact-footer">
-                Neem contact op
-              </Link>
             </p>
           </motion.div>
 
