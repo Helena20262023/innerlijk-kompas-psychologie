@@ -12,21 +12,18 @@ export default function About() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <h1 className="text-5xl md:text-6xl font-serif text-foreground mb-6">Over Innerlijk Kompas</h1>
-              <p className="text-xl text-muted-foreground leading-relaxed">
-                Ik geloof dat therapie toegankelijk, effectief en vrij van oordeel moet zijn. Mijn aanpak combineert wetenschappelijke nauwkeurigheid met oprechte menselijke warmte.
-              </p>
+              <h1 className="text-3xl md:text-4xl font-serif text-foreground mb-6">Over mij</h1>
             </motion.div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-24">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start mb-24">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               className="aspect-square rounded-[2rem] overflow-hidden shadow-xl"
             >
-              <img src={therapistImg} alt="Geregistreerde Psycholoog Online - Specialist in CGT, EMDR & ACT" className="w-full h-full object-cover" />
+              <img src={therapistImg} alt="Heleen - Psycholoog bij Innerlijk Kompas Psychologie" className="w-full h-full object-cover" />
             </motion.div>
             
             <motion.div
@@ -34,37 +31,22 @@ export default function About() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl font-serif text-foreground mb-6">Dr. Sarah van der Meer</h2>
-              <p className="text-lg text-primary font-medium mb-6 uppercase tracking-wider text-sm">GZ-Psycholoog & Oprichter</p>
-              
-              <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <div className="space-y-6 text-muted-foreground leading-relaxed">
                 <p>
-                  Met meer dan 12 jaar klinische ervaring in Nederland en het VK, heb ik Innerlijk Kompas opgericht om een plek te creëren waar jij je echt begrepen voelt.
+                  Ieder mens bewandelt een uniek pad, maar soms kom je in een fase terecht waarin het leven niet meer vanzelf lijkt te gaan. Je voelt dat de balans zoek is, dat je vastloopt in terugkerende patronen of dat emoties simpelweg te zwaar worden om alleen te dragen. Op zulke momenten kan het helpend zijn om stil te staan, te vertragen en samen met een onafhankelijke professional te onderzoeken wat er werkelijk nodig is om weer richting te vinden.
                 </p>
                 <p>
-                  Als <strong>VU Amsterdam alumna</strong> en BIG-geregistreerd psycholoog combineer ik academische expertise met een directe maar compassievolle stijl. Ik maak gebruik van Cognitieve Gedragstherapie (CGT) en EMDR om de kernoorzaken van jouw klachten aan te pakken.
+                  Mijn naam is Heleen en als psycholoog begeleid ik volwassenen die worstelen met uiteenlopende hulpvragen, zoals trauma, angst, burn-out of een negatief zelfbeeld. Na jarenlang brede ervaring te hebben opgedaan in diverse praktijken in Den Haag en Rotterdam, bied ik mijn expertise nu online aan. Wat mij drijft in dit vak is het gezamenlijk zoeken naar ruimte: ruimte om te voelen, te begrijpen en uiteindelijk weer te groeien. Ik geloof dat werkelijke verandering ontstaat wanneer je opnieuw in contact komt met jezelf en leert vertrouwen op je eigen kracht.
                 </p>
                 <p>
-                  Mijn doel is niet alleen symptoombestrijding, maar jou helpen een veerkrachtig en betekenisvol leven op te bouwen dat in lijn is met jouw eigen innerlijke kompas, waar ter wereld je ook bent.
+                  In mijn werkwijze combineer ik een warme, betrokken houding met wetenschappelijk onderbouwde methoden, altijd afgestemd op jouw persoonlijke verhaal. We bepalen samen het tempo en de richting, waarbij we niet alleen kijken naar het verminderen van klachten, maar vooral naar het versterken van je autonomie en zelfcompassie. Ik vind het belangrijk dat je weer gaat ervaren dat je veel meer bent dan de problemen waar je tegenaan loopt. We geven ruimte aan moeilijke ervaringen, maar kijken ook naar wat deze je hebben geleerd en hoe ze je gevormd hebben.
+                </p>
+                <p>
+                  Mijn nieuwsgierigheid naar de wereld en wat mensen beweegt, stopt niet bij de grens van mijn praktijk. In mijn vrije tijd onderneem ik graag nieuwe dingen; of ik nu de diepte opzoek tijdens het duiken, nieuwe culturen ontdek op reis of mezelf verlies in een goed boek. Ik geniet volop van de mooie momenten met mijn familie en vrienden. Deze persoonlijke betrokkenheid en open blik neem ik mee in ons contact: ik ben een luisterend oor met oprechte aandacht voor wie jij bent, zodat je met meer innerlijke stevigheid en veerkracht de uitdagingen van het leven tegemoet kunt treden.
                 </p>
               </div>
 
-              <div className="mt-8 flex flex-wrap gap-3">
-                {[
-                  { label: "BIG-geregistreerd", color: "bg-secondary/10 text-secondary border-secondary/20" },
-                  { label: "VU Amsterdam Alumna", color: "bg-primary/10 text-primary border-primary/20" },
-                  { label: "EMDR Practitioner", color: "bg-accent/20 text-accent-foreground border-accent/30" },
-                  { label: "Vloeiend in EN/NL", color: "bg-muted text-muted-foreground border-border" }
-                ].map((tag, i) => (
-                  <motion.span 
-                    key={i}
-                    whileHover={{ scale: 1.05, y: -2 }}
-                    className={`px-4 py-2 rounded-full text-sm font-medium border shadow-sm transition-all cursor-default ${tag.color}`}
-                  >
-                    {tag.label}
-                  </motion.span>
-                ))}
-              </div>
+              <p className="mt-6 text-sm text-muted-foreground">KVK nummer: 99588390</p>
 
               <div className="mt-12 p-6 glass-card rounded-2xl border-primary/10">
                 <p className="italic text-foreground/80">"Online therapie biedt de flexibiliteit die moderne professionals nodig hebben, zonder in te leveren op de kwaliteit van de verbinding of de effectiviteit van de behandeling."</p>
