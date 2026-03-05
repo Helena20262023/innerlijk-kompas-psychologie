@@ -11,9 +11,23 @@ export default function Tarieven() {
       <div className="container mx-auto px-6">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl mx-auto text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-serif mb-6 italic" data-testid="text-page-title">Kosten & Vergoeding</h1>
-          <p className="text-xl text-muted-foreground leading-relaxed">
-            Transparantie over de kosten van jouw traject, zodat je precies weet waar je aan toe bent.
+          <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+            Ik ben aangesloten bij <strong>Fundament Partners GGZ</strong> en <strong>Psyvisie</strong>. Behandelingen worden vergoed door je verzekeraar.
           </p>
+          <div className="flex justify-center gap-10 flex-wrap">
+            <a href="https://fundamentpartnersggz.nl" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-3 group" data-testid="link-fundament">
+              <div className="w-[100px] h-[100px] rounded-full bg-[#4A6741] flex items-center justify-center shadow-md transition-transform duration-300 group-hover:scale-105">
+                <span className="text-white font-bold text-sm tracking-wide">FGGZ</span>
+              </div>
+              <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">Fundament Partners GGZ</span>
+            </a>
+            <a href="https://psyvisie.nl" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-3 group" data-testid="link-psyvisie">
+              <div className="w-[100px] h-[100px] rounded-full bg-[#5D7B8A] flex items-center justify-center shadow-md transition-transform duration-300 group-hover:scale-105">
+                <span className="text-white font-bold text-sm tracking-wide">Psyvisie</span>
+              </div>
+              <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">Psyvisie</span>
+            </a>
+          </div>
         </motion.div>
 
         <div className="max-w-4xl mx-auto space-y-10">
@@ -142,10 +156,37 @@ export default function Tarieven() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            className="p-8 rounded-[2rem] border bg-card/50 glass-card text-center"
+          >
+            <h3 className="text-2xl font-serif mb-4" data-testid="text-section-aanmelden">Direct aanmelden</h3>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Kies een van de onderstaande platforms om je officieel aan te melden voor een traject bij mij.
+            </p>
+            <div className="flex gap-5 justify-center flex-wrap">
+              <a href="https://fundament-partners.nl" target="_blank" rel="noopener noreferrer" data-testid="button-aanmelden-fundament">
+                <Button className="rounded-lg gap-2 bg-[#4A6741] hover:bg-[#3d5636] text-white min-w-[250px] py-6 text-base font-bold">
+                  Meld je aan via Fundament Partners
+                </Button>
+              </a>
+              <a href="https://www.psyvisie.nl" target="_blank" rel="noopener noreferrer" data-testid="button-aanmelden-psyvisie">
+                <Button className="rounded-lg gap-2 bg-[#5D7B8A] hover:bg-[#4e6975] text-white min-w-[250px] py-6 text-base font-bold">
+                  Meld je aan via Psyvisie
+                </Button>
+              </a>
+            </div>
+            <p className="text-sm text-muted-foreground mt-5">
+              * Vergeet niet bij je aanmelding te vermelden dat je specifiek naar mijn begeleiding vraagt.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             className="p-6 rounded-2xl bg-secondary/10 border border-border/50 text-center"
           >
             <p className="text-muted-foreground text-sm">
-              Aangesloten bij <strong>Fundament Partners GGZ</strong>
+              Aangesloten bij <strong>Fundament Partners GGZ</strong> & <strong>Psyvisie</strong>
             </p>
             <p className="text-muted-foreground text-sm mt-1">
               Vragen over kosten of vergoedingen?{" "}
