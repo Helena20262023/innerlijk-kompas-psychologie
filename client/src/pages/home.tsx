@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
-import { Link } from "wouter";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Clock, Globe, CheckCircle2 } from "lucide-react";
+import { Clock, Globe, CheckCircle2 } from "lucide-react";
 import cherryBlossomImg from "@/assets/images/cherry-blossom-dark.png";
 import therapistImg from "@/assets/images/therapist.png";
 
@@ -119,55 +117,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Quick View */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-4xl font-serif text-foreground mb-4">Gespecialiseerde Online Hulp</h2>
-            <p className="text-lg text-muted-foreground">Expertise gericht op de uitdagingen van drukke professionals en Nederlanders in het buitenland.</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              { title: "Individuele Therapie", desc: "Online CGT sessies voor angst, somberheid en persoonlijke groei vanuit je eigen huis.", icon: "🌱", color: "bg-primary/5 border-primary/20" },
-              { title: "Burn-out Coaching", desc: "Specifieke ondersteuning bij stress en burn-out klachten.", icon: "⚡", color: "bg-accent/5 border-accent/20" },
-              { title: "Relatietherapie Online", desc: "Samen werken aan jullie verbinding via video-consult, waar jullie je ook bevinden.", icon: "🤝", color: "bg-secondary/5 border-secondary/20" }
-            ].map((service, i) => (
-              <motion.div 
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className={`p-8 rounded-[2rem] border ${service.color} hover:-translate-y-2 transition-transform duration-300`}
-              >
-                <div className="text-4xl mb-6">{service.icon}</div>
-                <h3 className="text-2xl font-serif mb-4">{service.title}</h3>
-                <p className="text-muted-foreground mb-8 leading-relaxed">{service.desc}</p>
-                <Link href="/services">
-                  <span className="inline-flex items-center text-sm font-bold uppercase tracking-wider text-foreground hover:text-primary transition-colors group cursor-pointer">
-                    Diensten bekijken <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
-                  </span>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-24 relative overflow-hidden bg-muted text-foreground">
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5 mix-blend-overlay"></div>
-        <div className="container mx-auto px-6 relative z-10 text-center">
-          <h2 className="text-4xl md:text-5xl font-serif mb-6 max-w-3xl mx-auto leading-tight">Start vandaag nog met jouw traject, waar je ook bent.</h2>
-          <p className="text-xl opacity-90 mb-10 max-w-2xl mx-auto">Vrijblijvend kennismakingsgesprek van 15 minuten. Geen reistijd, direct deskundige hulp voor jou.</p>
-          <Link href="/contact">
-            <Button size="lg" className="rounded-full bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-10 py-6 shadow-xl">
-              Boek direct jouw intake
-            </Button>
-          </Link>
-        </div>
-      </section>
     </div>
   );
 }
