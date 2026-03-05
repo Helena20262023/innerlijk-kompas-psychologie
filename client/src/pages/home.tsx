@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Clock, Globe, CheckCircle2 } from "lucide-react";
 import cherryBlossomImg from "@/assets/images/cherry-blossom-dark.png";
-import therapistImg from "@/assets/images/therapist.png";
 
 export default function Home() {
   return (
@@ -81,27 +80,10 @@ export default function Home() {
       {/* Introduction/Bio Section */}
       <section className="py-24 bg-background relative overflow-hidden">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <motion.div 
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="relative"
-            >
-              <div className="aspect-[4/5] rounded-[2rem] overflow-hidden relative z-10 shadow-2xl">
-                <img 
-                  src={therapistImg} 
-                  alt="Heleen - Online psycholoog bij Innerlijk Kompas Psychologie" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="absolute -inset-6 bg-secondary/20 rounded-[3rem] -z-10 transform rotate-3"></div>
-            </motion.div>
-
+          <div className="max-w-3xl mx-auto">
             <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
