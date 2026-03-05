@@ -36,7 +36,7 @@ export default function Tarieven() {
           >
             <h3 className="text-2xl font-serif mb-4" data-testid="text-section-zorgverzekering">Zorgverzekering</h3>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Ik ben aangesloten bij <strong>Fundament Partners GGZ</strong>. Behandelingen binnen de Generalistische Basis GGZ (GBGGZ) worden vergoed vanuit je basisverzekering.
+              Ik ben aangesloten bij <strong>Fundament Partners GGZ</strong> en <strong>Psyvisie</strong>. Behandelingen binnen de Generalistische Basis GGZ (GBGGZ) worden vergoed vanuit je basisverzekering.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-2">Wat heb je nodig?</p>
             <ul className="space-y-2 text-muted-foreground">
@@ -130,7 +130,7 @@ export default function Tarieven() {
               </table>
             </div>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Wachttijd: maximaal <strong>3 weken</strong>. Geen wachtlijst voor particuliere trajecten.
+              Wachttijd: maximaal <strong>3 weken</strong>.
             </p>
             <div className="p-4 bg-muted/30 rounded-xl text-sm text-muted-foreground">
               <p>Je kunt een afspraak kosteloos tot <strong>24 uur</strong> voor je afspraak afzeggen. Voor afspraken die niet of te laat worden afgezegd, wordt <strong>€75,-</strong> in rekening gebracht.</p>
