@@ -15,6 +15,7 @@ import Ervaringen from "@/pages/ervaringen";
 import Tarieven from "@/pages/tarieven";
 import Contact from "@/pages/contact";
 import LaunchChecklist from "@/pages/launch-checklist";
+import Methodiek from "@/pages/methodiek";
 
 function Router() {
   return (
@@ -24,6 +25,7 @@ function Router() {
         <Switch>
           <Route path="/" component={Home} />
           <Route path="/werkwijze" component={Services} />
+          <Route path="/werkwijze/:slug" component={Methodiek} />
           <Route path="/about" component={About} />
           <Route path="/ervaringen" component={Ervaringen} />
           <Route path="/tarieven" component={Tarieven} />

@@ -1,6 +1,23 @@
 import { motion } from "framer-motion";
+import { Link } from "wouter";
+import { ArrowRight } from "lucide-react";
 import praktijkruimteImg from "@/assets/images/praktijkruimte.jpg";
 import compassBgImg from "@/assets/images/kompas-dome.png";
+
+const behandelmethodieken = [
+  { slug: "cgt", title: "CGT", desc: "Cognitieve gedragstherapie richt zich op gedachten, gevoelens en gedrag." },
+  { slug: "mindfulness", title: "Mindfulness", desc: "Terugkeren naar het huidige moment en emoties leren observeren zonder oordeel." },
+  { slug: "sft", title: "SFT", desc: "Diepgewortelde patronen uit je jeugd zichtbaar maken en werken aan gezondere keuzes." },
+  { slug: "oplossingsgerichte", title: "Oplossingsgerichte therapie", desc: "Niet het probleem, maar de oplossing staat centraal. Praktisch en toekomstgericht." },
+  { slug: "inzichtgevende", title: "Inzichtgevende therapie", desc: "Begrijpen van de diepere oorzaken achter je klachten en terugkerende patronen." },
+];
+
+const traumamethodieken = [
+  { slug: "emdr", title: "EMDR", desc: "Schokkende herinneringen herverwerken door het werkgeheugen te belasten." },
+  { slug: "ie", title: "Imaginaire Exposure", desc: "De herinnering opzoeken in een veilige setting, zodat de spanning structureel afneemt." },
+  { slug: "ir", title: "Imaginaire Rescripting", desc: "In verbeelding ingrijpen in een nare herinnering om jezelf te geven wat je nodig had." },
+  { slug: "net", title: "Narratieve Exposure Therapie", desc: "Losse pijnlijke herinneringen omvormen tot een samenhangend levensverhaal." },
+];
 
 export default function Services() {
   const individualFocusAreas = [
@@ -13,20 +30,17 @@ export default function Services() {
     { focus: "Zelfbeeld", description: "Werken aan hardnekkige onzekerheid en negatieve overtuigingen over je eigenwaarde." },
   ];
 
-
   return (
     <div className="pt-20">
-      {/* Header */}
       <section className="py-24 bg-secondary/10 relative overflow-hidden">
-        {/* Decorative Compass for Header */}
-        <div 
+        <div
           className="absolute right-[-5%] top-[-10%] w-[500px] h-[500px] opacity-[0.18] pointer-events-none rotate-[-15deg]"
-          style={{ 
+          style={{
             backgroundImage: `url(${compassBgImg})`,
-            backgroundSize: 'contain',
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center',
-            filter: 'sepia(0.6) saturate(1.2) contrast(1.1)',
+            backgroundSize: "contain",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            filter: "sepia(0.6) saturate(1.2) contrast(1.1)",
           }}
         />
         <div className="container mx-auto px-6 relative z-10">
@@ -44,18 +58,16 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Main Content */}
       <section className="py-20 bg-background relative overflow-hidden">
-        {/* Full Section Background Compass */}
-        <div 
+        <div
           className="absolute inset-0 opacity-[0.05] pointer-events-none"
-          style={{ 
+          style={{
             backgroundImage: `url(${compassBgImg})`,
-            backgroundSize: '800px',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            filter: 'sepia(0.6) saturate(1.2) contrast(1.1)',
-            mixBlendMode: 'multiply'
+            backgroundSize: "800px",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            filter: "sepia(0.6) saturate(1.2) contrast(1.1)",
+            mixBlendMode: "multiply",
           }}
         />
         <div className="container mx-auto px-6 relative z-10">
@@ -67,7 +79,7 @@ export default function Services() {
               className="prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-8"
             >
               <h2 className="text-3xl md:text-4xl font-serif text-foreground italic mb-8">Hoe we te werk gaan</h2>
-              
+
               <p>
                 Hulp zoeken is een moedige stap, maar ik weet dat de drempel soms hoog kan aanvoelen. Spanning of twijfel bij de start is heel normaal. Juist daarom staat een veilige en vertrouwde sfeer bij mij voorop. Het grote voordeel van onze online behandelingen is dat je deze gesprekken voert vanuit je eigen omgeving—een plek waar jij je volledig op je gemak voelt.
               </p>
@@ -87,212 +99,137 @@ export default function Services() {
           </div>
 
           <div className="max-w-4xl mx-auto space-y-24">
-              <motion.div
-                id="individual"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.6 }}
-                className="scroll-mt-32"
-              >
-                <h2 className="text-3xl font-serif text-foreground mb-6">Individuele online behandeling</h2>
-                <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                  Binnen de individuele behandeling richten we ons op een breed scala aan psychische klachten. We kijken niet alleen naar de symptomen, maar ook naar de onderliggende patronen die je belemmeren in je dagelijks leven.
+            <motion.div
+              id="individual"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6 }}
+              className="scroll-mt-32"
+            >
+              <h2 className="text-3xl font-serif text-foreground mb-6">Individuele online behandeling</h2>
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                Binnen de individuele behandeling richten we ons op een breed scala aan psychische klachten. We kijken niet alleen naar de symptomen, maar ook naar de onderliggende patronen die je belemmeren in je dagelijks leven.
+              </p>
+
+              <div className="bg-white rounded-[2rem] border border-border/50 shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:border-primary/20">
+                <table className="w-full" data-testid="table-focus-areas">
+                  <thead>
+                    <tr className="border-b border-border/50">
+                      <th className="text-left px-6 py-4 font-bold text-foreground uppercase tracking-wide text-sm">Focusgebieden</th>
+                      <th className="text-left px-6 py-4 font-bold text-foreground uppercase tracking-wide text-sm">Omschrijving</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {individualFocusAreas.map((area, i) => (
+                      <tr key={i} className="border-b border-border/30 last:border-b-0 hover:bg-secondary/5 transition-colors" data-testid={`row-focus-area-${i}`}>
+                        <td className="px-6 py-4 font-medium text-foreground whitespace-nowrap align-top">{area.focus}</td>
+                        <td className="px-6 py-4 text-muted-foreground leading-relaxed">{area.description}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+
+              <div className="mt-8 rounded-[2rem] overflow-hidden shadow-lg">
+                <img src={praktijkruimteImg} alt="Moderne praktijkruimte met natuurlijke lichtinval" className="w-full h-auto object-cover" />
+              </div>
+            </motion.div>
+
+            <motion.div
+              id="behandelmethodieken"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6 }}
+              className="scroll-mt-32"
+            >
+              <h2 className="text-3xl font-serif text-foreground mb-6">Behandelmethodieken</h2>
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                Bij Innerlijk Kompas Psychologie wordt er met wetenschappelijk onderbouwde methoden gewerkt (evidence-based).
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+                {behandelmethodieken.map((m, i) => (
+                  <motion.div
+                    key={m.slug}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: i * 0.08 }}
+                  >
+                    <Link href={`/werkwijze/${m.slug}`}>
+                      <div
+                        className="bg-white rounded-2xl border border-border/50 shadow-sm p-6 h-full flex flex-col justify-between hover:shadow-lg hover:scale-[1.03] hover:border-primary/30 transition-all duration-300 cursor-pointer"
+                        data-testid={`card-methodiek-${m.slug}`}
+                      >
+                        <div>
+                          <h3 className="text-xl font-serif text-foreground mb-3">{m.title}</h3>
+                          <p className="text-sm text-muted-foreground leading-relaxed mb-4">{m.desc}</p>
+                        </div>
+                        <span className="inline-flex items-center text-sm font-semibold text-primary gap-1">
+                          Lees meer <ArrowRight size={14} />
+                        </span>
+                      </div>
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+
+            <motion.div
+              id="traumabehandeling"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6 }}
+              className="scroll-mt-32"
+            >
+              <h2 className="text-3xl font-serif text-foreground mb-6">Specialistische traumabehandeling</h2>
+              <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
+                Trauma vraagt om een specifieke, zorgvuldige benadering. Wanneer schokkende gebeurtenissen uit het verleden een grote impact blijven hebben op je huidige leven, bijvoorbeeld in de vorm van PTSS, herbelevingen of emotionele blokkades, kunnen er gerichte traumamethodieken in.
+              </p>
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                Deze methoden zijn erop gericht de emotionele lading van nare herinneringen te verminderen, zodat ze een plek kunnen krijgen in je geschiedenis zonder je heden te beheersen. Binnen Innerlijk Kompas Psychologie wordt er gebruik gemaakt van de volgende specialistische methodieken:
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-16">
+                {traumamethodieken.map((m, i) => (
+                  <motion.div
+                    key={m.slug}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: i * 0.08 }}
+                  >
+                    <Link href={`/werkwijze/${m.slug}`}>
+                      <div
+                        className="bg-white rounded-2xl border border-border/50 shadow-sm p-6 h-full flex flex-col justify-between hover:shadow-lg hover:scale-[1.03] hover:border-primary/30 transition-all duration-300 cursor-pointer"
+                        data-testid={`card-trauma-${m.slug}`}
+                      >
+                        <div>
+                          <h3 className="text-xl font-serif text-foreground mb-3">{m.title}</h3>
+                          <p className="text-sm text-muted-foreground leading-relaxed mb-4">{m.desc}</p>
+                        </div>
+                        <span className="inline-flex items-center text-sm font-semibold text-primary gap-1">
+                          Lees meer <ArrowRight size={14} />
+                        </span>
+                      </div>
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
+
+              <div className="bg-secondary/10 p-8 rounded-[2rem] border border-border/50">
+                <h3 className="text-2xl font-serif text-foreground mb-4">Welke methode is passend?</h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Er zijn veel verschillende manieren om aan herstel te werken en de keuze daarin maak je niet alleen. Samen kijken we naar wat er speelt: de aard van je klachten, je persoonlijke geschiedenis en wat in het verleden al helpend is geweest of juist niet.
                 </p>
-
-                <div className="bg-white rounded-[2rem] border border-border/50 shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:border-primary/20">
-                  <table className="w-full" data-testid="table-focus-areas">
-                    <thead>
-                      <tr className="border-b border-border/50">
-                        <th className="text-left px-6 py-4 font-bold text-foreground uppercase tracking-wide text-sm">Focusgebieden</th>
-                        <th className="text-left px-6 py-4 font-bold text-foreground uppercase tracking-wide text-sm">Omschrijving</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {individualFocusAreas.map((area, i) => (
-                        <tr key={i} className="border-b border-border/30 last:border-b-0 hover:bg-secondary/5 transition-colors" data-testid={`row-focus-area-${i}`}>
-                          <td className="px-6 py-4 font-medium text-foreground whitespace-nowrap align-top">{area.focus}</td>
-                          <td className="px-6 py-4 text-muted-foreground leading-relaxed">{area.description}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-
-                <div className="mt-8 rounded-[2rem] overflow-hidden shadow-lg">
-                  <img src={praktijkruimteImg} alt="Moderne praktijkruimte met natuurlijke lichtinval" className="w-full h-auto object-cover" />
-                </div>
-              </motion.div>
-
-              <motion.div
-                id="behandelmethodieken"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.6 }}
-                className="scroll-mt-32"
-              >
-                <h2 className="text-3xl font-serif text-foreground mb-6">Behandelmethodieken</h2>
-                <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                  Bij Innerlijk Kompas Psychologie wordt er met wetenschappelijk onderbouwde methoden gewerkt (evidence-based).
+                <p className="text-muted-foreground leading-relaxed">
+                  Bij Innerlijk Kompas Psychologie werken we niet met een standaardaanpak. Na de intake bespreken we welke methode, of combinatie van methoden, het beste aansluit bij jouw situatie. Zo ontstaat er een route die écht bij je past, in een tempo dat voor jou goed voelt.
                 </p>
-
-                <div className="bg-white rounded-[2rem] border border-border/50 shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:border-primary/20 mb-12">
-                  <table className="w-full" data-testid="table-methodieken">
-                    <thead>
-                      <tr className="border-b border-border/50">
-                        <th className="text-left px-6 py-4 font-bold text-foreground uppercase tracking-wide text-sm">Methodiek</th>
-                        <th className="text-left px-6 py-4 font-bold text-foreground uppercase tracking-wide text-sm">Omschrijving</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr className="border-b border-border/30 hover:bg-secondary/5 transition-colors">
-                        <td className="px-6 py-4 font-medium text-foreground whitespace-nowrap align-top">CGT</td>
-                        <td className="px-6 py-4 text-muted-foreground leading-relaxed">Gedachten, gevoelens en gedrag onderzoeken en bijsturen voor directe verlichting bij angst- en stemmingsklachten.</td>
-                      </tr>
-                      <tr className="border-b border-border/30 hover:bg-secondary/5 transition-colors">
-                        <td className="px-6 py-4 font-medium text-foreground whitespace-nowrap align-top">Mindfulness</td>
-                        <td className="px-6 py-4 text-muted-foreground leading-relaxed">Terugkeren naar het huidige moment en emoties leren observeren zonder oordeel — krachtig tegen stress en piekeren.</td>
-                      </tr>
-                      <tr className="last:border-b-0 hover:bg-secondary/5 transition-colors">
-                        <td className="px-6 py-4 font-medium text-foreground whitespace-nowrap align-top">SFT</td>
-                        <td className="px-6 py-4 text-muted-foreground leading-relaxed">Diepgewortelde patronen uit je jeugd zichtbaar maken en werken aan gezondere keuzes in relaties en voor jezelf.</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-                <div className="space-y-12">
-                  <div>
-                    <h3 className="text-2xl font-serif text-foreground mb-4">Cognitieve Gedragstherapie (CGT)</h3>
-                    <p className="text-muted-foreground leading-relaxed mb-4">
-                      CGT gaat ervan uit dat gedachten, gevoelens en gedrag onlosmakelijk met elkaar verbonden zijn. Vaak hebben we onbewuste, negatieve gedachten over onszelf of situaties die ons angstig of somber maken.
-                    </p>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Samen onderzoeken we of deze gedachten wel kloppen met de realiteit. Door kritisch naar je overtuigingen te kijken en stapsgewijs met nieuw gedrag te oefenen, leer je anders tegen situaties aan te kijken. Dit geeft direct verlichting bij angst- en stemmingsklachten.
-                    </p>
-                  </div>
-
-                  <div>
-                    <h3 className="text-2xl font-serif text-foreground mb-4">Mindfulness</h3>
-                    <p className="text-muted-foreground leading-relaxed mb-4">
-                      In onze drukke maatschappij leven we vaak op de 'automatische piloot' of zijn we in ons hoofd constant bezig met het verleden of de toekomst. Mindfulness helpt je om terug te keren naar het huidige moment.
-                    </p>
-                    <p className="text-muted-foreground leading-relaxed">
-                      We gebruiken specifieke aandachtsoefeningen om je bewustzijn te vergroten. Je leert om emoties en gedachten te observeren zonder er direct over te oordelen of erdoor meegesleurd te worden. Dit is een krachtig middel tegen stress, piekeren en emotieregulatieproblemen.
-                    </p>
-                  </div>
-
-                  <div>
-                    <h3 className="text-2xl font-serif text-foreground mb-4">Schemagerichte therapie (SFT)</h3>
-                    <p className="text-muted-foreground leading-relaxed mb-4">
-                      Soms merk je dat je steeds in dezelfde valkuilen stapt, ongeacht hoe hard je je best doet. Dit komt vaak door 'schema's': diepgewortelde overtuigingen over jezelf en anderen die in je jeugd zijn ontstaan (bijvoorbeeld: "Ik ben niet goed genoeg" of "Mensen laten me altijd in de steek").
-                    </p>
-                    <p className="text-muted-foreground leading-relaxed">
-                      We maken deze patronen zichtbaar en begrijpelijk. We werken aan het 'gezonde volwassene'-deel in jou, zodat je minder vanuit oude pijn reageert en gezondere keuzes kunt maken in relaties en voor jezelf.
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-
-              <motion.div
-                id="traumabehandeling"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.6 }}
-                className="scroll-mt-32"
-              >
-                <h2 className="text-3xl font-serif text-foreground mb-6">Specialistische traumabehandeling</h2>
-                <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
-                  Trauma vraagt om een specifieke, zorgvuldige benadering. Wanneer schokkende gebeurtenissen uit het verleden een grote impact blijven hebben op je huidige leven, bijvoorbeeld in de vorm van PTSS, herbelevingen of emotionele blokkades, kunnen er gerichte traumamethodieken in.
-                </p>
-                <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                  Deze methoden zijn erop gericht de emotionele lading van nare herinneringen te verminderen, zodat ze een plek kunnen krijgen in je geschiedenis zonder je heden te beheersen. Binnen Innerlijk Kompas Psychologie wordt er gebruik gemaakt van de volgende specialistische methodieken:
-                </p>
-
-                <div className="bg-white rounded-[2rem] border border-border/50 shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:border-primary/20 mb-12">
-                  <table className="w-full" data-testid="table-trauma-methodieken">
-                    <thead>
-                      <tr className="border-b border-border/50">
-                        <th className="text-left px-6 py-4 font-bold text-foreground uppercase tracking-wide text-sm">Methodiek</th>
-                        <th className="text-left px-6 py-4 font-bold text-foreground uppercase tracking-wide text-sm">Omschrijving</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr className="border-b border-border/30 hover:bg-secondary/5 transition-colors">
-                        <td className="px-6 py-4 font-medium text-foreground whitespace-nowrap align-top">EMDR</td>
-                        <td className="px-6 py-4 text-muted-foreground leading-relaxed">Schokkende herinneringen herverwerken door het werkgeheugen te belasten, waardoor de emotionele lading structureel afneemt.</td>
-                      </tr>
-                      <tr className="border-b border-border/30 hover:bg-secondary/5 transition-colors">
-                        <td className="px-6 py-4 font-medium text-foreground whitespace-nowrap align-top">IE</td>
-                        <td className="px-6 py-4 text-muted-foreground leading-relaxed">De herinnering opzoeken in een veilige setting, zodat je brein leert dat het gevaar geweken is en de spanning afneemt.</td>
-                      </tr>
-                      <tr className="border-b border-border/30 hover:bg-secondary/5 transition-colors">
-                        <td className="px-6 py-4 font-medium text-foreground whitespace-nowrap align-top">IR</td>
-                        <td className="px-6 py-4 text-muted-foreground leading-relaxed">In verbeelding ingrijpen in een nare herinnering om jezelf te geven wat je op dat moment nodig had, zoals veiligheid of troost.</td>
-                      </tr>
-                      <tr className="last:border-b-0 hover:bg-secondary/5 transition-colors">
-                        <td className="px-6 py-4 font-medium text-foreground whitespace-nowrap align-top">NET</td>
-                        <td className="px-6 py-4 text-muted-foreground leading-relaxed">Losse pijnlijke herinneringen omvormen tot een samenhangend levensverhaal via een tijdlijn — effectief bij meervoudig trauma.</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-                <div className="space-y-12">
-                  <div>
-                    <h3 className="text-2xl font-serif text-foreground mb-4">EMDR (Eye Movement Desensitization and Reprocessing)</h3>
-                    <p className="text-muted-foreground leading-relaxed mb-4">
-                      EMDR is een wetenschappelijk bewezen en zeer effectieve therapievorm voor het verwerken van schokkende of pijnlijke gebeurtenissen die in het hier en nu nog steeds klachten geven.
-                    </p>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Terwijl je terugdenkt aan de gebeurtenis, wordt je werkgeheugen belast door een afleidende taak (zoals een bewegend object op je scherm). Hierdoor wordt de herinnering opnieuw opgeslagen, maar dan zonder de overweldigende emotionele lading. Na de behandeling worden deze herinneringen als aanzienlijk minder pijnlijk en belastend ervaren. Hoewel EMDR bekend staat als traumatherapie, is het breed toepasbaar. Het kan ook zeer effectief worden ingezet bij andere psychische problemen, zoals angstklachten, paniek of een negatief zelfbeeld dat is ontstaan door nare ervaringen in het verleden.
-                    </p>
-                  </div>
-
-                  <div>
-                    <h3 className="text-2xl font-serif text-foreground mb-4">Imaginaire Exposure (IE)</h3>
-                    <p className="text-muted-foreground leading-relaxed mb-4">
-                      Wanneer je iets ingrijpends hebt meegemaakt, is de natuurlijke neiging om alles wat daaraan herinnert te vermijden. Hoewel dit op de korte termijn rust geeft, houdt het de angst op de lange termijn juist in stand.
-                    </p>
-                    <p className="text-muted-foreground leading-relaxed">
-                      In een veilige setting zoeken we de herinnering juist op. Door de gebeurtenis in de tegenwoordige tijd en met detail te herbeleven in je verbeelding, leert je brein dat het gevaar nu geweken is. De spanning neemt hierdoor structureel af.
-                    </p>
-                  </div>
-
-                  <div>
-                    <h3 className="text-2xl font-serif text-foreground mb-4">Imaginaire Rescripting (IR)</h3>
-                    <p className="text-muted-foreground leading-relaxed mb-4">
-                      Deze methode wordt vaak ingezet bij trauma's die te maken hebben met jeugdervaringen of sociale pijn.
-                    </p>
-                    <p className="text-muted-foreground leading-relaxed">
-                      In je verbeelding gaan we terug naar een nare herinnering. In plaats van de gebeurtenis lijdzaam te ondergaan, grijpen we in de verbeelding in om jezelf te geven wat je op dat moment nodig had, zoals veiligheid of troost. Dit helpt om diepe emotionele wonden te verzachten.
-                    </p>
-                  </div>
-
-                  <div>
-                    <h3 className="text-2xl font-serif text-foreground mb-4">Narratieve Exposure Therapie (NET)</h3>
-                    <p className="text-muted-foreground leading-relaxed mb-4">
-                      NET is bijzonder effectief wanneer je in je leven te maken hebt gehad met meerdere traumatische gebeurtenissen (meervoudig trauma).
-                    </p>
-                    <p className="text-muted-foreground leading-relaxed">
-                      We kijken naar de context van je hele leven. Samen leggen we een 'tijdlijn' neer van je levensverhaal. We staan uitgebreid stil bij de ingrijpende gebeurtenissen en schrijven deze uit. Dit helpt om losse, pijnlijke herinneringen om te vormen tot een samenhangend verhaal dat een plek krijgt in je biografie.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="mt-12 bg-secondary/10 p-8 rounded-[2rem] border border-border/50">
-                  <h3 className="text-2xl font-serif text-foreground mb-4">Welke methode is passend?</h3>
-                  <p className="text-muted-foreground leading-relaxed mb-4">
-                    Er zijn veel verschillende manieren om aan herstel te werken en de keuze daarin maak je niet alleen. Samen kijken we naar wat er speelt: de aard van je klachten, je persoonlijke geschiedenis en wat in het verleden al helpend is geweest of juist niet.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Bij Innerlijk Kompas Psychologie werken we niet met een standaardaanpak. Na de intake bespreken we welke methode, of combinatie van methoden, het beste aansluit bij jouw situatie. Zo ontstaat er een route die écht bij je past, in een tempo dat voor jou goed voelt.
-                  </p>
-                </div>
-              </motion.div>
-
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>

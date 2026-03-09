@@ -1,50 +1,53 @@
 import { Link } from "wouter";
+import { Mail, MapPin, Building2 } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#5C3D45] text-background py-16">
-      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
-        <div className="col-span-1 md:col-span-2">
-          <Link href="/" className="font-serif text-2xl font-bold tracking-tight mb-4 block">
-            Innerlijk Kompas
-          </Link>
-          <p className="text-muted/80 max-w-sm mb-6 leading-relaxed">
-            Serene, toegankelijke therapie voor zowel inwoners als expats in Nederland.
-            Evidence-based praktijken in een veilige, verwelkomende omgeving.
+    <footer className="bg-[#5C3D45] text-white py-8">
+      <div className="container mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+          <div>
+            <span className="font-serif text-lg font-bold tracking-tight block mb-1">
+              Innerlijk Kompas
+            </span>
+            <p className="text-white/70 text-sm">
+              Online behandeling in je eigen omgeving
+            </p>
+          </div>
+
+          <div>
+            <h4 className="font-bold text-sm mb-3">Snel naar</h4>
+            <ul className="space-y-1.5 text-sm">
+              <li><Link href="/werkwijze" className="text-white/70 hover:text-white transition-colors">Werkwijze</Link></li>
+              <li><Link href="/about" className="text-white/70 hover:text-white transition-colors">Over mij</Link></li>
+              <li><Link href="/tarieven" className="text-white/70 hover:text-white transition-colors">Tarieven</Link></li>
+              <li><Link href="/contact" className="text-white/70 hover:text-white transition-colors">Contact</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-bold text-sm mb-3">Contact</h4>
+            <ul className="space-y-1.5 text-sm">
+              <li className="flex items-center gap-2 text-white/70">
+                <Mail size={14} className="shrink-0" />
+                <a href="mailto:info@innerlijkkompaspsychologie.com" className="hover:text-white transition-colors">info@innerlijkkompaspsychologie.com</a>
+              </li>
+              <li className="flex items-center gap-2 text-white/70">
+                <MapPin size={14} className="shrink-0" />
+                Rotterdam en omgeving
+              </li>
+              <li className="flex items-center gap-2 text-white/70">
+                <Building2 size={14} className="shrink-0" />
+                KVK: 99588390
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-6 pt-4 border-t border-white/15 text-center">
+          <p className="text-xs text-white/50">
+            &copy; {new Date().getFullYear()} Innerlijk Kompas Psychologie. Alle rechten voorbehouden.
           </p>
-          <p className="text-sm text-muted/60">
-            © {new Date().getFullYear()} Innerlijk Kompas. Alle rechten voorbehouden.
-          </p>
-        </div>
-
-        <div>
-          <h4 className="font-bold mb-4 text-white">Diensten</h4>
-          <ul className="space-y-3">
-            <li><Link href="/services" className="text-muted/80 hover:text-white transition-colors">Individuele Therapie</Link></li>
-            <li><Link href="/services" className="text-muted/80 hover:text-white transition-colors">Relatietherapie</Link></li>
-            <li><Link href="/services" className="text-muted/80 hover:text-white transition-colors">Expat Ondersteuning</Link></li>
-            <li><Link href="/services" className="text-muted/80 hover:text-white transition-colors">Online Sessies</Link></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 className="font-bold mb-4 text-white">Juridisch</h4>
-          <ul className="space-y-3">
-            <li><Link href="/privacy" className="text-muted/80 hover:text-white transition-colors">Privacyverklaring</Link></li>
-            <li><Link href="/terms" className="text-muted/80 hover:text-white transition-colors">Algemene Voorwaarden</Link></li>
-            <li><Link href="/checklist" className="text-muted/80 hover:text-white transition-colors">Lanceringschecklist</Link></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 className="font-bold mb-4 text-white">Contact</h4>
-          <ul className="space-y-3 text-muted/80">
-            <li>Keizersgracht 123</li>
-            <li>1015 CJ Amsterdam</li>
-            <li>Nederland</li>
-            <li className="pt-2"><a href="mailto:hello@innerlijkkompas.nl" className="hover:text-white transition-colors">hello@innerlijkkompas.nl</a></li>
-            <li><a href="tel:+31201234567" className="hover:text-white transition-colors">+31 20 123 4567</a></li>
-          </ul>
         </div>
       </div>
     </footer>

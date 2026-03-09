@@ -1,0 +1,39 @@
+De gehele onderbalk aanpassen:
+-	Footer moet kleiner en minder paginaruimte innemen
+-	Onder innerlijk kompas Online behandeling in je eigen omgeving 
+-	Naast innerlijk kompas het kopje snel naar en daaronder puntsgewijs – werkwijze – over mij -tarieven – contact
+-	Daarnaast kopje contact en daaronder
+ icoon envelop info@innerlijkkompaspsychologie.com 
+icoon pijltje Rotterdam en omgeving
+icoontje administratie KVK: 99588390
+
+-	Lettertype open sans
+-	Lijn het allemaal netjes uit
+
+-	Voeg bij de therapieen nog de volgende 2 therapieen toe:
+-	Oplossingsgerichte therapie
+Bij oplossingsgerichte therapie staat niet het probleem centraal, maar de oplossing. In plaats van uitgebreid stil te staan bij wat er misgaat, richten we ons op wat al wél werkt en hoe je daar op kunt voortbouwen. Samen onderzoeken we jouw krachten, mogelijkheden en wat je al in huis hebt om verandering te bewerkstelligen. Deze vorm van therapie is praktisch en toekomstgericht: we werken met concrete doelen en kijken stap voor stap naar hoe jij je leven wilt vormgeven. Oplossingsgerichte therapie is vaak kortdurend en geschikt als je behoefte hebt aan een heldere richting en merkbare vooruitgang op relatief korte termijn.
+
+Inzichtgevende therapie
+Inzichtgevende therapie richt zich op het begrijpen van de diepere oorzaken achter je klachten. Vaak hebben patronen in het heden hun wortels in eerdere ervaringen — in de opvoeding, belangrijke relaties of ingrijpende gebeurtenissen. Door hier samen naar te kijken, ontstaat er begrip voor waarom je reageert zoals je reageert en waarom bepaalde patronen zich blijven herhalen. Dit inzicht vormt de basis voor echte en duurzame verandering. Inzichtgevende therapie vraagt om bereidheid om naar binnen te kijken en is bij uitstek geschikt als je het gevoel hebt vast te lopen in terugkerende patronen die je zelf niet goed begrijpt.
+Ik wil graag op de pagina werkwijze onder het kopje behandelmethodieken de behandelmethodieken op tegels met op die tegel de behandelmethodiek titel en een zin om deze te beschrijven. Als je hier dan op klikt ga je naar de pagina van de meer uitgebreide uitleg. In de balk bovenin wil ik dat als je op het kopje werkwijze staat met de cursor, je dan ook een uitvouw krijgt met de verschillende behandelmethodieken. 
+Bouw een standalone HTML-pagina "Werkwijze" voor psychologenpraktijk. Minimalistisch ontwerp: witte achtergrond, zachte blauw (#007bff, #f8f9fa), Lato/Open Sans fonts, volledig mobiel-responsief.
+
+Structuur:
+1. **Header**: Logo "Jouw Praktijk" + navigatiebalk. Bij hover op "Werkwijze" toont dropdown met behandelmethodieken 
+
+2. **Hoofdsectie**: H1 "Werkwijze" + H2 "Behandelmethodieken" met grid van klikbare tegels:
+   - Elke tegel: Titel (H3) + 1 korte beschrijvende zin + "Lees meer" knop
+   - voorbeeld
+     * CGT: "Cognitieve gedragstherapie richt zich op gedachten, gevoelens en gedrag."
+   - Klik op tegel → link naar #modal of /methodiek-naam pagina
+
+3. **Tegels styling**: Witte cards (200x250px), schaduw, hover-effect (scale/groter), grid 2-3 kolommen, mobiel stackt.
+
+4. **Dropdown**: CSS-only hover menu bij "Werkwijze" met links naar ankers (#cgt, #emdr etc.) op dezelfde pagina.
+
+5. **Footer**: Contact + "Aangesloten bij Fundament GGZ & Psyvisie" met logo-knoppen.
+
+Volledige index.html met inline CSS/JS. Gebruik Lato font via Google Fonts. Output alleen de HTML-code.
+
+
