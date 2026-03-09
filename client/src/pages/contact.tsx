@@ -7,7 +7,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
-import { MapPin, Phone, Mail, Clock, AlertCircle, Loader2 } from "lucide-react";
+import { MapPin, Mail, Building2, AlertCircle, Loader2 } from "lucide-react";
+import rotterdamImg from "@/assets/images/rotterdam-willemsbrug.png";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
@@ -80,54 +81,32 @@ export default function Contact() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
-            {/* Contact Info */}
+            {/* Rotterdam Photo & Contact Details */}
             <motion.div 
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-white p-10 rounded-[2rem] border border-border shadow-sm h-fit"
+              className="h-fit"
             >
-              <h3 className="text-2xl font-serif mb-8">Praktijkgegevens</h3>
-              
-              <div className="space-y-8">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
-                    <MapPin size={24} />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-foreground">Locatie</h4>
-                    <p className="text-muted-foreground mt-1">Keizersgracht 123<br/>1015 CJ Amsterdam<br/>Nederland</p>
-                  </div>
+              <div className="rounded-2xl overflow-hidden shadow-lg mb-6">
+                <img 
+                  src={rotterdamImg} 
+                  alt="Rotterdam Willemsbrug bij avond" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3 text-muted-foreground">
+                  <Mail size={16} className="shrink-0 text-primary" />
+                  <a href="mailto:info@innerlijkkompaspsychologie.com" className="hover:text-primary transition-colors">info@innerlijkkompaspsychologie.com</a>
                 </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
-                    <Mail size={24} />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-foreground">Email</h4>
-                    <a href="mailto:hello@innerlijkkompas.nl" className="text-muted-foreground mt-1 hover:text-primary transition-colors">hello@innerlijkkompas.nl</a>
-                  </div>
+                <div className="flex items-center gap-3 text-muted-foreground">
+                  <MapPin size={16} className="shrink-0 text-primary" />
+                  <span>Rotterdam en omgeving</span>
                 </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-accent/10 text-accent flex items-center justify-center shrink-0">
-                    <Phone size={24} />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-foreground">Telefoon</h4>
-                    <a href="tel:+31201234567" className="text-muted-foreground mt-1 hover:text-primary transition-colors">+31 20 123 4567</a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-muted text-muted-foreground flex items-center justify-center shrink-0">
-                    <Clock size={24} />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-foreground">Openingstijden</h4>
-                    <p className="text-muted-foreground mt-1">Ma - Do: 9:00 - 18:00<br/>Vr: 9:00 - 15:00<br/>Jouw sessies in overleg</p>
-                  </div>
+                <div className="flex items-center gap-3 text-muted-foreground">
+                  <Building2 size={16} className="shrink-0 text-primary" />
+                  <span>KVK: 99588390</span>
                 </div>
               </div>
             </motion.div>

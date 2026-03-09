@@ -7,9 +7,9 @@ import { Button } from "@/components/ui/button";
 const behandelmethodieken = [
   { slug: "cgt", label: "CGT" },
   { slug: "mindfulness", label: "Mindfulness" },
-  { slug: "sft", label: "SFT" },
   { slug: "oplossingsgerichte", label: "Oplossingsgerichte therapie" },
   { slug: "inzichtgevende", label: "Inzichtgevende therapie" },
+  { slug: "sft", label: "SFT" },
   { slug: "emdr", label: "EMDR" },
   { slug: "ie", label: "Imaginaire Exposure" },
   { slug: "ir", label: "Imaginaire Rescripting" },
@@ -34,7 +34,6 @@ export default function Navbar() {
     { href: "/", label: "Home" },
     { href: "/werkwijze", label: "Werkwijze", hasDropdown: true },
     { href: "/about", label: "Over mij" },
-    { href: "/ervaringen", label: "Ervaringen" },
     { href: "/tarieven", label: "Tarieven" },
     { href: "/contact", label: "Contact" },
   ];
