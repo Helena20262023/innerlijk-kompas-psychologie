@@ -13,86 +13,102 @@ export default function Home() {
             alt="Japanse Bloesem - Rustige omgeving voor online therapie" 
             className="w-full h-full object-cover opacity-40 grayscale-[0.2]"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent backdrop-blur-[1px]"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/50 to-background/80"></div>
         </div>
-
-        <div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-secondary/10 blob-shape z-0 blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-primary/10 blob-shape z-0 blur-3xl" style={{ animationDelay: '-4s' }}></div>
 
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
             >
-              <h1 className="text-3xl md:text-4xl font-serif text-foreground leading-[1.1] mb-4 tracking-tight">
+              <h1 className="text-4xl md:text-5xl font-serif text-foreground leading-[1.15] mb-5 tracking-tight">
                 Innerlijk Kompas Psychologie
               </h1>
-              <p className="text-xl md:text-2xl font-sans text-primary/80 mb-6 font-medium">
+              <div className="w-16 h-[2px] bg-primary/40 mx-auto mb-6"></div>
+              <p className="text-lg md:text-xl text-foreground/70 mb-8 font-light tracking-wide">
                 Psychologische online behandeling
               </p>
-              
-              <p className="text-lg md:text-xl text-foreground/80 mb-10 leading-relaxed max-w-2xl mx-auto">
-                Iedereen verdient een stevig fundament om op terug te vallen. Of je nu kampt met trauma, somberheid, aanhoudende stress of onverwerkte rouwgevoelens: Innerlijk Kompas Psychologie biedt de professionele begeleiding die nodig is om jouw koers weer helder te krijgen. Persoonlijk, toegankelijk en volledig online. Zodat je vanuit je eigen vertrouwde omgeving kunt werken aan herstel en kunt ontdekken hoe je weer vanuit eigen kracht kunt bewegen.
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+            >
+              <p className="text-base md:text-lg text-foreground/75 leading-[1.8] max-w-2xl mx-auto">
+                Iedereen verdient een stevig fundament om op terug te vallen. Of je nu kampt met trauma, somberheid, aanhoudende stress of onverwerkte rouwgevoelens — Innerlijk Kompas Psychologie biedt de professionele begeleiding die nodig is om jouw koers weer helder te krijgen. Persoonlijk, toegankelijk en volledig online, zodat je vanuit je eigen vertrouwde omgeving kunt werken aan herstel.
               </p>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Features Banner */}
-      <section className="bg-white py-12 border-b border-border/50 relative z-20 shadow-sm">
+      {/* Kernwaarden */}
+      <section className="bg-white py-14 border-b border-border/30 relative z-20">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-            <div className="flex flex-col md:flex-row items-center gap-4 group cursor-default">
-              <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center text-secondary shrink-0 group-hover:bg-secondary/20 transition-colors duration-300">
-                <Clock size={24} />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-4xl mx-auto">
+            <motion.div 
+              initial={{ opacity: 0, y: 15 }} 
+              whileInView={{ opacity: 1, y: 0 }} 
+              viewport={{ once: true }} 
+              transition={{ duration: 0.5 }}
+              className="text-center"
+            >
+              <div className="w-11 h-11 rounded-full bg-secondary/10 flex items-center justify-center text-secondary mx-auto mb-3">
+                <Clock size={20} />
               </div>
-              <div>
-                <h3 className="font-bold text-foreground group-hover:text-secondary transition-colors">Snel starten</h3>
-                <p className="text-sm text-muted-foreground">Start jouw traject binnen een week online.</p>
+              <h3 className="font-semibold text-foreground text-sm mb-1">Snel starten</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">Start jouw traject binnen een week, volledig online.</p>
+            </motion.div>
+            <motion.div 
+              initial={{ opacity: 0, y: 15 }} 
+              whileInView={{ opacity: 1, y: 0 }} 
+              viewport={{ once: true }} 
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="text-center"
+            >
+              <div className="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center text-primary mx-auto mb-3">
+                <Globe size={20} />
               </div>
-            </div>
-            <div className="flex flex-col md:flex-row items-center gap-4 group cursor-default">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0 group-hover:bg-primary/20 transition-colors duration-300">
-                <Globe size={24} />
+              <h3 className="font-semibold text-foreground text-sm mb-1">Wereldwijd bereikbaar</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">Specialistische zorg in het Nederlands, waar je ook woont.</p>
+            </motion.div>
+            <motion.div 
+              initial={{ opacity: 0, y: 15 }} 
+              whileInView={{ opacity: 1, y: 0 }} 
+              viewport={{ once: true }} 
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="text-center"
+            >
+              <div className="w-11 h-11 rounded-full bg-accent/10 flex items-center justify-center text-accent mx-auto mb-3">
+                <CheckCircle2 size={20} />
               </div>
-              <div>
-                <h3 className="font-bold text-foreground group-hover:text-primary transition-colors">Wereldwijd hulp</h3>
-                <p className="text-sm text-muted-foreground">Specialistische zorg voor jou, waar je ook woont.</p>
-              </div>
-            </div>
-            <div className="flex flex-col md:flex-row items-center gap-4 group cursor-default">
-              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center text-accent shrink-0 group-hover:bg-accent/20 transition-colors duration-300">
-                <CheckCircle2 size={24} />
-              </div>
-              <div>
-                <h3 className="font-bold text-foreground group-hover:text-accent transition-colors">Evidence Based</h3>
-                <p className="text-sm text-muted-foreground">Effectieve CGT & EMDR via jouw scherm.</p>
-              </div>
-            </div>
+              <h3 className="font-semibold text-foreground text-sm mb-1">Evidence-based</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">Bewezen effectieve methoden zoals CGT en EMDR.</p>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Introduction/Bio Section */}
-      <section className="py-24 bg-background relative overflow-hidden">
+      {/* Online therapie */}
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-2xl mx-auto text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-4xl font-serif text-foreground mb-6">Online therapie: flexibel, veilig en persoonlijk.</h2>
-              <p className="text-lg text-foreground/80 mb-6 leading-relaxed">
-                Als online psycholoog help ik je graag met hoogwaardige zorg, zonder dat je de deur uit hoeft. Of je nu in Nederland woont of als expat in het buitenland verblijft, je krijgt de vertrouwde hulp in je eigen taal.
+              <h2 className="text-3xl font-serif text-foreground mb-3">Online therapie</h2>
+              <p className="text-sm uppercase tracking-widest text-primary/60 mb-8">Flexibel · Veilig · Persoonlijk</p>
+              <p className="text-base text-foreground/75 leading-[1.85] mb-5">
+                Als online psycholoog bied ik hoogwaardige zorg, zonder dat je de deur uit hoeft. Of je nu in Nederland woont of als expat in het buitenland verblijft — je krijgt vertrouwde hulp in je eigen taal.
               </p>
-              <p className="text-lg text-foreground/80 leading-relaxed">
-                Bij Innerlijk Kompas combineer ik wetenschappelijke methoden met de toegankelijkheid van online zorg. Geen reistijd, geen wachtlijsten, wel de diepgang die jij nodig hebt met een veilige video-verbinding (privacy gewaarborgd).
+              <p className="text-base text-foreground/75 leading-[1.85]">
+                Bij Innerlijk Kompas combineer ik wetenschappelijke methoden met de toegankelijkheid van online zorg. Geen reistijd, geen wachtlijsten, wel de diepgang die jij nodig hebt via een veilige, privacybeschermde video-verbinding.
               </p>
             </motion.div>
           </div>
