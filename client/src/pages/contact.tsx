@@ -2,14 +2,13 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage, FormDescription } from "@/components/ui/form";
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
-import { MapPin, Mail, Building2, AlertCircle, Loader2 } from "lucide-react";
+import { MapPin, Mail, Building2, Loader2 } from "lucide-react";
 import rotterdamImg from "@/assets/images/rotterdam-willemsbrug.png";
-import { Checkbox } from "@/components/ui/checkbox";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
 
@@ -17,11 +16,7 @@ const contactSchema = z.object({
   name: z.string().min(2, "Naam is verplicht"),
   email: z.string().email("Ongeldig e-mailadres"),
   phone: z.string().optional(),
-  service: z.string().min(1, "Selecteer een dienst"),
   message: z.string().min(10, "Geef een kort bericht op"),
-  privacy: z.boolean().refine((val) => val === true, {
-    message: "Akkoord gaan met de privacyverklaring is verplicht",
-  }),
 });
 
 export default function Contact() {
@@ -32,9 +27,7 @@ export default function Contact() {
       name: "",
       email: "",
       phone: "",
-      service: "",
       message: "",
-      privacy: false,
     },
   });
 
@@ -163,29 +156,6 @@ export default function Contact() {
                         </FormItem>
                       )}
                     />
-                    <FormField
-                      control={form.control}
-                      name="service"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Interesse in</FormLabel>
-                          <FormControl>
-                            <select 
-                              className="flex h-10 w-full items-center justify-between rounded-md border border-input bg-white px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                              {...field}
-                              data-testid="input-service"
-                            >
-                              <option value="" disabled>Selecteer een dienst</option>
-                              <option value="individual">Individuele Therapie</option>
-                              <option value="expat">Expat Ondersteuning</option>
-                              <option value="couples">Relatietherapie</option>
-                              <option value="online">Online Sessies</option>
-                            </select>
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
                   </div>
 
                   <FormField
@@ -202,35 +172,7 @@ export default function Contact() {
                             data-testid="input-message"
                           />
                         </FormControl>
-                        <FormDescription className="flex items-center gap-2 text-amber-600 font-medium">
-                          <AlertCircle size={14} />
-                          Let op: Deel geen gevoelige medische informatie in dit veld.
-                        </FormDescription>
                         <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-
-                  <FormField
-                    control={form.control}
-                    name="privacy"
-                    render={({ field }) => (
-                      <FormItem className="flex flex-row items-start space-x-3 space-y-0 rounded-md border p-4 bg-muted/30">
-                        <FormControl>
-                          <Checkbox
-                            checked={field.value}
-                            onCheckedChange={field.onChange}
-                            data-testid="checkbox-privacy"
-                          />
-                        </FormControl>
-                        <div className="space-y-1 leading-none">
-                          <FormLabel>
-                            Ik ga akkoord met de <a href="/privacy" className="text-primary hover:underline">privacyverklaring</a> (AVG).
-                          </FormLabel>
-                          <FormDescription>
-                            Je gegevens worden vertrouwelijk behandeld.
-                          </FormDescription>
-                        </div>
                       </FormItem>
                     )}
                   />
