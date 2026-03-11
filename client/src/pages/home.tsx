@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Clock, Globe, CheckCircle2, Star, Quote } from "lucide-react";
+import { Clock, Globe, CheckCircle2 } from "lucide-react";
 import cherryBlossomImg from "@/assets/images/cherry-blossom-dark.png";
 
 export default function Home() {
@@ -38,7 +38,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
             >
               <p className="text-base md:text-lg text-foreground/75 leading-[1.8] max-w-2xl mx-auto">
-                Iedereen verdient een stevig fundament om op terug te vallen. Of je nu kampt met trauma, somberheid, aanhoudende stress of onverwerkte rouwgevoelens — Innerlijk Kompas Psychologie biedt de professionele begeleiding die nodig is om jouw koers weer helder te krijgen. Persoonlijk, toegankelijk en volledig online, zodat je vanuit je eigen vertrouwde omgeving kunt werken aan herstel.
+                Iedereen verdient een stevig fundament om op terug te vallen. Of je nu kampt met trauma, somberheid, aanhoudende stress of onverwerkte rouwgevoelens, Innerlijk Kompas Psychologie biedt de professionele begeleiding die nodig is om jouw koers weer helder te krijgen. Persoonlijk, toegankelijk en volledig online, zodat je vanuit je eigen vertrouwde omgeving kunt werken aan herstel.
               </p>
             </motion.div>
           </div>
@@ -105,55 +105,17 @@ export default function Home() {
               <h2 className="text-3xl font-serif text-foreground mb-3">Online therapie</h2>
               <p className="text-sm uppercase tracking-widest text-primary/60 mb-8">Flexibel · Veilig · Persoonlijk</p>
               <p className="text-base text-foreground/75 leading-[1.85] mb-5">
-                Als online psycholoog bied ik hoogwaardige zorg, zonder dat je de deur uit hoeft. Of je nu in Nederland woont of als expat in het buitenland verblijft — je krijgt vertrouwde hulp in je eigen taal.
+                Als online psycholoog bied ik hoogwaardige zorg, zonder dat je de deur uit hoeft. Of je nu in Nederland woont of als expat in het buitenland verblijft, je krijgt vertrouwde hulp in je eigen taal.
               </p>
               <p className="text-base text-foreground/75 leading-[1.85]">
                 Bij Innerlijk Kompas combineer ik wetenschappelijke methoden met de toegankelijkheid van online zorg. Geen reistijd, geen wachtlijsten, wel de diepgang die jij nodig hebt via een veilige, privacybeschermde video-verbinding.
               </p>
+              <div className="mt-10 p-6 bg-secondary/5 rounded-2xl border border-border/30">
+                <p className="italic text-foreground/80 leading-relaxed">
+                  "Online therapie biedt de flexibiliteit die moderne professionals nodig hebben, zonder in te leveren op de kwaliteit van de verbinding of de effectiviteit van de behandeling."
+                </p>
+              </div>
             </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Ervaringen Section */}
-      <section className="py-20 bg-secondary/5">
-        <div className="container mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="max-w-3xl mx-auto text-center mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-4 italic">Ervaringen</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Wat anderen zeggen over hun traject bij Innerlijk Kompas.
-            </p>
-          </motion.div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {[
-              { name: "Anoniem", text: "Sarah heeft me enorm geholpen bij mijn burn-out. Haar aanpak is warm en professioneel.", rating: 5 },
-              { name: "M. van Dijk", text: "De online EMDR sessies waren een doorbraak voor mijn traumaverwerking. Heel dankbaar.", rating: 5 },
-              { name: "Expats in NL", text: "Fijn om in mijn eigen taal over complexe gevoelens te kunnen praten. Een aanrader voor iedere expat.", rating: 5 },
-            ].map((r, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="p-8 rounded-2xl border bg-white relative"
-                data-testid={`card-review-${i}`}
-              >
-                <Quote className="absolute top-6 right-8 text-primary/10" size={40} />
-                <div className="flex gap-1 mb-4">
-                  {[...Array(r.rating)].map((_, j) => (
-                    <Star key={j} size={14} className="fill-primary text-primary" />
-                  ))}
-                </div>
-                <p className="text-base italic mb-4 text-foreground/80 leading-relaxed">"{r.text}"</p>
-                <p className="font-bold text-sm text-foreground">— {r.name}</p>
-              </motion.div>
-            ))}
           </div>
         </div>
       </section>

@@ -66,7 +66,7 @@ export default function Contact() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="text-5xl font-serif text-foreground mb-6">Contact</h1>
+              <h1 className="text-3xl md:text-4xl font-serif text-foreground mb-6">Contact</h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
                 Zet de eerste stap. Neem contact op voor een intake of stel jouw vragen. Ik help je graag verder.
               </p>

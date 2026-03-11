@@ -50,10 +50,7 @@ export default function Services() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="max-w-3xl"
           >
-            <h1 className="text-5xl md:text-6xl font-serif text-foreground mb-6 leading-tight">Mijn Werkwijze</h1>
-            <p className="text-xl text-foreground/80 leading-relaxed">
-              Ik bied evidence-based behandelingen in een warme omgeving. Samen kijken we welke methode het beste bij jou en jouw hulpvraag past.
-            </p>
+            <h1 className="text-3xl md:text-4xl font-serif text-foreground mb-6">Mijn Werkwijze</h1>
           </motion.div>
         </div>
       </section>

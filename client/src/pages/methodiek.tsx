@@ -111,7 +111,7 @@ export default function Methodiek() {
                 <ArrowLeft size={16} /> Terug naar Werkwijze
               </span>
             </Link>
-            <h1 className="text-4xl md:text-5xl font-serif text-foreground leading-tight" data-testid="text-methodiek-title">{data.title}</h1>
+            <h1 className="text-3xl md:text-4xl font-serif text-foreground" data-testid="text-methodiek-title">{data.title}</h1>
           </motion.div>
         </div>
       </section>

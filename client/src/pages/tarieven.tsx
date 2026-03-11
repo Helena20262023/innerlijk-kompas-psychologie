@@ -6,7 +6,7 @@ export default function Tarieven() {
     <div className="pt-24 pb-20 min-h-screen bg-background text-foreground">
       <div className="container mx-auto px-6">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl mx-auto text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-serif mb-6 italic" data-testid="text-page-title">Kosten & Vergoeding</h1>
+          <h1 className="text-3xl md:text-4xl font-serif text-foreground mb-6" data-testid="text-page-title">Kosten & Vergoeding</h1>
           <p className="text-xl text-muted-foreground leading-relaxed mb-8">
             Ik ben aangesloten bij <strong>Fundament Partners GGZ</strong> en <strong>Psyvisie</strong>. Behandelingen worden vergoed door je verzekeraar.
           </p>

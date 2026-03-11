@@ -10,10 +10,7 @@ const behandelmethodieken = [
   { slug: "oplossingsgerichte", label: "Oplossingsgerichte therapie" },
   { slug: "inzichtgevende", label: "Inzichtgevende therapie" },
   { slug: "sft", label: "SFT" },
-  { slug: "emdr", label: "EMDR" },
-  { slug: "ie", label: "Imaginaire Exposure" },
-  { slug: "ir", label: "Imaginaire Rescripting" },
-  { slug: "net", label: "Narratieve Exposure Therapie" },
+  { slug: "traumabehandeling", label: "Specialistische traumabehandeling" },
 ];
 
 export default function Navbar() {
@@ -75,7 +72,7 @@ export default function Navbar() {
                 <div className="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                   <div className="bg-white rounded-xl shadow-lg border border-border/50 py-2 min-w-[240px]">
                     {behandelmethodieken.map((m) => (
-                      <Link key={m.slug} href={`/werkwijze/${m.slug}`}>
+                      <Link key={m.slug} href={m.slug === "traumabehandeling" ? "/werkwijze#traumabehandeling" : `/werkwijze/${m.slug}`}>
                         <span className="block px-4 py-2 text-sm text-foreground/80 hover:text-primary hover:bg-secondary/10 transition-colors cursor-pointer" data-testid={`dropdown-${m.slug}`}>
                           {m.label}
                         </span>
@@ -152,7 +149,7 @@ export default function Navbar() {
                           className="pl-4 overflow-hidden"
                         >
                           {behandelmethodieken.map((m) => (
-                            <Link key={m.slug} href={`/werkwijze/${m.slug}`}>
+                            <Link key={m.slug} href={m.slug === "traumabehandeling" ? "/werkwijze#traumabehandeling" : `/werkwijze/${m.slug}`}>
                               <span
                                 onClick={() => setIsMobileMenuOpen(false)}
                                 className="block py-1.5 text-sm text-foreground/70 hover:text-primary cursor-pointer"

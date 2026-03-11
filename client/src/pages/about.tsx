@@ -48,9 +48,6 @@ export default function About() {
 
               <p className="mt-6 text-sm text-muted-foreground">KVK nummer: 99588390</p>
 
-              <div className="mt-12 p-6 glass-card rounded-2xl border-primary/10">
-                <p className="italic text-foreground/80">"Online therapie biedt de flexibiliteit die moderne professionals nodig hebben, zonder in te leveren op de kwaliteit van de verbinding of de effectiviteit van de behandeling."</p>
-              </div>
             </motion.div>
           </div>
         </div>
