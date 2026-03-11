@@ -50,7 +50,8 @@ export default function Services() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="max-w-3xl"
           >
-            <h1 className="text-3xl md:text-4xl font-serif text-foreground mb-6">Mijn Werkwijze</h1>
+            <h1 className="text-3xl md:text-4xl font-serif text-foreground mb-4">Mijn Werkwijze</h1>
+            <p className="text-lg text-foreground/80 leading-relaxed">Samen kijken we welke methode het beste bij jou en jouw hulpvraag past.</p>
           </motion.div>
         </div>
       </section>
@@ -75,7 +76,7 @@ export default function Services() {
               viewport={{ once: true }}
               className="prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-8"
             >
-              <h2 className="text-3xl md:text-4xl font-serif text-foreground italic mb-8">Hoe we te werk gaan</h2>
+              <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-8">Hoe we te werk gaan</h2>
 
               <p>
                 Hulp zoeken is een moedige stap, maar ik weet dat de drempel soms hoog kan aanvoelen. Spanning of twijfel bij de start is heel normaal. Juist daarom staat een veilige en vertrouwde sfeer bij mij voorop. Het grote voordeel van onze online behandelingen is dat je deze gesprekken voert vanuit je eigen omgeving—een plek waar jij je volledig op je gemak voelt.
@@ -104,7 +105,7 @@ export default function Services() {
               transition={{ duration: 0.6 }}
               className="scroll-mt-32"
             >
-              <h2 className="text-3xl font-serif text-foreground mb-6">Individuele online behandeling</h2>
+              <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-6">Individuele online behandeling</h2>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 Binnen de individuele behandeling richten we ons op een breed scala aan psychische klachten. We kijken niet alleen naar de symptomen, maar ook naar de onderliggende patronen die je belemmeren in je dagelijks leven.
               </p>
@@ -141,7 +142,7 @@ export default function Services() {
               transition={{ duration: 0.6 }}
               className="scroll-mt-32"
             >
-              <h2 className="text-3xl font-serif text-foreground mb-6">Behandelmethodieken</h2>
+              <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-6">Behandelmethodieken</h2>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 Bij Innerlijk Kompas Psychologie wordt er met wetenschappelijk onderbouwde methoden gewerkt (evidence-based).
               </p>
@@ -182,7 +183,7 @@ export default function Services() {
               transition={{ duration: 0.6 }}
               className="scroll-mt-32"
             >
-              <h2 className="text-3xl font-serif text-foreground mb-6">Specialistische traumabehandeling</h2>
+              <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-6">Specialistische traumabehandeling</h2>
               <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
                 Trauma vraagt om een specifieke, zorgvuldige benadering. Wanneer schokkende gebeurtenissen uit het verleden een grote impact blijven hebben op je huidige leven, bijvoorbeeld in de vorm van PTSS, herbelevingen of emotionele blokkades, kunnen er gerichte traumamethodieken in.
               </p>
@@ -218,7 +219,7 @@ export default function Services() {
               </div>
 
               <div className="bg-secondary/10 p-8 rounded-[2rem] border border-border/50">
-                <h3 className="text-2xl font-serif text-foreground mb-4">Welke methode is passend?</h3>
+                <h3 className="text-3xl md:text-4xl font-serif text-foreground mb-4">Welke methode is passend?</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   Er zijn veel verschillende manieren om aan herstel te werken en de keuze daarin maak je niet alleen. Samen kijken we naar wat er speelt: de aard van je klachten, je persoonlijke geschiedenis en wat in het verleden al helpend is geweest of juist niet.
                 </p>
