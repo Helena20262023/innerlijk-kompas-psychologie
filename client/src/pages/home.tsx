@@ -110,11 +110,6 @@ export default function Home() {
               <p className="text-base text-foreground/75 leading-[1.85]">
                 Bij Innerlijk Kompas combineer ik wetenschappelijke methoden met de toegankelijkheid van online zorg. Geen reistijd, geen wachtlijsten, wel de diepgang die jij nodig hebt via een veilige, privacybeschermde video-verbinding.
               </p>
-              <div className="mt-10 p-6 bg-secondary/5 rounded-2xl border border-border/30">
-                <p className="italic text-foreground/80 leading-relaxed">
-                  "Online therapie biedt de flexibiliteit die moderne professionals nodig hebben, zonder in te leveren op de kwaliteit van de verbinding of de effectiviteit van de behandeling."
-                </p>
-              </div>
             </motion.div>
           </div>
         </div>
