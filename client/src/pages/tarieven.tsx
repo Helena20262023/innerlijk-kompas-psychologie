@@ -13,7 +13,7 @@ export default function Tarieven() {
           </p>
 
           <div className="flex gap-5 justify-center flex-wrap">
-            <a href="https://www.fundamentpartnersggz.nl" target="_blank" rel="noopener noreferrer" data-testid="link-fundament-badge">
+            <a href="https://www.fundamentpartners.nl" target="_blank" rel="noopener noreferrer" data-testid="link-fundament-badge">
               <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary/10 border border-primary/20 text-primary font-semibold hover:bg-primary/20 hover:border-primary/30 transition-all duration-200 cursor-pointer">
                 Fundament Partners GGZ <ExternalLink size={15} />
               </div>
@@ -65,7 +65,7 @@ export default function Tarieven() {
                 </p>
                 <ul className="space-y-2 mb-3">
                   <li>
-                    <a href="https://www.fundamentpartnersggz.nl" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold underline underline-offset-4 hover:text-primary/80 transition-colors text-[15px]" data-testid="link-vergoeding-fundament">
+                    <a href="https://www.fundamentpartners.nl" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold underline underline-offset-4 hover:text-primary/80 transition-colors text-[15px]" data-testid="link-vergoeding-fundament">
                       Informatie over vergoedingen bij Fundament Partners
                     </a>
                   </li>
@@ -180,7 +180,7 @@ export default function Tarieven() {
                   Kies een van de onderstaande platforms om je officieel aan te melden voor een traject bij mij.
                 </p>
                 <div className="flex gap-5 justify-center flex-wrap">
-                  <a href="https://www.fundamentpartnersggz.nl" target="_blank" rel="noopener noreferrer" data-testid="button-aanmelden-fundament">
+                  <a href="https://www.fundamentpartners.nl" target="_blank" rel="noopener noreferrer" data-testid="button-aanmelden-fundament">
                     <Button className="rounded-lg gap-2 bg-primary hover:bg-primary/90 text-white min-w-[250px] py-6 text-base font-bold">
                       Meld je aan via Fundament Partners
                     </Button>
