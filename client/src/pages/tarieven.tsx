@@ -12,15 +12,21 @@ export default function Tarieven() {
             Behandelingen worden vergoed door je verzekeraar. Hieronder vind je alle informatie over tarieven en vergoedingen.
           </p>
 
-          <div className="flex gap-5 justify-center flex-wrap">
-            <a href="https://www.fundamentpartners.nl" target="_blank" rel="noopener noreferrer" data-testid="link-fundament-badge">
-              <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-white font-semibold hover:opacity-90 transition-all duration-200 cursor-pointer" style={{ backgroundColor: '#5C3D45' }}>
-                Fundament Partners GGZ <ExternalLink size={15} />
+          <div className="flex gap-8 justify-center flex-wrap">
+            <a href="https://www.fundamentpartners.nl" target="_blank" rel="noopener noreferrer" data-testid="link-fundament-badge" className="group">
+              <div className="flex flex-col items-center gap-3">
+                <div className="w-20 h-20 rounded-full flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-200 shadow-lg" style={{ backgroundColor: '#5C3D45' }}>
+                  <ExternalLink size={24} />
+                </div>
+                <span className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors">Fundament Partners</span>
               </div>
             </a>
-            <a href="https://www.psyvisie.nl" target="_blank" rel="noopener noreferrer" data-testid="link-psyvisie-badge">
-              <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-white font-semibold hover:opacity-90 transition-all duration-200 cursor-pointer" style={{ backgroundColor: '#5C3D45' }}>
-                Psyvisie <ExternalLink size={15} />
+            <a href="https://www.psyvisie.nl" target="_blank" rel="noopener noreferrer" data-testid="link-psyvisie-badge" className="group">
+              <div className="flex flex-col items-center gap-3">
+                <div className="w-20 h-20 rounded-full flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-200 shadow-lg" style={{ backgroundColor: '#5C3D45' }}>
+                  <ExternalLink size={24} />
+                </div>
+                <span className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors">Psyvisie</span>
               </div>
             </a>
           </div>
