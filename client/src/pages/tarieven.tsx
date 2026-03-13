@@ -6,20 +6,20 @@ export default function Tarieven() {
   return (
     <div className="pt-24 pb-20 min-h-screen bg-background text-foreground">
       <div className="container mx-auto px-6">
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl mx-auto text-center mb-28">
-          <h1 className="text-3xl md:text-4xl font-serif text-foreground mb-8" data-testid="text-page-title">Kosten & Vergoeding</h1>
-          <p className="text-lg text-muted-foreground leading-relaxed mb-10">
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl mx-auto text-center mb-36">
+          <h1 className="text-3xl md:text-4xl font-serif text-foreground mb-12" data-testid="text-page-title">Kosten & Vergoeding</h1>
+          <p className="text-lg text-muted-foreground leading-relaxed mb-12">
             Behandelingen worden vergoed door je verzekeraar. Hieronder vind je alle informatie over tarieven en vergoedingen.
           </p>
 
           <div className="flex gap-5 justify-center flex-wrap">
             <a href="https://www.fundamentpartners.nl" target="_blank" rel="noopener noreferrer" data-testid="link-fundament-badge">
-              <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary/10 border border-primary/20 text-primary font-semibold hover:bg-primary/20 hover:border-primary/30 transition-all duration-200 cursor-pointer">
+              <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-white font-semibold hover:opacity-90 transition-all duration-200 cursor-pointer" style={{ backgroundColor: '#5C3D45' }}>
                 Fundament Partners GGZ <ExternalLink size={15} />
               </div>
             </a>
             <a href="https://www.psyvisie.nl" target="_blank" rel="noopener noreferrer" data-testid="link-psyvisie-badge">
-              <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary/10 border border-primary/20 text-primary font-semibold hover:bg-primary/20 hover:border-primary/30 transition-all duration-200 cursor-pointer">
+              <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-white font-semibold hover:opacity-90 transition-all duration-200 cursor-pointer" style={{ backgroundColor: '#5C3D45' }}>
                 Psyvisie <ExternalLink size={15} />
               </div>
             </a>
