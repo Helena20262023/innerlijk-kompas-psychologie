@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
-import praktijkruimteImg from "@/assets/images/praktijkruimte.jpg";
 import compassBgImg from "@/assets/images/kompas-dome.png";
 
 const behandelmethodieken = [
@@ -129,9 +128,6 @@ export default function Services() {
                 </table>
               </div>
 
-              <div className="mt-8 rounded-[2rem] overflow-hidden shadow-lg">
-                <img src={praktijkruimteImg} alt="Moderne praktijkruimte met natuurlijke lichtinval" className="w-full h-auto object-cover" />
-              </div>
             </motion.div>
 
             <motion.div
