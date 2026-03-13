@@ -5,11 +5,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
 const behandelmethodieken = [
-  { slug: "cgt", label: "CGT" },
+  { slug: "cgt", label: "Cognitieve Gedragstherapie (CGT)" },
   { slug: "mindfulness", label: "Mindfulness" },
   { slug: "oplossingsgerichte", label: "Oplossingsgerichte therapie" },
   { slug: "inzichtgevende", label: "Inzichtgevende therapie" },
-  { slug: "sft", label: "SFT" },
+  { slug: "sft", label: "Schemagerichte therapie (SFT)" },
   { slug: "traumabehandeling", label: "Specialistische traumabehandeling" },
 ];
 
