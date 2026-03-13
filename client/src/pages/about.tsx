@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import therapistImg from "@/assets/images/therapist.png";
+import heleenImg from "@/assets/images/heleen-portrait.jpeg";
 
 export default function About() {
   return (
@@ -21,9 +21,9 @@ export default function About() {
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="aspect-square rounded-[2rem] overflow-hidden shadow-xl"
+              className="aspect-[3/4] rounded-[2rem] overflow-hidden shadow-xl sticky top-28"
             >
-              <img src={therapistImg} alt="Heleen - Psycholoog bij Innerlijk Kompas Psychologie" className="w-full h-full object-cover" />
+              <img src={heleenImg} alt="Heleen - Psycholoog bij Innerlijk Kompas Psychologie" className="w-full h-full object-cover" />
             </motion.div>
             
             <motion.div
