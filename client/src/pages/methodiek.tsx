@@ -1,7 +1,14 @@
 import { motion } from "framer-motion";
 import { Link, useParams } from "wouter";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import compassBgImg from "@/assets/images/kompas-dome.png";
+
+const traumamethodieken = [
+  { slug: "emdr", title: "EMDR", desc: "Schokkende herinneringen herverwerken door het werkgeheugen te belasten." },
+  { slug: "ie", title: "Imaginaire Exposure", desc: "De herinnering opzoeken in een veilige setting, zodat de spanning structureel afneemt." },
+  { slug: "ir", title: "Imaginaire Rescripting", desc: "In verbeelding ingrijpen in een nare herinnering om jezelf te geven wat je nodig had." },
+  { slug: "net", title: "Narratieve Exposure Therapie", desc: "Losse pijnlijke herinneringen omvormen tot een samenhangend levensverhaal." },
+];
 
 const methodieken: Record<string, { title: string; content: string[] }> = {
   cgt: {
@@ -142,6 +149,43 @@ export default function Methodiek() {
                 </p>
               ))}
             </motion.div>
+
+            {params.slug === "traumabehandeling" && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                className="mt-12"
+              >
+                <h2 className="text-2xl font-serif text-foreground mb-6">Traumamethodieken</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  {traumamethodieken.map((m, i) => (
+                    <motion.div
+                      key={m.slug}
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.4, delay: i * 0.08 }}
+                    >
+                      <Link href={`/werkwijze/${m.slug}`}>
+                        <div
+                          className="bg-white rounded-2xl border border-border/50 shadow-sm p-6 h-full flex flex-col justify-between hover:shadow-lg hover:scale-[1.03] hover:border-primary/30 transition-all duration-300 cursor-pointer"
+                          data-testid={`card-trauma-${m.slug}`}
+                        >
+                          <div>
+                            <h3 className="text-xl font-serif text-foreground mb-3">{m.title}</h3>
+                            <p className="text-sm text-muted-foreground leading-relaxed mb-4">{m.desc}</p>
+                          </div>
+                          <span className="inline-flex items-center text-sm font-semibold text-primary gap-1">
+                            Lees meer <ArrowRight size={14} />
+                          </span>
+                        </div>
+                      </Link>
+                    </motion.div>
+                  ))}
+                </div>
+              </motion.div>
+            )}
           </div>
         </div>
       </section>
