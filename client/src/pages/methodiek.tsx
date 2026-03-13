@@ -67,6 +67,17 @@ const methodieken: Record<string, { title: string; content: string[] }> = {
       "We kijken naar de context van je hele leven. Samen leggen we een 'tijdlijn' neer van je levensverhaal. We staan uitgebreid stil bij de ingrijpende gebeurtenissen en schrijven deze uit. Dit helpt om losse, pijnlijke herinneringen om te vormen tot een samenhangend verhaal dat een plek krijgt in je biografie.",
     ],
   },
+  traumabehandeling: {
+    title: "Specialistische traumabehandeling",
+    content: [
+      "Trauma vraagt om een specifieke, zorgvuldige benadering. Wanneer schokkende gebeurtenissen uit het verleden een grote impact blijven hebben op je huidige leven, bijvoorbeeld in de vorm van PTSS, herbelevingen of emotionele blokkades, kunnen er gerichte traumamethodieken ingezet worden.",
+      "Deze methoden zijn erop gericht de emotionele lading van nare herinneringen te verminderen, zodat ze een plek kunnen krijgen in je geschiedenis zonder je heden te beheersen.",
+      "EMDR (Eye Movement Desensitization and Reprocessing) is een wetenschappelijk bewezen en zeer effectieve therapievorm voor het verwerken van schokkende of pijnlijke gebeurtenissen. Terwijl je terugdenkt aan de gebeurtenis, wordt je werkgeheugen belast door een afleidende taak. Hierdoor wordt de herinnering opnieuw opgeslagen, maar dan zonder de overweldigende emotionele lading.",
+      "Imaginaire Exposure (IE) zoekt de herinnering juist op in een veilige setting. Door de gebeurtenis in de tegenwoordige tijd en met detail te herbeleven in je verbeelding, leert je brein dat het gevaar nu geweken is. De spanning neemt hierdoor structureel af.",
+      "Imaginaire Rescripting (IR) wordt vaak ingezet bij trauma's die te maken hebben met jeugdervaringen of sociale pijn. In je verbeelding gaan we terug naar een nare herinnering en grijpen we in om jezelf te geven wat je op dat moment nodig had, zoals veiligheid of troost.",
+      "Narratieve Exposure Therapie (NET) is bijzonder effectief bij meervoudig trauma. Samen leggen we een tijdlijn neer van je levensverhaal en staan we uitgebreid stil bij de ingrijpende gebeurtenissen, zodat losse pijnlijke herinneringen een samenhangend verhaal worden dat een plek krijgt in je biografie.",
+    ],
+  },
 };
 
 export default function Methodiek() {
