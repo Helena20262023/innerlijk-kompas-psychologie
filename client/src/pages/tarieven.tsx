@@ -1,15 +1,29 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { ExternalLink } from "lucide-react";
 
 export default function Tarieven() {
   return (
     <div className="pt-24 pb-20 min-h-screen bg-background text-foreground">
       <div className="container mx-auto px-6">
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl mx-auto text-center mb-16">
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl mx-auto text-center mb-20">
           <h1 className="text-3xl md:text-4xl font-serif text-foreground mb-6" data-testid="text-page-title">Kosten & Vergoeding</h1>
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-            Ik ben aangesloten bij <a href="https://www.fundamentpartnersggz.nl" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-primary transition-colors underline underline-offset-4">Fundament Partners GGZ</a> en <a href="https://www.psyvisie.nl" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-primary transition-colors underline underline-offset-4">Psyvisie</a>. Behandelingen worden vergoed door je verzekeraar.
+            Behandelingen worden vergoed door je verzekeraar. Hieronder vind je alle informatie over tarieven en vergoedingen.
           </p>
+
+          <div className="flex gap-5 justify-center flex-wrap">
+            <a href="https://www.fundamentpartnersggz.nl" target="_blank" rel="noopener noreferrer" data-testid="link-fundament-badge">
+              <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary/10 border border-primary/20 text-primary font-semibold hover:bg-primary/20 hover:border-primary/30 transition-all duration-200 cursor-pointer">
+                Fundament Partners GGZ <ExternalLink size={15} />
+              </div>
+            </a>
+            <a href="https://www.psyvisie.nl" target="_blank" rel="noopener noreferrer" data-testid="link-psyvisie-badge">
+              <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary/10 border border-primary/20 text-primary font-semibold hover:bg-primary/20 hover:border-primary/30 transition-all duration-200 cursor-pointer">
+                Psyvisie <ExternalLink size={15} />
+              </div>
+            </a>
+          </div>
         </motion.div>
 
         <div className="max-w-3xl mx-auto space-y-8">
@@ -95,22 +109,26 @@ export default function Tarieven() {
             <p className="text-muted-foreground leading-relaxed mb-4">
               Voor klachten die niet in aanmerking komen voor vergoeding via de basisverzekering (zoals burn-out coaching, relatievragen of persoonlijke groei) geldt een particulier tarief.
             </p>
-            <div className="bg-background rounded-xl border border-border/50 overflow-hidden mb-6">
+            <div className="rounded-xl border border-border/50 overflow-hidden mb-6">
               <table className="w-full" data-testid="table-tarieven">
                 <thead>
-                  <tr className="border-b border-border/50">
+                  <tr className="bg-secondary/20 border-b border-border/50">
                     <th className="text-left px-6 py-4 font-bold text-foreground uppercase tracking-wide text-sm">Sessie</th>
                     <th className="text-left px-6 py-4 font-bold text-foreground uppercase tracking-wide text-sm">Tarief</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-border/30 hover:bg-secondary/5 transition-colors">
+                  <tr className="bg-secondary/5 border-b border-border/30">
                     <td className="px-6 py-4 font-medium text-foreground">Individuele Sessie (45 min)</td>
                     <td className="px-6 py-4 text-foreground font-semibold">€75</td>
                   </tr>
-                  <tr className="last:border-b-0 hover:bg-secondary/5 transition-colors">
+                  <tr className="bg-secondary/10 border-b border-border/30">
                     <td className="px-6 py-4 font-medium text-foreground">Relatie Sessie (60 min)</td>
                     <td className="px-6 py-4 text-foreground font-semibold">€120</td>
+                  </tr>
+                  <tr className="bg-secondary/5">
+                    <td className="px-6 py-4 font-medium text-foreground">Te laat afgezegd / niet verschenen</td>
+                    <td className="px-6 py-4 text-foreground font-semibold">€65</td>
                   </tr>
                 </tbody>
               </table>
@@ -119,7 +137,7 @@ export default function Tarieven() {
               Wachttijd: maximaal <strong>3 weken</strong>.
             </p>
             <p className="text-sm text-muted-foreground">
-              Je kunt een afspraak kosteloos tot <strong>24 uur</strong> voor je afspraak afzeggen. Voor afspraken die niet of te laat worden afgezegd, wordt <strong>€75,-</strong> in rekening gebracht.
+              Je kunt een afspraak kosteloos tot <strong>24 uur</strong> voor je afspraak afzeggen. Voor afspraken die niet of te laat worden afgezegd, wordt <strong>€65,-</strong> in rekening gebracht.
             </p>
           </motion.div>
 
