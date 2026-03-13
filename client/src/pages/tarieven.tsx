@@ -14,19 +14,15 @@ export default function Tarieven() {
 
           <div className="flex gap-8 justify-center flex-wrap">
             <a href="https://www.fundamentpartners.nl" target="_blank" rel="noopener noreferrer" data-testid="link-fundament-badge" className="group">
-              <div className="flex flex-col items-center gap-3">
-                <div className="w-20 h-20 rounded-full flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-200 shadow-lg" style={{ backgroundColor: '#5C3D45' }}>
-                  <ExternalLink size={24} />
-                </div>
-                <span className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors">Fundament Partners</span>
+              <div className="w-40 h-40 rounded-full flex flex-col items-center justify-center text-white group-hover:scale-105 transition-transform duration-200 shadow-lg gap-1.5" style={{ backgroundColor: '#5C3D45' }}>
+                <span className="text-sm font-bold text-center leading-tight px-3">Fundament Partners</span>
+                <ExternalLink size={16} className="opacity-70" />
               </div>
             </a>
             <a href="https://www.psyvisie.nl" target="_blank" rel="noopener noreferrer" data-testid="link-psyvisie-badge" className="group">
-              <div className="flex flex-col items-center gap-3">
-                <div className="w-20 h-20 rounded-full flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-200 shadow-lg" style={{ backgroundColor: '#5C3D45' }}>
-                  <ExternalLink size={24} />
-                </div>
-                <span className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors">Psyvisie</span>
+              <div className="w-40 h-40 rounded-full flex flex-col items-center justify-center text-white group-hover:scale-105 transition-transform duration-200 shadow-lg gap-1.5" style={{ backgroundColor: '#5C3D45' }}>
+                <span className="text-sm font-bold text-center leading-tight px-3">Psyvisie</span>
+                <ExternalLink size={16} className="opacity-70" />
               </div>
             </a>
           </div>
