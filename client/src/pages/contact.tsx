@@ -1,81 +1,14 @@
 import { motion } from "framer-motion";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import * as z from "zod";
 import { useState } from "react";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { Checkbox } from "@/components/ui/checkbox";
-import { useToast } from "@/hooks/use-toast";
-import { MapPin, Mail, Building2, Loader2 } from "lucide-react";
+import { MapPin, Mail, Building2 } from "lucide-react";
 import { Link } from "wouter";
 import rotterdamImg from "@/assets/images/rotterdam-willemsbrug.png";
-import { useMutation } from "@tanstack/react-query";
-import { apiRequest } from "@/lib/queryClient";
-
-const contactSchema = z.object({
-  name: z.string().min(2, "Naam is verplicht"),
-  email: z.string().email("Ongeldig e-mailadres"),
-  phone: z.string().optional(),
-  message: z.string().min(10, "Geef een kort bericht op"),
-  privacy: z.literal(true, { errorMap: () => ({ message: "Je moet akkoord gaan met de privacyverklaring" }) }),
-});
 
 export default function Contact() {
-  const { toast } = useToast();
-  const [honeypot, setHoneypot] = useState("");
-  const form = useForm<z.infer<typeof contactSchema>>({
-    resolver: zodResolver(contactSchema),
-    defaultValues: {
-      name: "",
-      email: "",
-      phone: "",
-      message: "",
-      privacy: false as unknown as true,
-    },
-  });
-
-  const contactMutation = useMutation({
-    mutationFn: async (values: z.infer<typeof contactSchema>) => {
-      if (honeypot) {
-        return { success: true };
-      }
-      const { privacy, ...data } = values;
-      const formData = new URLSearchParams();
-      formData.append("form-name", "contact");
-      formData.append("name", data.name);
-      formData.append("email", data.email);
-      formData.append("phone", data.phone || "");
-      formData.append("message", data.message);
-      const res = await fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: formData.toString(),
-      });
-      if (!res.ok) throw new Error("Form submission failed");
-      return { success: true };
-    },
-    onSuccess: () => {
-      toast({
-        title: "Bericht verzonden!",
-        description: "Bedankt voor jouw bericht. Ik neem binnen 48 uur contact met je op.",
-      });
-      form.reset();
-    },
-    onError: () => {
-      toast({
-        title: "Er ging iets mis",
-        description: "Probeer het later opnieuw of neem telefonisch contact op.",
-        variant: "destructive",
-      });
-    },
-  });
-
-  function onSubmit(values: z.infer<typeof contactSchema>) {
-    contactMutation.mutate(values);
-  }
+  const [privacyChecked, setPrivacyChecked] = useState(false);
 
   return (
     <div className="pt-20">
@@ -95,7 +28,6 @@ export default function Contact() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
-            {/* Rotterdam Photo & Contact Details */}
             <motion.div 
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -125,137 +57,79 @@ export default function Contact() {
               </div>
             </motion.div>
 
-            {/* Form */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
               <h3 className="text-2xl font-serif mb-8">Stuur een bericht</h3>
-              <Form {...form}>
-                <form
-                  name="contact"
-                  method="POST"
-                  data-netlify="true"
-                  data-netlify-honeypot="honeypot"
-                  onSubmit={form.handleSubmit(onSubmit)}
-                  className="space-y-6"
-                >
-                  <input type="hidden" name="form-name" value="contact" />
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <FormField
-                      control={form.control}
-                      name="name"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Volledige naam</FormLabel>
-                          <FormControl>
-                            <Input placeholder="Jan Janssen" className="bg-white" {...field} data-testid="input-name" />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                    <FormField
-                      control={form.control}
-                      name="email"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Email</FormLabel>
-                          <FormControl>
-                            <Input type="email" placeholder="jan@voorbeeld.nl" className="bg-white" {...field} data-testid="input-email" />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                  </div>
+              <form
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                data-netlify-honeypot="honeypot"
+                action="/contact?success=true"
+                className="space-y-6"
+              >
+                <input type="hidden" name="form-name" value="contact" />
+                <input type="text" name="honeypot" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <FormField
-                      control={form.control}
-                      name="phone"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Telefoonnummer (Optioneel)</FormLabel>
-                          <FormControl>
-                            <Input placeholder="+31 6 12345678" className="bg-white" {...field} data-testid="input-phone" />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <label htmlFor="name" className="text-sm font-medium leading-none">Volledige naam</label>
+                    <Input id="name" name="name" placeholder="Jan Janssen" className="bg-white" required data-testid="input-name" />
                   </div>
+                  <div className="space-y-2">
+                    <label htmlFor="email" className="text-sm font-medium leading-none">Email</label>
+                    <Input id="email" name="email" type="email" placeholder="jan@voorbeeld.nl" className="bg-white" required data-testid="input-email" />
+                  </div>
+                </div>
 
-                  <FormField
-                    control={form.control}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <label htmlFor="phone" className="text-sm font-medium leading-none">Telefoonnummer (Optioneel)</label>
+                    <Input id="phone" name="phone" placeholder="+31 6 12345678" className="bg-white" data-testid="input-phone" />
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <label htmlFor="message" className="text-sm font-medium leading-none">Jouw bericht</label>
+                  <Textarea 
+                    id="message"
                     name="message"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Jouw bericht</FormLabel>
-                        <FormControl>
-                          <Textarea 
-                            placeholder="Beschrijf kort wat jou naar therapie brengt..." 
-                            className="min-h-[150px] bg-white resize-y" 
-                            {...field} 
-                            data-testid="input-message"
-                          />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
+                    placeholder="Beschrijf kort wat jou naar therapie brengt..." 
+                    className="min-h-[150px] bg-white resize-y" 
+                    required
+                    minLength={10}
+                    data-testid="input-message"
                   />
+                </div>
 
+                <div className="flex items-start space-x-3">
                   <input
-                    type="text"
-                    name="honeypot"
-                    value={honeypot}
-                    onChange={(e) => setHoneypot(e.target.value)}
-                    style={{ display: "none" }}
-                    tabIndex={-1}
-                    autoComplete="off"
+                    type="checkbox"
+                    id="privacy"
+                    required
+                    checked={privacyChecked}
+                    onChange={(e) => setPrivacyChecked(e.target.checked)}
+                    className="mt-1 h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+                    data-testid="checkbox-privacy"
                   />
+                  <label htmlFor="privacy" className="text-sm text-muted-foreground cursor-pointer">
+                    Ik ga akkoord met de{" "}
+                    <Link href="/privacy" className="text-primary underline underline-offset-2 hover:text-primary/80">
+                      privacyverklaring
+                    </Link>
+                  </label>
+                </div>
 
-                  <FormField
-                    control={form.control}
-                    name="privacy"
-                    render={({ field }) => (
-                      <FormItem className="flex flex-row items-start space-x-3 space-y-0">
-                        <FormControl>
-                          <Checkbox
-                            checked={field.value}
-                            onCheckedChange={field.onChange}
-                            data-testid="checkbox-privacy"
-                          />
-                        </FormControl>
-                        <div className="space-y-1 leading-none">
-                          <FormLabel className="text-sm text-muted-foreground font-normal cursor-pointer">
-                            Ik ga akkoord met de{" "}
-                            <Link href="/privacy" className="text-primary underline underline-offset-2 hover:text-primary/80">
-                              privacyverklaring
-                            </Link>
-                          </FormLabel>
-                          <FormMessage />
-                        </div>
-                      </FormItem>
-                    )}
-                  />
-
-                  <Button type="submit" size="lg" className="w-full rounded-full bg-primary hover:bg-primary/90 text-white text-lg h-14" data-testid="button-submit-contact" disabled={contactMutation.isPending}>
-                    {contactMutation.isPending ? (
-                      <>
-                        <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-                        Verzenden...
-                      </>
-                    ) : (
-                      "Verzend aanvraag"
-                    )}
-                  </Button>
-                  <p className="text-xs text-muted-foreground text-center mt-4">
-                    Je informatie wordt veilig versleuteld en strikt vertrouwelijk behandeld.
-                  </p>
-                </form>
-              </Form>
+                <Button type="submit" size="lg" className="w-full rounded-full bg-primary hover:bg-primary/90 text-white text-lg h-14" data-testid="button-submit-contact">
+                  Verzend aanvraag
+                </Button>
+                <p className="text-xs text-muted-foreground text-center mt-4">
+                  Je informatie wordt veilig versleuteld en strikt vertrouwelijk behandeld.
+                </p>
+              </form>
             </motion.div>
           </div>
         </div>
