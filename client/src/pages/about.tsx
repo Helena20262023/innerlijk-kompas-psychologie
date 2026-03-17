@@ -23,7 +23,7 @@ export default function About() {
               viewport={{ once: true }}
               className="aspect-[3/4] rounded-[2rem] overflow-hidden shadow-xl sticky top-28"
             >
-              <img src={heleenImg} alt="Heleen - Psycholoog bij Innerlijk Kompas Psychologie" className="w-full h-full object-cover" />
+              <img src={heleenImg} alt="Heleen, Psycholoog bij Innerlijk Kompas Psychologie" className="w-full h-full object-cover" />
             </motion.div>
             
             <motion.div
