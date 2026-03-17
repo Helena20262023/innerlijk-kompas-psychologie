@@ -56,7 +56,7 @@ export default function Contact() {
               transition={{ duration: 0.6, delay: 0.3 }}
             >
               <h3 className="text-2xl font-serif mb-8">Stuur een bericht</h3>
-              <form name="contact" method="POST" data-netlify="true" className="space-y-6">
+              <form name="contact" method="POST" data-netlify="true" action="/success" className="space-y-6">
                 <input type="hidden" name="form-name" value="contact" />
                 <p className="hidden"><label>Vul dit niet in: <input name="bot-field" /></label></p>
 

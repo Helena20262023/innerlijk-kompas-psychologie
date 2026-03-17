@@ -17,6 +17,7 @@ import Contact from "@/pages/contact";
 import LaunchChecklist from "@/pages/launch-checklist";
 import Methodiek from "@/pages/methodiek";
 import Privacy from "@/pages/privacy";
+import Success from "@/pages/success";
 
 function Router() {
   return (
@@ -32,6 +33,7 @@ function Router() {
           <Route path="/tarieven" component={Tarieven} />
           <Route path="/contact" component={Contact} />
           <Route path="/privacy" component={Privacy} />
+          <Route path="/success" component={Success} />
           <Route path="/checklist" component={LaunchChecklist} />
           <Route component={NotFound} />
         </Switch>
