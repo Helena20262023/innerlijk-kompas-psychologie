@@ -16,6 +16,7 @@ import Tarieven from "@/pages/tarieven";
 import Contact from "@/pages/contact";
 import LaunchChecklist from "@/pages/launch-checklist";
 import Methodiek from "@/pages/methodiek";
+import Privacy from "@/pages/privacy";
 
 function Router() {
   return (
@@ -30,6 +31,7 @@ function Router() {
           <Route path="/ervaringen" component={Ervaringen} />
           <Route path="/tarieven" component={Tarieven} />
           <Route path="/contact" component={Contact} />
+          <Route path="/privacy" component={Privacy} />
           <Route path="/checklist" component={LaunchChecklist} />
           <Route component={NotFound} />
         </Switch>

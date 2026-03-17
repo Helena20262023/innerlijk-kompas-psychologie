@@ -2,12 +2,15 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
+import { useState } from "react";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
 import { MapPin, Mail, Building2, Loader2 } from "lucide-react";
+import { Link } from "wouter";
 import rotterdamImg from "@/assets/images/rotterdam-willemsbrug.png";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
@@ -17,10 +20,12 @@ const contactSchema = z.object({
   email: z.string().email("Ongeldig e-mailadres"),
   phone: z.string().optional(),
   message: z.string().min(10, "Geef een kort bericht op"),
+  privacy: z.literal(true, { errorMap: () => ({ message: "Je moet akkoord gaan met de privacyverklaring" }) }),
 });
 
 export default function Contact() {
   const { toast } = useToast();
+  const [honeypot, setHoneypot] = useState("");
   const form = useForm<z.infer<typeof contactSchema>>({
     resolver: zodResolver(contactSchema),
     defaultValues: {
@@ -28,12 +33,17 @@ export default function Contact() {
       email: "",
       phone: "",
       message: "",
+      privacy: false as unknown as true,
     },
   });
 
   const contactMutation = useMutation({
     mutationFn: async (values: z.infer<typeof contactSchema>) => {
-      const res = await apiRequest("POST", "/api/contact", values);
+      if (honeypot) {
+        return { success: true };
+      }
+      const { privacy, ...data } = values;
+      const res = await apiRequest("POST", "/api/contact", data);
       return res.json();
     },
     onSuccess: () => {
@@ -173,6 +183,41 @@ export default function Contact() {
                           />
                         </FormControl>
                         <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+
+                  <input
+                    type="text"
+                    name="honeypot"
+                    value={honeypot}
+                    onChange={(e) => setHoneypot(e.target.value)}
+                    style={{ display: "none" }}
+                    tabIndex={-1}
+                    autoComplete="off"
+                  />
+
+                  <FormField
+                    control={form.control}
+                    name="privacy"
+                    render={({ field }) => (
+                      <FormItem className="flex flex-row items-start space-x-3 space-y-0">
+                        <FormControl>
+                          <Checkbox
+                            checked={field.value}
+                            onCheckedChange={field.onChange}
+                            data-testid="checkbox-privacy"
+                          />
+                        </FormControl>
+                        <div className="space-y-1 leading-none">
+                          <FormLabel className="text-sm text-muted-foreground font-normal cursor-pointer">
+                            Ik ga akkoord met de{" "}
+                            <Link href="/privacy" className="text-primary underline underline-offset-2 hover:text-primary/80">
+                              privacyverklaring
+                            </Link>
+                          </FormLabel>
+                          <FormMessage />
+                        </div>
                       </FormItem>
                     )}
                   />

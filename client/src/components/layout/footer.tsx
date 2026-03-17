@@ -44,10 +44,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-6 pt-4 border-t border-white/15 text-center">
+        <div className="mt-6 pt-4 border-t border-white/15 flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="text-xs text-white/50">
             &copy; {new Date().getFullYear()} Innerlijk Kompas Psychologie. Alle rechten voorbehouden.
           </p>
+          <Link href="/privacy" className="text-xs text-white/50 hover:text-white transition-colors">
+            Privacyverklaring
+          </Link>
         </div>
       </div>
     </footer>
