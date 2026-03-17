@@ -48,6 +48,13 @@
     </script>
   </head>
   <body>
+    <form name="contact" netlify netlify-honeypot="honeypot" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="phone" />
+      <textarea name="message"></textarea>
+      <input type="text" name="honeypot" />
+    </form>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

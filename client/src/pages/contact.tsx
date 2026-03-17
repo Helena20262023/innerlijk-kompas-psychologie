@@ -43,8 +43,19 @@ export default function Contact() {
         return { success: true };
       }
       const { privacy, ...data } = values;
-      const res = await apiRequest("POST", "/api/contact", data);
-      return res.json();
+      const formData = new URLSearchParams();
+      formData.append("form-name", "contact");
+      formData.append("name", data.name);
+      formData.append("email", data.email);
+      formData.append("phone", data.phone || "");
+      formData.append("message", data.message);
+      const res = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: formData.toString(),
+      });
+      if (!res.ok) throw new Error("Form submission failed");
+      return { success: true };
     },
     onSuccess: () => {
       toast({
@@ -122,7 +133,15 @@ export default function Contact() {
             >
               <h3 className="text-2xl font-serif mb-8">Stuur een bericht</h3>
               <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                <form
+                  name="contact"
+                  method="POST"
+                  data-netlify="true"
+                  data-netlify-honeypot="honeypot"
+                  onSubmit={form.handleSubmit(onSubmit)}
+                  className="space-y-6"
+                >
+                  <input type="hidden" name="form-name" value="contact" />
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <FormField
                       control={form.control}
