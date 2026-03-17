@@ -220,7 +220,7 @@ export default function Services() {
                   Er zijn veel verschillende manieren om aan herstel te werken en de keuze daarin maak je niet alleen. Samen kijken we naar wat er speelt: de aard van je klachten, je persoonlijke geschiedenis en wat in het verleden al helpend is geweest of juist niet.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Bij Innerlijk Kompas Psychologie werken we niet met een standaardaanpak. Na de intake bespreken we welke methode, of combinatie van methoden, het beste aansluit bij jouw situatie. Zo ontstaat er een route die écht bij je past, in een tempo dat voor jou goed voelt.
+                  Bij Innerlijk Kompas Psychologie werken we niet met een standaardaanpak. Na de intake bespreken we welke methode, of combinatie van methoden, het beste aansluit bij jouw situatie. Zo ontstaat er een route die écht bij je past.
                 </p>
               </div>
             </motion.div>
