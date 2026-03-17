@@ -1,15 +1,8 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
 import { MapPin, Mail, Building2 } from "lucide-react";
-import { Link } from "wouter";
 import rotterdamImg from "@/assets/images/rotterdam-willemsbrug.png";
 
 export default function Contact() {
-  const [privacyChecked, setPrivacyChecked] = useState(false);
-
   return (
     <div className="pt-20">
       <section className="py-20 bg-background">
@@ -63,42 +56,35 @@ export default function Contact() {
               transition={{ duration: 0.6, delay: 0.3 }}
             >
               <h3 className="text-2xl font-serif mb-8">Stuur een bericht</h3>
-              <form
-                name="contact"
-                method="POST"
-                data-netlify="true"
-                data-netlify-honeypot="honeypot"
-                action="/contact?success=true"
-                className="space-y-6"
-              >
+              <form name="contact" method="POST" data-netlify="true" className="space-y-6">
                 <input type="hidden" name="form-name" value="contact" />
-                <input type="text" name="honeypot" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
+                <p className="hidden"><label>Vul dit niet in: <input name="bot-field" /></label></p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label htmlFor="name" className="text-sm font-medium leading-none">Volledige naam</label>
-                    <Input id="name" name="name" placeholder="Jan Janssen" className="bg-white" required data-testid="input-name" />
+                    <input id="name" name="name" type="text" placeholder="Jan Janssen" required className="flex h-10 w-full rounded-md border border-input bg-white px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-testid="input-name" />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="email" className="text-sm font-medium leading-none">Email</label>
-                    <Input id="email" name="email" type="email" placeholder="jan@voorbeeld.nl" className="bg-white" required data-testid="input-email" />
+                    <input id="email" name="email" type="email" placeholder="jan@voorbeeld.nl" required className="flex h-10 w-full rounded-md border border-input bg-white px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-testid="input-email" />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label htmlFor="phone" className="text-sm font-medium leading-none">Telefoonnummer (Optioneel)</label>
-                    <Input id="phone" name="phone" placeholder="+31 6 12345678" className="bg-white" data-testid="input-phone" />
+                    <input id="phone" name="phone" type="tel" placeholder="+31 6 12345678" className="flex h-10 w-full rounded-md border border-input bg-white px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" data-testid="input-phone" />
                   </div>
                 </div>
 
                 <div className="space-y-2">
                   <label htmlFor="message" className="text-sm font-medium leading-none">Jouw bericht</label>
-                  <Textarea 
+                  <textarea 
                     id="message"
                     name="message"
                     placeholder="Beschrijf kort wat jou naar therapie brengt..." 
-                    className="min-h-[150px] bg-white resize-y" 
+                    className="flex min-h-[150px] w-full rounded-md border border-input bg-white px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 resize-y" 
                     required
                     minLength={10}
                     data-testid="input-message"
@@ -109,23 +95,22 @@ export default function Contact() {
                   <input
                     type="checkbox"
                     id="privacy"
+                    name="privacy"
                     required
-                    checked={privacyChecked}
-                    onChange={(e) => setPrivacyChecked(e.target.checked)}
-                    className="mt-1 h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+                    className="mt-1 h-4 w-4 rounded border-gray-300"
                     data-testid="checkbox-privacy"
                   />
                   <label htmlFor="privacy" className="text-sm text-muted-foreground cursor-pointer">
                     Ik ga akkoord met de{" "}
-                    <Link href="/privacy" className="text-primary underline underline-offset-2 hover:text-primary/80">
+                    <a href="/privacy" className="text-primary underline underline-offset-2 hover:text-primary/80">
                       privacyverklaring
-                    </Link>
+                    </a>
                   </label>
                 </div>
 
-                <Button type="submit" size="lg" className="w-full rounded-full bg-primary hover:bg-primary/90 text-white text-lg h-14" data-testid="button-submit-contact">
+                <button type="submit" className="w-full rounded-full bg-primary hover:bg-primary/90 text-white text-lg h-14 font-medium transition-colors" data-testid="button-submit-contact">
                   Verzend aanvraag
-                </Button>
+                </button>
                 <p className="text-xs text-muted-foreground text-center mt-4">
                   Je informatie wordt veilig versleuteld en strikt vertrouwelijk behandeld.
                 </p>
