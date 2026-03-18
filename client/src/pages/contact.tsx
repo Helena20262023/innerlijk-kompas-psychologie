@@ -56,7 +56,7 @@ export default function Contact() {
               transition={{ duration: 0.6, delay: 0.3 }}
             >
               <h3 className="text-2xl font-serif mb-8">Stuur een bericht</h3>
-              <form name="contact" method="POST" data-netlify="true" action="/success" className="space-y-6">
+              <form name="contact" method="POST" data-netlify="true" action="/" className="space-y-6">
                 <input type="hidden" name="form-name" value="contact" />
                 <p className="hidden"><label>Vul dit niet in: <input name="bot-field" /></label></p>
 
@@ -109,7 +109,7 @@ export default function Contact() {
                 </div>
 
                 <button type="submit" className="w-full rounded-full bg-primary hover:bg-primary/90 text-white text-lg h-14 font-medium transition-colors" data-testid="button-submit-contact">
-                  Verzend aanvraag
+                  Verstuur
                 </button>
                 <p className="text-xs text-muted-foreground text-center mt-4">
                   Je informatie wordt veilig versleuteld en strikt vertrouwelijk behandeld.
