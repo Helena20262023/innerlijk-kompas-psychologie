@@ -78,7 +78,7 @@ export default function Services() {
               <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-8">Hoe we te werk gaan</h2>
 
               <p>
-                Hulp zoeken is een moedige stap, maar ik weet dat de drempel soms hoog kan aanvoelen. Spanning of twijfel bij de start is heel normaal. Juist daarom staat een veilige en vertrouwde sfeer bij mij voorop. Het grote voordeel van onze online behandelingen is dat je deze gesprekken voert vanuit je eigen omgeving—een plek waar jij je volledig op je gemak voelt.
+                Hulp zoeken is een moedige stap, maar ik weet dat de drempel soms hoog kan aanvoelen. Spanning of twijfel bij de start is heel normaal. Juist daarom staat een veilige en vertrouwde sfeer bij mij voorop. Het grote voordeel van onze online behandelingen is dat je deze gesprekken voert vanuit je eigen omgeving, een plek waar jij je volledig op je gemak voelt.
               </p>
 
               <p>
