@@ -113,12 +113,12 @@ export default function Services() {
                 className="bg-white rounded-[2rem] border border-border/50 shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:border-primary/20 relative"
                 style={{
                   backgroundImage: `url(${compassBgImg})`,
-                  backgroundSize: "420px",
-                  backgroundPosition: "right center",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",
                 }}
               >
-                <div className="absolute inset-0 bg-white/80 pointer-events-none" />
+                <div className="absolute inset-0 bg-white/93 pointer-events-none" />
                 <table className="w-full relative z-10" data-testid="table-focus-areas">
                   <thead>
                     <tr className="border-b border-border/50">
