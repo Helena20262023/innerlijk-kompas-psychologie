@@ -6,3 +6,9 @@ id = "O-mn6C4HwGCIzgV5Yuljl"
 uri = "file://innerlijk-kompas-website.tar.gz"
 type = "unspecified"
 title = "Innerlijk Kompas Psychologie - Alle projectbestanden"
+
+[[outputs]]
+id = "G0uieBKLZWIuoMtSF1ddE"
+uri = "file://client/public/favicon.png"
+type = "image"
+title = "Kompas logo (favicon)"
