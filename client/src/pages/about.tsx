@@ -4,9 +4,9 @@ import heleenImg from "@/assets/images/heleen-portrait.jpeg";
 export default function About() {
   return (
     <div className="pt-20">
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center mb-20">
+      <section className="py-12 md:py-20 bg-background">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-4xl mx-auto text-center mb-10 md:mb-20">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -16,22 +16,26 @@ export default function About() {
             </motion.div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start mb-24">
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-16 items-start mb-16 md:mb-24 max-w-4xl mx-auto">
             <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="aspect-[3/4] rounded-[2rem] overflow-hidden shadow-xl sticky top-28"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7 }}
+              className="w-full rounded-[2rem] overflow-hidden shadow-xl md:sticky md:top-28"
             >
-              <img src={heleenImg} alt="Helena, Psycholoog bij Innerlijk Kompas Psychologie" className="w-full h-full object-cover" />
+              <img
+                src={heleenImg}
+                alt="Helena, Psycholoog bij Innerlijk Kompas Psychologie"
+                className="w-full max-h-72 md:max-h-none md:h-auto object-cover object-top"
+              />
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <div className="space-y-6 text-muted-foreground leading-relaxed">
+              <div className="space-y-5 text-muted-foreground leading-relaxed text-[15px] md:text-base">
                 <p>
                   Ieder mens bewandelt een uniek pad, maar soms kom je in een fase terecht waarin het leven niet meer vanzelf lijkt te gaan. Je voelt dat de balans zoek is, dat je vastloopt in terugkerende patronen of dat emoties simpelweg te zwaar worden om alleen te dragen. Op zulke momenten kan het helpend zijn om stil te staan, te vertragen en samen met een onafhankelijke professional te onderzoeken wat er werkelijk nodig is om weer richting te vinden.
                 </p>
@@ -47,7 +51,6 @@ export default function About() {
               </div>
 
               <p className="mt-6 text-sm text-muted-foreground">KVK nummer: 99588390</p>
-
             </motion.div>
           </div>
         </div>

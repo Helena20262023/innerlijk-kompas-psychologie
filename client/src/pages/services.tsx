@@ -67,8 +67,8 @@ export default function Services() {
             mixBlendMode: "multiply",
           }}
         />
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-4xl mx-auto mb-20">
+        <div className="container mx-auto px-4 md:px-6 relative z-10">
+          <div className="max-w-4xl mx-auto mb-12 md:mb-20">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -117,9 +117,25 @@ export default function Services() {
                   backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",
                 }}
+                data-testid="table-focus-areas"
               >
                 <div className="absolute inset-0 bg-white/93 pointer-events-none" />
-                <table className="w-full relative z-10" data-testid="table-focus-areas">
+
+                {/* Mobile: stacked list */}
+                <div className="block md:hidden relative z-10">
+                  <div className="px-5 py-3 border-b border-border/50">
+                    <span className="font-bold text-foreground uppercase tracking-wide text-sm">Focusgebieden</span>
+                  </div>
+                  {individualFocusAreas.map((area, i) => (
+                    <div key={i} className="px-5 py-4 border-b border-border/30 last:border-b-0" data-testid={`row-focus-area-${i}`}>
+                      <p className="font-medium text-foreground mb-1">{area.focus}</p>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{area.description}</p>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Desktop: table */}
+                <table className="w-full relative z-10 hidden md:table">
                   <thead>
                     <tr className="border-b border-border/50">
                       <th className="text-left px-6 py-4 font-bold text-foreground uppercase tracking-wide text-sm">Focusgebieden</th>
@@ -128,7 +144,7 @@ export default function Services() {
                   </thead>
                   <tbody>
                     {individualFocusAreas.map((area, i) => (
-                      <tr key={i} className="border-b border-border/30 last:border-b-0 hover:bg-secondary/5 transition-colors" data-testid={`row-focus-area-${i}`}>
+                      <tr key={i} className="border-b border-border/30 last:border-b-0 hover:bg-secondary/5 transition-colors" data-testid={`row-focus-area-desktop-${i}`}>
                         <td className="px-6 py-4 font-medium text-foreground whitespace-nowrap align-top">{area.focus}</td>
                         <td className="px-6 py-4 text-muted-foreground leading-relaxed">{area.description}</td>
                       </tr>

@@ -5,8 +5,8 @@ import { ExternalLink } from "lucide-react";
 export default function Tarieven() {
   return (
     <div className="pt-24 pb-20 min-h-screen bg-background text-foreground">
-      <div className="container mx-auto px-6">
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl mx-auto text-center mb-36">
+      <div className="container mx-auto px-4 md:px-6">
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl mx-auto text-center mb-12 md:mb-24">
           <h1 className="text-3xl md:text-4xl font-serif text-foreground mb-12" data-testid="text-page-title">Kosten & Vergoeding</h1>
           <p className="text-lg text-muted-foreground leading-relaxed mb-12">
             Behandelingen worden vergoed door je verzekeraar. Hieronder vind je alle informatie over tarieven en vergoedingen.
@@ -181,14 +181,14 @@ export default function Tarieven() {
                 <p className="text-muted-foreground leading-relaxed mb-6 text-[15px]">
                   Kies een van de onderstaande platforms om je officieel aan te melden voor een traject bij mij.
                 </p>
-                <div className="flex gap-5 justify-center flex-wrap">
-                  <a href="https://www.fundamentpartners.nl" target="_blank" rel="noopener noreferrer" data-testid="button-aanmelden-fundament">
-                    <Button className="rounded-lg gap-2 bg-primary hover:bg-primary/90 text-white min-w-[250px] py-6 text-base font-bold">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <a href="https://www.fundamentpartners.nl" target="_blank" rel="noopener noreferrer" data-testid="button-aanmelden-fundament" className="w-full sm:w-auto">
+                    <Button className="rounded-lg gap-2 bg-primary hover:bg-primary/90 text-white w-full sm:min-w-[250px] py-6 text-base font-bold">
                       Meld je aan via Fundament Partners
                     </Button>
                   </a>
-                  <a href="https://www.psyvisie.nl" target="_blank" rel="noopener noreferrer" data-testid="button-aanmelden-psyvisie">
-                    <Button className="rounded-lg gap-2 bg-primary hover:bg-primary/90 text-white min-w-[250px] py-6 text-base font-bold">
+                  <a href="https://www.psyvisie.nl" target="_blank" rel="noopener noreferrer" data-testid="button-aanmelden-psyvisie" className="w-full sm:w-auto">
+                    <Button className="rounded-lg gap-2 bg-primary hover:bg-primary/90 text-white w-full sm:min-w-[250px] py-6 text-base font-bold">
                       Meld je aan via Psyvisie
                     </Button>
                   </a>
