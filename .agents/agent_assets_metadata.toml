@@ -78,3 +78,9 @@ id = "-pYgmhaZi7BpP1AFKU3TM"
 uri = "file://attached_assets/generated_images/compass-art-a-nolabels.png"
 type = "image"
 title = "Variant A — zonder letters"
+
+[[outputs]]
+id = "v4HNJkOTR_LRVhNykc1o2"
+uri = "file://attached_assets/generated_images/compass-art-a-v3.png"
+type = "image"
+title = "Variant A — zonder letters, gravure stijl"
