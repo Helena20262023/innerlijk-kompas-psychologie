@@ -23,7 +23,7 @@ export default function About() {
               viewport={{ once: true }}
               className="aspect-[3/4] rounded-[2rem] overflow-hidden shadow-xl sticky top-28"
             >
-              <img src={heleenImg} alt="Heleen, Psycholoog bij Innerlijk Kompas Psychologie" className="w-full h-full object-cover" />
+              <img src={heleenImg} alt="Helena, Psycholoog bij Innerlijk Kompas Psychologie" className="w-full h-full object-cover" />
             </motion.div>
             
             <motion.div
@@ -36,7 +36,7 @@ export default function About() {
                   Ieder mens bewandelt een uniek pad, maar soms kom je in een fase terecht waarin het leven niet meer vanzelf lijkt te gaan. Je voelt dat de balans zoek is, dat je vastloopt in terugkerende patronen of dat emoties simpelweg te zwaar worden om alleen te dragen. Op zulke momenten kan het helpend zijn om stil te staan, te vertragen en samen met een onafhankelijke professional te onderzoeken wat er werkelijk nodig is om weer richting te vinden.
                 </p>
                 <p>
-                  Mijn naam is Heleen en als psycholoog begeleid ik volwassenen die worstelen met uiteenlopende hulpvragen, zoals trauma, angst, burn-out of een negatief zelfbeeld. Na jarenlang brede ervaring te hebben opgedaan in diverse praktijken in Den Haag en Rotterdam, bied ik mijn expertise nu online aan. Wat mij drijft in dit vak is het gezamenlijk zoeken naar ruimte: ruimte om te voelen, te begrijpen en uiteindelijk weer te groeien. Ik geloof dat werkelijke verandering ontstaat wanneer je opnieuw in contact komt met jezelf en leert vertrouwen op je eigen kracht.
+                  Mijn naam is Helena en als psycholoog begeleid ik volwassenen die worstelen met uiteenlopende hulpvragen, zoals trauma, angst, burn-out of een negatief zelfbeeld. Na jarenlang brede ervaring te hebben opgedaan in diverse praktijken in Den Haag en Rotterdam, bied ik mijn expertise nu online aan. Wat mij drijft in dit vak is het gezamenlijk zoeken naar ruimte: ruimte om te voelen, te begrijpen en uiteindelijk weer te groeien. Ik geloof dat werkelijke verandering ontstaat wanneer je opnieuw in contact komt met jezelf en leert vertrouwen op je eigen kracht.
                 </p>
                 <p>
                   In mijn werkwijze combineer ik een warme, betrokken houding met wetenschappelijk onderbouwde methoden, altijd afgestemd op jouw persoonlijke verhaal. We bepalen samen het tempo en de richting, waarbij we niet alleen kijken naar het verminderen van klachten, maar vooral naar het versterken van je autonomie en zelfcompassie. Ik vind het belangrijk dat je weer gaat ervaren dat je veel meer bent dan de problemen waar je tegenaan loopt. We geven ruimte aan moeilijke ervaringen, maar kijken ook naar wat deze je hebben geleerd en hoe ze je gevormd hebben.
