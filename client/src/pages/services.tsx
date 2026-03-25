@@ -149,7 +149,7 @@ export default function Services() {
               <img
                 src="/therapy-room-new.png"
                 alt="Behandelkamer Innerlijk Kompas Psychologie"
-                className="w-full h-72 md:h-96 object-cover"
+                className="w-full h-64 md:h-[420px] object-cover"
               />
             </motion.div>
 
