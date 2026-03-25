@@ -138,7 +138,7 @@ export default function Services() {
               className="w-full overflow-hidden rounded-[2rem] shadow-md"
             >
               <img
-                src="/therapy-room.png"
+                src="/therapy-room-v2.png"
                 alt="Serene psychologenkamer met naturlijk licht"
                 className="w-full h-72 md:h-96 object-cover"
               />
