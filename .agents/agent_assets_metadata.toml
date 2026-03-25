@@ -60,3 +60,9 @@ id = "b2BOSrqONhJ3zTszkExzU"
 uri = "file://attached_assets/generated_images/compass-art-b.png"
 type = "image"
 title = "Variant B — Linoleumsnede, handgemaakt"
+
+[[outputs]]
+id = "CNIlJMWOSSfeQQnwt03ik"
+uri = "file://attached_assets/generated_images/compass-art-final.png"
+type = "image"
+title = "Aquarel kompas — zonder letters, zacht"
