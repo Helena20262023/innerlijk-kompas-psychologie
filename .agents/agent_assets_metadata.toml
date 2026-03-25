@@ -42,3 +42,9 @@ id = "1DSnQt20Kej1rNvAZwelT"
 uri = "file://attached_assets/generated_images/compass-modern-b2.png"
 type = "image"
 title = "Variant B2 — Slanke ringen, grafisch"
+
+[[outputs]]
+id = "wOBK4GZMe9UO9Z_mYSyq4"
+uri = "file://attached_assets/generated_images/compass-modern-b1-soft.png"
+type = "image"
+title = "Variant B1 zacht — Slate blauw en warm goud"
