@@ -66,3 +66,9 @@ id = "CNIlJMWOSSfeQQnwt03ik"
 uri = "file://attached_assets/generated_images/compass-art-final.png"
 type = "image"
 title = "Aquarel kompas — zonder letters, zacht"
+
+[[outputs]]
+id = "IMCGVQSgucNbioOlEtxww"
+uri = "file://attached_assets/generated_images/compass-art-v2.png"
+type = "image"
+title = "Aquarel kompas — puur abstract, geen letters"
