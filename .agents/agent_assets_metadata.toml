@@ -12,3 +12,21 @@ id = "G0uieBKLZWIuoMtSF1ddE"
 uri = "file://client/public/favicon.png"
 type = "image"
 title = "Nautisch kompas logo"
+
+[[outputs]]
+id = "Pi8HPu3nAyoEhkd9bETce"
+uri = "file://attached_assets/generated_images/compass-vintage-a.png"
+type = "image"
+title = "Variant A — Perkament, fleur-de-lis"
+
+[[outputs]]
+id = "BkeJtWLBL0vmWw5PYS57I"
+uri = "file://attached_assets/generated_images/compass-vintage-b.png"
+type = "image"
+title = "Variant B — Marineblauw en goud"
+
+[[outputs]]
+id = "wBjQZSqyqyMxsxENNWsaz"
+uri = "file://attached_assets/generated_images/compass-vintage-c.png"
+type = "image"
+title = "Variant C — Handgetekend, teal en oranje"
