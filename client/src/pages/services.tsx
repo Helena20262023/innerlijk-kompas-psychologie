@@ -109,8 +109,17 @@ export default function Services() {
                 Binnen de individuele behandeling richten we ons op een breed scala aan psychische klachten. We kijken niet alleen naar de symptomen, maar ook naar de onderliggende patronen die je belemmeren in je dagelijks leven.
               </p>
 
-              <div className="bg-white rounded-[2rem] border border-border/50 shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:border-primary/20">
-                <table className="w-full" data-testid="table-focus-areas">
+              <div
+                className="bg-white rounded-[2rem] border border-border/50 shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md hover:border-primary/20 relative"
+                style={{
+                  backgroundImage: `url(${compassBgImg})`,
+                  backgroundSize: "420px",
+                  backgroundPosition: "right center",
+                  backgroundRepeat: "no-repeat",
+                }}
+              >
+                <div className="absolute inset-0 bg-white/80 pointer-events-none" />
+                <table className="w-full relative z-10" data-testid="table-focus-areas">
                   <thead>
                     <tr className="border-b border-border/50">
                       <th className="text-left px-6 py-4 font-bold text-foreground uppercase tracking-wide text-sm">Focusgebieden</th>
