@@ -84,3 +84,9 @@ id = "v4HNJkOTR_LRVhNykc1o2"
 uri = "file://attached_assets/generated_images/compass-art-a-v3.png"
 type = "image"
 title = "Variant A — zonder letters, gravure stijl"
+
+[[outputs]]
+id = "7Rk42z02XESnTWzb-DAY4"
+uri = "file://attached_assets/generated_images/compass-b-v2.png"
+type = "image"
+title = "Variant B — zonder letters"
