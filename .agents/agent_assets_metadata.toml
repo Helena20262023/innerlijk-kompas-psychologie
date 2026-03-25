@@ -48,3 +48,15 @@ id = "wOBK4GZMe9UO9Z_mYSyq4"
 uri = "file://attached_assets/generated_images/compass-modern-b1-soft.png"
 type = "image"
 title = "Variant B1 zacht — Slate blauw en warm goud"
+
+[[outputs]]
+id = "3TJA7LUfh2Fru1qLFyJvQ"
+uri = "file://attached_assets/generated_images/compass-art-a.png"
+type = "image"
+title = "Variant A — Aquarel, zachte verfvlekken"
+
+[[outputs]]
+id = "b2BOSrqONhJ3zTszkExzU"
+uri = "file://attached_assets/generated_images/compass-art-b.png"
+type = "image"
+title = "Variant B — Linoleumsnede, handgemaakt"
