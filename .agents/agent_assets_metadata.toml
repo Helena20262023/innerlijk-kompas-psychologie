@@ -30,3 +30,15 @@ id = "wBjQZSqyqyMxsxENNWsaz"
 uri = "file://attached_assets/generated_images/compass-vintage-c.png"
 type = "image"
 title = "Variant C — Handgetekend, teal en oranje"
+
+[[outputs]]
+id = "uAh2T1fEQg-g3NTd91fBN"
+uri = "file://attached_assets/generated_images/compass-modern-b1.png"
+type = "image"
+title = "Variant B1 — Geometrisch, scherpe punten"
+
+[[outputs]]
+id = "1DSnQt20Kej1rNvAZwelT"
+uri = "file://attached_assets/generated_images/compass-modern-b2.png"
+type = "image"
+title = "Variant B2 — Slanke ringen, grafisch"
