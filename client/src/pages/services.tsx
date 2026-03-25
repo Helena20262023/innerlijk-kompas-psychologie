@@ -131,20 +131,6 @@ export default function Services() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-              className="w-full overflow-hidden rounded-[2rem] shadow-md"
-            >
-              <img
-                src="/therapy-room-v2.png"
-                alt="Serene psychologenkamer met naturlijk licht"
-                className="w-full h-72 md:h-96 object-cover"
-              />
-            </motion.div>
-
-            <motion.div
               id="behandelmethodieken"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
