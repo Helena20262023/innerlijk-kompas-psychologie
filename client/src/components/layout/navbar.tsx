@@ -46,9 +46,7 @@ export default function Navbar() {
       <div className="container mx-auto px-6 h-20 flex items-center justify-between">
         <Link href="/">
           <span className="font-serif text-2xl font-bold text-primary tracking-tight flex items-center gap-2 cursor-pointer">
-            <span className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-white text-lg">
-              IK
-            </span>
+            <img src="/favicon.png?v=3" alt="Innerlijk Kompas logo" className="w-9 h-9 rounded-full object-cover" />
             Innerlijk Kompas
           </span>
         </Link>
