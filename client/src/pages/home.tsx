@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Clock, Globe, CheckCircle2 } from "lucide-react";
 import cherryBlossomImg from "@/assets/images/cherry-blossom-dark.png";
 
 export default function Home() {
+  useEffect(() => {
+    document.title = "Innerlijk Kompas Psychologie | Online Psycholoog | CGT & EMDR";
+  }, []);
   return (
     <div className="pt-20">
       {/* Hero Section */}

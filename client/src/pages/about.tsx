@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import heleenImg from "@/assets/images/heleen-portrait.jpeg";
 
 export default function About() {
+  useEffect(() => {
+    document.title = "Over mij | Helena | Innerlijk Kompas Psychologie";
+  }, []);
   return (
     <div className="pt-20">
       <section className="py-12 md:py-20 bg-background">

@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
 
 export default function Privacy() {
+  useEffect(() => {
+    document.title = "Privacyverklaring | Innerlijk Kompas Psychologie";
+  }, []);
   return (
     <div className="pt-20">
       <section className="py-20 bg-background">

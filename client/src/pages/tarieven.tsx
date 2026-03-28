@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 
 export default function Tarieven() {
+  useEffect(() => {
+    document.title = "Tarieven & Vergoeding | Innerlijk Kompas Psychologie";
+  }, []);
   return (
     <div className="pt-24 pb-20 min-h-screen bg-background text-foreground">
       <div className="container mx-auto px-4 md:px-6">

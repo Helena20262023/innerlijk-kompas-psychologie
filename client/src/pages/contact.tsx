@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { MapPin, Mail, Building2 } from "lucide-react";
 import rotterdamImg from "@/assets/images/rotterdam-willemsbrug.png";
 
 export default function Contact() {
+  useEffect(() => {
+    document.title = "Contact | Innerlijk Kompas Psychologie";
+  }, []);
   return (
     <div className="pt-20">
       <section className="py-20 bg-background">

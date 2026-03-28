@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
@@ -19,6 +20,9 @@ const traumamethodieken = [
 ];
 
 export default function Services() {
+  useEffect(() => {
+    document.title = "Werkwijze & Behandelmethoden | Innerlijk Kompas Psychologie";
+  }, []);
   const individualFocusAreas = [
     { focus: "Angst & Paniek", description: "Overmatige bezorgdheid, sociale angst of paniekaanvallen die je bewegingsvrijheid beperken." },
     { focus: "Somberheid", description: "Gevoelens van neerslachtigheid, verlies van plezier of aanhoudende depressieve klachten." },
