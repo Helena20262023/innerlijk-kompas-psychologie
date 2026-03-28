@@ -30,7 +30,7 @@ export default function Footer() {
             <ul className="space-y-1.5 text-sm">
               <li className="flex items-center gap-2 text-white/70">
                 <Mail size={14} className="shrink-0" />
-                <a href="mailto:info@innerlijkkompaspsychologie.com" className="hover:text-white transition-colors">info@innerlijkkompaspsychologie.com</a>
+                <a href="mailto:info@innerlijkkompaspsychologie.nl" className="hover:text-white transition-colors">info@innerlijkkompaspsychologie.nl</a>
               </li>
               <li className="flex items-center gap-2 text-white/70">
                 <MapPin size={14} className="shrink-0" />

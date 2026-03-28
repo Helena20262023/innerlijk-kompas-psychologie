@@ -37,7 +37,7 @@ export default function Contact() {
               <div className="space-y-3">
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <Mail size={16} className="shrink-0 text-primary" />
-                  <a href="mailto:info@innerlijkkompaspsychologie.com" className="hover:text-primary transition-colors">info@innerlijkkompaspsychologie.com</a>
+                  <a href="mailto:info@innerlijkkompaspsychologie.nl" className="hover:text-primary transition-colors">info@innerlijkkompaspsychologie.nl</a>
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <MapPin size={16} className="shrink-0 text-primary" />

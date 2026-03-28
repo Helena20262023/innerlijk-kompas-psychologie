@@ -80,7 +80,7 @@ export default function Privacy() {
                 <h2 className="text-xl font-serif text-foreground mb-3">6. Contactgegevens</h2>
                 <div className="text-muted-foreground leading-relaxed space-y-1">
                   <p>Innerlijk Kompas Psychologie</p>
-                  <p>E-mail: <a href="mailto:info@innerlijkkompaspsychologie.com" className="text-primary hover:underline">info@innerlijkkompaspsychologie.com</a></p>
+                  <p>E-mail: <a href="mailto:info@innerlijkkompaspsychologie.nl" className="text-primary hover:underline">info@innerlijkkompaspsychologie.nl</a></p>
                   <p>KVK: 99588390</p>
                 </div>
               </div>
