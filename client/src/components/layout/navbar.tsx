@@ -10,7 +10,10 @@ const behandelmethodieken = [
   { slug: "oplossingsgerichte", label: "Oplossingsgerichte therapie" },
   { slug: "inzichtgevende", label: "Inzichtgevende therapie" },
   { slug: "sft", label: "Schemagerichte therapie (SFT)" },
-  { slug: "traumabehandeling", label: "Specialistische traumabehandeling" },
+  { slug: "emdr", label: "EMDR" },
+  { slug: "ie", label: "Imaginaire Exposure" },
+  { slug: "ir", label: "Imaginaire Rescripting" },
+  { slug: "net", label: "Narratieve Exposure Therapie" },
 ];
 
 export default function Navbar() {
