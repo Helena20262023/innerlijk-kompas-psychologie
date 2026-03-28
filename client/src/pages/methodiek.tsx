@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link, useParams } from "wouter";
 import { ArrowLeft, ArrowRight } from "lucide-react";
@@ -90,6 +91,12 @@ const methodieken: Record<string, { title: string; content: string[] }> = {
 export default function Methodiek() {
   const params = useParams<{ slug: string }>();
   const data = methodieken[params.slug || ""];
+
+  useEffect(() => {
+    if (data) {
+      document.title = `${data.title} | Innerlijk Kompas Psychologie`;
+    }
+  }, [data]);
 
   if (!data) {
     return (
