@@ -102,3 +102,9 @@ id = "XOPZdsbgkxDnm9ZZuWEFM"
 uri = "file://client/public/therapy-room-v5.png"
 type = "image"
 title = "Therapiekamer foto"
+
+[[outputs]]
+id = "XgVWv6-17SGuNoi1FbDga"
+uri = "file://client/public/therapiekamer.jpg"
+type = "image"
+title = "Therapiekamer foto (JPEG)"
