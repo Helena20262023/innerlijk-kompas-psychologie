@@ -96,3 +96,9 @@ id = "2mhIx-L2dsf_hfLw2zQWj"
 uri = "file://attached_assets/generated_images/compass-a-nolabels-v2.png"
 type = "image"
 title = "Variant A — zonder letters"
+
+[[outputs]]
+id = "XOPZdsbgkxDnm9ZZuWEFM"
+uri = "file://client/public/therapy-room-v5.png"
+type = "image"
+title = "Therapiekamer foto"
