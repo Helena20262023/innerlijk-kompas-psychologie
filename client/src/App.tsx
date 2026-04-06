@@ -24,6 +24,7 @@ import Tarieven from "@/pages/tarieven";
 import Contact from "@/pages/contact";
 import Methodiek from "@/pages/methodiek";
 import Privacy from "@/pages/privacy";
+import PrivacyInformatie from "@/pages/privacy-informatie";
 import Success from "@/pages/success";
 
 function Router() {
@@ -40,6 +41,7 @@ function Router() {
           <Route path="/tarieven" component={Tarieven} />
           <Route path="/contact" component={Contact} />
           <Route path="/privacy" component={Privacy} />
+          <Route path="/privacy-informatie" component={PrivacyInformatie} />
           <Route path="/success" component={Success} />
           <Route component={NotFound} />
         </Switch>
