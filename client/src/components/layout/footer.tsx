@@ -53,7 +53,7 @@ export default function Footer() {
               Privacyverklaring
             </Link>
             <Link href="/privacy-informatie" className="text-xs text-white/50 hover:text-white transition-colors">
-              Privacy voor cliënten
+              Privacy-informatiefolder
             </Link>
           </div>
         </div>
