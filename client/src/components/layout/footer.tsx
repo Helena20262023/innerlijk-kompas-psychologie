@@ -48,12 +48,15 @@ export default function Footer() {
           <p className="text-xs text-white/50">
             &copy; {new Date().getFullYear()} Innerlijk Kompas Psychologie. Alle rechten voorbehouden.
           </p>
-          <div className="flex gap-4">
+          <div className="flex flex-wrap gap-4">
             <Link href="/privacy" className="text-xs text-white/50 hover:text-white transition-colors">
               Privacyverklaring
             </Link>
             <Link href="/privacy-informatie" className="text-xs text-white/50 hover:text-white transition-colors">
               Privacy-informatiefolder
+            </Link>
+            <Link href="/klachten" className="text-xs text-white/50 hover:text-white transition-colors">
+              Klachten en geschillen
             </Link>
           </div>
         </div>
