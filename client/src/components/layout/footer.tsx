@@ -58,6 +58,9 @@ export default function Footer() {
             <Link href="/klachten" className="text-xs text-white/50 hover:text-white transition-colors">
               Klachten en geschillen
             </Link>
+            <Link href="/betalingsvoorwaarden" className="text-xs text-white/50 hover:text-white transition-colors">
+              Betalingsvoorwaarden
+            </Link>
           </div>
         </div>
       </div>

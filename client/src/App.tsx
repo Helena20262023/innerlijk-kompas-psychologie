@@ -26,6 +26,7 @@ import Methodiek from "@/pages/methodiek";
 import Privacy from "@/pages/privacy";
 import PrivacyInformatie from "@/pages/privacy-informatie";
 import Klachten from "@/pages/klachten";
+import Betalingsvoorwaarden from "@/pages/betalingsvoorwaarden";
 import Success from "@/pages/success";
 
 function Router() {
@@ -44,6 +45,7 @@ function Router() {
           <Route path="/privacy" component={Privacy} />
           <Route path="/privacy-informatie" component={PrivacyInformatie} />
           <Route path="/klachten" component={Klachten} />
+          <Route path="/betalingsvoorwaarden" component={Betalingsvoorwaarden} />
           <Route path="/success" component={Success} />
           <Route component={NotFound} />
         </Switch>
