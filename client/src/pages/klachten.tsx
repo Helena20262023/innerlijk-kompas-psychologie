@@ -83,7 +83,7 @@ export default function Klachten() {
               <div>
                 <h2 className="text-xl font-serif text-foreground mb-3">Geschilleninstantie</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  De uiteindelijke geschilleninstantie is <strong className="text-foreground font-semibold">De Geschillencommissie Zorg (gevestigd in Den Haag)</strong>. Deze instantie is onafhankelijk en onpartijdig. De Geschillencommissie Zorg geeft binnen 6 maanden een oordeel over het geschil. De uitspraak is bindend voor alle partijen. U als cliënt en ik als zorgaanbieder kunnen hiertegen dus niet in beroep.
+                  De uiteindelijke geschilleninstantie is De Geschillencommissie Zorg (gevestigd in Den Haag). Deze instantie is onafhankelijk en onpartijdig. De Geschillencommissie Zorg geeft binnen 6 maanden een oordeel over het geschil. De uitspraak is bindend voor alle partijen. U als cliënt en ik als zorgaanbieder kunnen hiertegen dus niet in beroep.
                 </p>
               </div>
 
