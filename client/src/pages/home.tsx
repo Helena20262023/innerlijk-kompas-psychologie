@@ -42,7 +42,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
             >
               <p className="text-base md:text-lg text-foreground/75 leading-[1.8] max-w-2xl mx-auto">
-                Iedereen verdient een stevig fundament om op terug te vallen. Of je nu kampt met trauma, somberheid, aanhoudende stress of onverwerkte rouwgevoelens, Innerlijk Kompas Psychologie biedt de professionele begeleiding die nodig is om jouw koers weer helder te krijgen. Persoonlijk, toegankelijk en volledig online, zodat je vanuit je eigen vertrouwde omgeving kunt werken aan herstel. Binnen de praktijk worden kortdurende, klachtgerichte behandeltrajecten aangeboden in de Basis GGZ (BGGZ). De gemiddelde duur van een traject bedraagt maximaal 10 sessies.
+                Iedereen verdient een stevig fundament om op terug te vallen. Of je nu kampt met trauma, somberheid, aanhoudende stress of onverwerkte rouwgevoelens, Innerlijk Kompas Psychologie biedt de professionele begeleiding die nodig is om jouw koers weer helder te krijgen. Persoonlijk, toegankelijk en volledig online, zodat je vanuit je eigen vertrouwde omgeving kunt werken aan herstel. Binnen de praktijk worden kortdurende, klachtgerichte behandeltrajecten aangeboden in de Basis GGZ (BGGZ). De gemiddelde duur van een traject bedraagt maximaal 10 tot 15 sessies.
               </p>
             </motion.div>
           </div>
